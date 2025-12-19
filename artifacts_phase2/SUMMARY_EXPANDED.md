@@ -1,13 +1,14 @@
 # Profile (Expanded)
 
-This browsing history suggests recurring themes across News / geopolitics (e.g., bbc.co.uk, independent.co.uk, amp.theguardian.com; searches like ukraine, sku cloud blog, metropolitan wharf postcode), Travel planning (e.g., tripadvisor.co.uk, booking.com, tripadvisor.com; searches like skyscanner, naples cooking classes, bombay canteen), News / geopolitics (e.g., kcl.ac.uk, investopedia.com, bbcgoodfood.com; searches like keats, kcl email, wrds database), Life admin (jobs/visa/finance) (e.g., quora.com, schengenvisainfo.com, visa.vfsglobal.com; searches like santander mortgage, buy astro turf, hotel jules and jim), Mixed interest (e.g., designmynight.com, squaremeal.co.uk, opentable.co.uk; searches like shared christmas parties london, christmas party london 2017, balthazar), Mixed interest (e.g., strategyand.pwc.com, ramboll.co.uk, bgs.ac.uk; searches like amount spent in equipment & services by oil & gas companies, boots london wall, fuelling the next generation a study of the uk upstream oil and gas workforce).
+This browsing profile reflects a user balancing practical life tasks with specialized professional and personal interests. Travel planning appears regularly, including routes from Spain to Monaco and vineyard accommodations in Montpellier. Food-related searches show a focus on sourcing high-quality ingredients (sashimi-grade fish from Billingsgate Market) and preparing dishes like tuna ceviche. Professional research includes detailed queries about the UK oil and gas sector, procurement headcount, and upstream suppliers, suggesting work in energy consulting or analysis.
 
-## Evidence-backed themes
-- **News / geopolitics/Mixed interest/Life admin (jobs/visa/finance)** — queries: clos maggiore, download preview signature as image, tax efficient ways of buying second home | domains: tripadvisor.co.uk, keybusinessconsultants.co.uk, tanners.co.uk
-- **Travel planning/Fashion / shopping/Mixed interest** — queries: pals to monaco, pals spain to monaco, stay in vineyard montpelier | domains: robertdyas.co.uk, spain-holiday.com, easyjet.com
-- **News / geopolitics/Health / medicine/Mixed interest** — queries: future of health, couch to 10k, how to find a medium audience | domains: myrunningtips.com, letsdothis.com, rockay.com
-- **Mixed interest/Life admin (jobs/visa/finance)/News / geopolitics** — queries: uk oil and gas suppliers, oil and gas information, % of headcount in procurement for uk o&g companies | domains: ramboll.co.uk, ukoilandgasdata.com, ogauthority.co.uk
-- **Mixed interest/Mixed interest/News / geopolitics** — queries: lily lulu fashion, lily lulu vat number, past perfect ltd | domains: lilylulufashion.com, pastperfect.com, annie-and-chris.com
-- **Mixed interest/Mixed interest/Mixed interest** — queries: changing sprite on scratch, create a sprite on scratch, female doctor clipart | domains: scratch.mit.edu, shutterstock.com, monitor.ppcprotect.com
-- **Life admin (jobs/visa/finance)/Mixed interest/Fashion / shopping** — queries: apply for a long term schengen visa, schengen visa multiple entry, uniform schengen visa | domains: ec.europa.eu, norway.no, 3331.xg4ken.com
-- **Mixed interest/News / geopolitics/Life admin (jobs/visa/finance)** — queries: london local news, why to have your google email as part of signature, why to have your google page as part of signature | domains: moz.com, localguidesconnect.com, superb.digital
+Additional patterns include VAT number lookups for fashion retailers (Lily Lulu, Past Perfect), tax-efficient strategies for purchasing a second home outside the UK, and SIPP tax reclaims. The user also engages with educational platforms (EdX courses, Scratch sprite programming for a medical-themed project) and reads medical non-fiction ("Being Mortal," "Better: A Surgeon's Notes on Performance"). Searches for protein powder in Costa Rica and British Airways Executive Club indicate international travel habits and health consciousness.
+
+## Stable truths
+- The user actively plans European travel, particularly routes involving Spain, Monaco, and French wine regions.
+- They source specialty food ingredients, specifically sashimi-grade fish for preparing ceviche, and consult Billingsgate Market.
+- Professional or academic interest in the UK oil and gas industry is evident, with detailed queries about procurement, upstream operations, and workforce data.
+- The user researches tax-efficient property investment strategies, including second homes outside the UK and SIPP tax reclaims.
+- They verify VAT registration for fashion and retail businesses, possibly for business compliance or purchasing purposes.
+- Educational engagement includes EdX courses and Scratch programming, potentially for teaching or personal skill development.
+- The user reads medical and performance-focused non-fiction by surgeon-authors like Atul Gawande.

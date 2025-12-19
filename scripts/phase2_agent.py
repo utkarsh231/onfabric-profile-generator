@@ -481,7 +481,17 @@ def build_intent_cards(
     comm_summaries: List[dict],
     session_trails: dict,
     selected_sessions: List[SessionCandidate],
+    *,
+    per_session_max_intents: int = 2,
+    min_comm_mass_frac: float = 0.28,
 ) -> List[dict]:
+    """Build intent cards for humans.
+
+    IMPORTANT: Cards are generated per (session, dominant community).
+
+    This avoids “mixed” cards where multiple unrelated themes are merged into a single label.
+    """
+
     q_df = _query_df_from_graph(G)
     e_df = _entity_df_from_graph(G)
     n_sess = max(1, sum(1 for n in G.nodes if isinstance(n, str) and n.startswith("s:")))
@@ -494,14 +504,33 @@ def build_intent_cards(
         df = e_df.get(e, 0)
         return math.log((1.0 + n_sess) / (1.0 + df)) + 1.0
 
+    # Index summaries by community id for fast lookup
+    summ_by_id: Dict[int, dict] = {}
+    for s in comm_summaries:
+        try:
+            summ_by_id[int(s.get("community_id"))] = s
+        except Exception:
+            continue
+
+    def _dedup(xs: List[str]) -> List[str]:
+        seen: Set[str] = set()
+        out: List[str] = []
+        for x in xs:
+            if not x:
+                continue
+            if x in seen:
+                continue
+            seen.add(x)
+            out.append(x)
+        return out
+
     cards: List[dict] = []
+
     for cand in selected_sessions:
         s = cand.session_node
         sid = cand.session_id
 
-        comm_rank = sorted(cand.comm_weights.items(), key=lambda x: x[1], reverse=True)
-        top_comms = [int(c) for c, _ in comm_rank[:3]]
-
+        # Gather neighbors with community ids
         neigh: List[Tuple[float, str, str, int]] = []
         for nb in G.neighbors(s):
             t = ntype_of_node(G, nb)
@@ -519,45 +548,81 @@ def build_intent_cards(
             w = float(G[s][nb].get("weight", 1.0))
             neigh.append((w, nb, t, int(cid)))
 
-        # query ranking: (idf * edge_weight)
-        queries = [(w * q_idf(_strip_prefix(nb)), w, _strip_prefix(nb)) for (w, nb, t, _) in neigh if t == "query"]
-        queries.sort(reverse=True, key=lambda x: x[0])
+        if not neigh:
+            continue
 
-        domains = [(w, _strip_prefix(nb)) for (w, nb, t, _) in neigh if t == "domain"]
-        domains.sort(reverse=True, key=lambda x: x[0])
+        # Compute community mass for this session
+        comm_mass: Dict[int, float] = defaultdict(float)
+        for w, _, _, c in neigh:
+            comm_mass[int(c)] += float(w)
 
-        entities = [(w * e_idf(_strip_prefix(nb)), w, _strip_prefix(nb)) for (w, nb, t, _) in neigh if t == "entity"]
-        entities.sort(reverse=True, key=lambda x: x[0])
-        top_entities = [e for _, _, e in entities[:5]]
+        total_mass = sum(comm_mass.values()) or 1.0
+        ranked = sorted(comm_mass.items(), key=lambda kv: kv[1], reverse=True)
 
-        top_queries = [q for _, _, q in queries[:4]]
-        top_domains = [d for _, d in domains[:3]]
+        # Choose dominant communities for this session
+        chosen: List[int] = []
+        for c, m in ranked:
+            if m / total_mass < float(min_comm_mass_frac):
+                continue
+            chosen.append(int(c))
+            if len(chosen) >= int(per_session_max_intents):
+                break
 
-        # label from summaries (deterministic)
-        label_parts = []
-        for c in top_comms:
-            summ = next((x for x in comm_summaries if int(x["community_id"]) == int(c)), None)
-            if summ:
-                label_parts.append(_guess_topic_label(summ.get("top_domains", [])[:6], summ.get("top_queries", [])[:6], summ.get("top_entities", [])[:6]))
-        label = "/".join([p for p in label_parts if p]) or "Mixed interest"
+        # Fallback to top community if threshold filters all
+        if not chosen and ranked:
+            chosen = [int(ranked[0][0])]
 
+        # Representative titles are session-level (still useful even if a session has 2 themes)
         preview = session_trails.get(sid) or {}
         reps = preview.get("representative_titles", []) if isinstance(preview, dict) else []
 
-        cards.append(
-            {
-                "session_id": sid,
-                "label": label,
-                "top_communities": top_comms,
-                "top_queries": top_queries,
-                "top_entities": top_entities,
-                "supporting_domains": top_domains,
-                "strength": float(cand.strength),
-                "representative_titles": reps[:6],
-            }
-        )
+        # Build one card per (session, community)
+        for c in chosen:
+            bucket = [(w, nb, t) for (w, nb, t, cid) in neigh if int(cid) == int(c)]
+            if not bucket:
+                continue
+            bucket.sort(reverse=True, key=lambda x: x[0])
 
-    cards.sort(key=lambda x: x.get("strength", 0.0), reverse=True)
+            # Rank queries/entities by (edge_weight * idf) to favor distinctive intent
+            q_scored = [(w * q_idf(_strip_prefix(nb)), w, _strip_prefix(nb)) for (w, nb, t) in bucket if t == "query"]
+            q_scored.sort(reverse=True, key=lambda x: x[0])
+
+            d_scored = [(w, _strip_prefix(nb)) for (w, nb, t) in bucket if t == "domain"]
+            d_scored.sort(reverse=True, key=lambda x: x[0])
+
+            e_scored = [(w * e_idf(_strip_prefix(nb)), w, _strip_prefix(nb)) for (w, nb, t) in bucket if t == "entity"]
+            e_scored.sort(reverse=True, key=lambda x: x[0])
+
+            top_queries = _dedup([q for _, _, q in q_scored[:8]])[:4]
+            top_domains = _dedup([d for _, d in d_scored[:6]])[:3]
+            top_entities = _dedup([e for _, _, e in e_scored[:10]])[:5]
+
+            # Label from that single community summary (not merged across communities)
+            summ = summ_by_id.get(int(c))
+            if summ:
+                label = _guess_topic_label(
+                    (summ.get("top_domains", []) or [])[:6],
+                    (summ.get("top_queries", []) or [])[:6],
+                    (summ.get("top_entities", []) or [])[:6],
+                )
+            else:
+                label = _guess_topic_label(top_domains, top_queries, top_entities)
+
+            cards.append(
+                {
+                    "session_id": sid,
+                    "community_id": int(c),
+                    "label": label,
+                    "top_queries": top_queries,
+                    "top_entities": top_entities,
+                    "supporting_domains": top_domains,
+                    # strength is community-specific mass so sorting produces coherent rabbit holes
+                    "strength": float(comm_mass.get(int(c), 0.0)),
+                    "representative_titles": reps[:6],
+                }
+            )
+
+    cards.sort(key=lambda x: float(x.get("strength", 0.0)), reverse=True)
     return cards
 
 
@@ -762,11 +827,50 @@ def render_summary_expanded(profile_paragraph: str, intent_cards: List[dict]) ->
     return "\n".join(lines).strip() + "\n"
 
 
+
 def _safe_compact_text(s: str, max_len: int = 220) -> str:
     s = re.sub(r"\s+", " ", (s or "")).strip()
     if len(s) <= max_len:
         return s
     return s[: max_len - 1] + "…"
+
+
+# --- LLM JSON postprocessing helpers ---
+
+def _parse_json_object_from_text(text: str) -> dict:
+    """Parse a JSON object from an LLM response.
+
+    Handles common cases:
+      - empty/whitespace output
+      - ```json fenced blocks
+      - extra preface/epilogue text around a JSON object
+    """
+    raw = (text or "").strip()
+    if not raw:
+        raise ValueError("LLM returned empty text")
+
+    # Strip common fenced code blocks
+    if raw.startswith("```"):
+        lines = raw.splitlines()
+        # drop first fence line
+        if lines:
+            lines = lines[1:]
+        # drop trailing fence if present
+        if lines and lines[-1].strip().startswith("```"):
+            lines = lines[:-1]
+        raw = "\n".join(lines).strip()
+
+    # If the model added commentary, extract the first top-level JSON object
+    if not raw.startswith("{"):
+        i = raw.find("{")
+        j = raw.rfind("}")
+        if i != -1 and j != -1 and j > i:
+            raw = raw[i : j + 1].strip()
+
+    obj = json.loads(raw)
+    if not isinstance(obj, dict):
+        raise ValueError("LLM JSON was not an object")
+    return obj
 
 
 def _anthropic_list_models(limit: int = 200, timeout: int = 30) -> List[str]:
@@ -891,7 +995,11 @@ def _anthropic_call(
                     for b in blocks2:
                         if isinstance(b, dict) and b.get("type") == "text":
                             texts2.append(b.get("text", ""))
-                    return "\n".join(texts2).strip()
+                    out2 = "\n".join(texts2).strip()
+                    if not out2:
+                        preview2 = (body2 or "")[:600]
+                        raise RuntimeError(f"Anthropic returned no text content. Raw response preview: {preview2}")
+                    return out2
             except Exception:
                 pass
 
@@ -906,7 +1014,13 @@ def _anthropic_call(
     for b in blocks:
         if isinstance(b, dict) and b.get("type") == "text":
             texts.append(b.get("text", ""))
-    return "\n".join(texts).strip()
+
+    out = "\n".join(texts).strip()
+    if not out:
+        # Surface a useful error so we don't later crash with json.loads('')
+        preview = (body or "")[:600]
+        raise RuntimeError(f"Anthropic returned no text content. Raw response preview: {preview}")
+    return out
 
 
 def apply_label_map(intent_cards: List[dict], label_map: dict) -> List[dict]:
@@ -945,13 +1059,18 @@ def llm_postprocess_cards_and_summaries(intent_cards: List[dict], profile_paragr
         "Constraints:\n"
         "- Do not invent facts. If uncertain, hedge.\n"
         "- Prefer concrete themes; avoid 'mixed interest'.\n"
-        "- Output MUST be valid JSON with keys exactly: label_map, summary_small, summary_big, truths.\n\n"
+        "- Output MUST be a single JSON object (no markdown, no code fences, no commentary).\n"
+        "- Keys must be exactly: label_map, summary_small, summary_big, truths.\n\n"
         f"BASE_PARAGRAPH:\n{profile_paragraph}\n\n"
         f"EVIDENCE_JSON:\n{json.dumps(evidence, ensure_ascii=False)}\n"
     )
 
     text = _anthropic_call(prompt, model=anthropic_model)
-    return json.loads(text)
+    try:
+        return _parse_json_object_from_text(text)
+    except Exception as e:
+        preview = _safe_compact_text(text, 600)
+        raise RuntimeError(f"Failed to parse LLM JSON: {e}. LLM output preview: {preview}")
 
 
 def maybe_llm_summarize(cards: List[dict], fallback_paragraph: str, provider: str = "off", anthropic_model: Optional[str] = None) -> Tuple[dict, List[dict]]:

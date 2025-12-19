@@ -1,6 +1,6 @@
 # 🌈 Web Wrapped
 
-_Generated: 2025-12-19T22:52:49.681044Z_
+_Generated: 2025-12-19T22:55:32.062128Z_
 
 ## Your year in signals
 
@@ -65,34 +65,35 @@ _Generated: 2025-12-19T22:52:49.681044Z_
 
 ## Rabbit holes (deep dives)
 
-### News / geopolitics/Mixed interest/Life admin (jobs/visa/finance) — session `s8103`
-- intents: `clos maggiore`, `download preview signature as image`, `tax efficient ways of buying second home`, `tax efficient ways of buying second home outside of uk`
-- sites: `tripadvisor.co.uk`, `keybusinessconsultants.co.uk`, `tanners.co.uk`
-
-### Travel planning/Fashion / shopping/Mixed interest — session `s1761`
+### Travel planning: Spain to Monaco — session `s1761`
 - intents: `pals to monaco`, `pals spain to monaco`, `stay in vineyard montpelier`, `domaines paul mas languedoc`
 - sites: `robertdyas.co.uk`, `spain-holiday.com`, `easyjet.com`
 
-### News / geopolitics/Health / medicine/Mixed interest — session `s5179`
-- intents: `future of health`, `couch to 10k`, `how to find a medium audience`, `sequence your genome`
-- sites: `myrunningtips.com`, `letsdothis.com`, `rockay.com`
-
-### Mixed interest/Life admin (jobs/visa/finance)/News / geopolitics — session `s0162`
-- intents: `uk oil and gas suppliers`, `oil and gas information`, `% of headcount in procurement for uk o&g companies`, `is upstream oil same as procurement`
-- sites: `ramboll.co.uk`, `ukoilandgasdata.com`, `ogauthority.co.uk`
-
-### Mixed interest/Mixed interest/News / geopolitics — session `s0738`
+### VAT lookup for fashion retailers — session `s0738`
 - intents: `lily lulu fashion`, `lily lulu vat number`, `past perfect ltd`, `past perfect vat number`
 - sites: `lilylulufashion.com`, `pastperfect.com`, `annie-and-chris.com`
 
+### EdX course and Scratch programming — session `s2832`
+- intents: `changing sprite on scratch`, `create a sprite on scratch`, `female doctor clipart`, `female doctor clipart in different actions`
+- sites: `shutterstock.com`, `monitor.ppcprotect.com`, `clipartkey.com`
+
+### Eyewear and watch shopping India — session `s2509`
+- intents: `branded eyewear lucknow`, `titan eye plus`, `titan eye plus lucknow`, `indian watch brands`
+- sites: `lahoreoptical.com`, `sonatawatches.in`, `thbaker.co.uk`
+
+### UK oil & gas industry research — session `s0162`
+- intents: `uk oil and gas suppliers`, `oil and gas information`, `% of headcount in procurement for uk o&g companies`, `is upstream oil same as procurement`
+- sites: `ramboll.co.uk`, `ukoilandgasdata.com`, `ogauthority.co.uk`
+
 ## Stable truths
 
-- News / geopolitics/Mixed interest/Life admin (jobs/visa/finance)
-- Travel planning/Fashion / shopping/Mixed interest
-- News / geopolitics/Health / medicine/Mixed interest
-- Mixed interest/Life admin (jobs/visa/finance)/News / geopolitics
-- Mixed interest/Mixed interest/News / geopolitics
-- Mixed interest/Mixed interest/Mixed interest
+- The user actively plans European travel, particularly routes involving Spain, Monaco, and French wine regions.
+- They source specialty food ingredients, specifically sashimi-grade fish for preparing ceviche, and consult Billingsgate Market.
+- Professional or academic interest in the UK oil and gas industry is evident, with detailed queries about procurement, upstream operations, and workforce data.
+- The user researches tax-efficient property investment strategies, including second homes outside the UK and SIPP tax reclaims.
+- They verify VAT registration for fashion and retail businesses, possibly for business compliance or purchasing purposes.
+- Educational engagement includes EdX courses and Scratch programming, potentially for teaching or personal skill development.
+- The user reads medical and performance-focused non-fiction by surgeon-authors like Atul Gawande.
 
 ---
 ### How this was produced (one-liner)

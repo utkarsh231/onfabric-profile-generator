@@ -1,42 +1,8 @@
 [
   {
-    "session_id": "s8103",
-    "label": "News / geopolitics/Mixed interest/Life admin (jobs/visa/finance)",
-    "top_communities": [
-      6,
-      11,
-      8
-    ],
-    "top_queries": [
-      "clos maggiore",
-      "download preview signature as image",
-      "tax efficient ways of buying second home",
-      "tax efficient ways of buying second home outside of uk"
-    ],
-    "top_entities": [],
-    "supporting_domains": [
-      "tripadvisor.co.uk",
-      "keybusinessconsultants.co.uk",
-      "tanners.co.uk"
-    ],
-    "strength": 154.5031506195778,
-    "representative_titles": [
-      "Searched for download preview signature as image",
-      "Visited Luxury Baby Gifts | New Baby Gifts | The White Company UK",
-      "Visited https://www.cnet.com/news/how-to-extract-previews-signatures-for-use-in-other-applications/",
-      "Searched for civil partnership register search tower hamlets",
-      "Visited Copies of certificates - Tower Hamlets Council",
-      "Searched for todoist"
-    ]
-  },
-  {
     "session_id": "s1761",
-    "label": "Travel planning/Fashion / shopping/Mixed interest",
-    "top_communities": [
-      4,
-      0,
-      91
-    ],
+    "community_id": 4,
+    "label": "Travel planning: Spain to Monaco",
     "top_queries": [
       "pals to monaco",
       "pals spain to monaco",
@@ -49,7 +15,7 @@
       "spain-holiday.com",
       "easyjet.com"
     ],
-    "strength": 153.79628482974874,
+    "strength": 122.55922076114798,
     "representative_titles": [
       "Searched for pals to monaco",
       "Visited https://www.robertdyas.co.uk/russell-hobbs-la053794-three-tier-clothes-airer",
@@ -60,73 +26,9 @@
     ]
   },
   {
-    "session_id": "s5179",
-    "label": "News / geopolitics/Health / medicine/Mixed interest",
-    "top_communities": [
-      2,
-      3,
-      5
-    ],
-    "top_queries": [
-      "future of health",
-      "couch to 10k",
-      "how to find a medium audience",
-      "sequence your genome"
-    ],
-    "top_entities": [],
-    "supporting_domains": [
-      "myrunningtips.com",
-      "letsdothis.com",
-      "rockay.com"
-    ],
-    "strength": 153.232743456533,
-    "representative_titles": [
-      "Searched for ba executive club",
-      "Visited https://ad.doubleclick.net/ddm/trackclk/N3643.ds.Google.com/B26054377.307631604;dc_trk_aid=500421699;dc_trk_cid=153624409;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=",
-      "Visited https://www.britishairways.com/en-gb/executive-club",
-      "Searched for future of health",
-      "Searched for couch to 10k",
-      "Visited Couch To 10K | No Problem!"
-    ]
-  },
-  {
-    "session_id": "s0162",
-    "label": "Mixed interest/Life admin (jobs/visa/finance)/News / geopolitics",
-    "top_communities": [
-      43,
-      9,
-      2
-    ],
-    "top_queries": [
-      "uk oil and gas suppliers",
-      "oil and gas information",
-      "% of headcount in procurement for uk o&g companies",
-      "is upstream oil same as procurement"
-    ],
-    "top_entities": [],
-    "supporting_domains": [
-      "ramboll.co.uk",
-      "ukoilandgasdata.com",
-      "ogauthority.co.uk"
-    ],
-    "strength": 147.0089454174592,
-    "representative_titles": [
-      "Searched for boots moorgate",
-      "Visited https://www2.deloitte.com/uk/en/pages/energy-and-resources/articles/uk-upstream-independents.html",
-      "Visited London Moorgate High Street - Boots",
-      "Searched for boots london wall",
-      "Searched for UK oil and gas suppliers",
-      "Visited http://www.ramboll.co.uk/oil-gas"
-    ]
-  },
-  {
     "session_id": "s0738",
-    "label": "Mixed interest/Mixed interest/News / geopolitics",
-    "top_communities": [
-      49,
-      52,
-      2
-    ],
+    "community_id": 49,
+    "label": "VAT lookup for fashion retailers",
     "top_queries": [
       "lily lulu fashion",
       "lily lulu vat number",
@@ -139,7 +41,7 @@
       "pastperfect.com",
       "annie-and-chris.com"
     ],
-    "strength": 138.17420179566142,
+    "strength": 111.39325438366217,
     "representative_titles": [
       "Searched for lily lulu fashion",
       "Visited http://vat-search.co.uk/",
@@ -151,12 +53,8 @@
   },
   {
     "session_id": "s2832",
-    "label": "Mixed interest/Mixed interest/Mixed interest",
-    "top_communities": [
-      54,
-      7,
-      82
-    ],
+    "community_id": 54,
+    "label": "EdX course and Scratch programming",
     "top_queries": [
       "changing sprite on scratch",
       "create a sprite on scratch",
@@ -165,11 +63,11 @@
     ],
     "top_entities": [],
     "supporting_domains": [
-      "scratch.mit.edu",
       "shutterstock.com",
-      "monitor.ppcprotect.com"
+      "monitor.ppcprotect.com",
+      "clipartkey.com"
     ],
-    "strength": 133.59801389366262,
+    "strength": 104.51489399887913,
     "representative_titles": [
       "Searched for edx",
       "Searched for doctors office animated background",
@@ -180,72 +78,9 @@
     ]
   },
   {
-    "session_id": "s1025",
-    "label": "Life admin (jobs/visa/finance)/Mixed interest/Fashion / shopping",
-    "top_communities": [
-      10,
-      7,
-      0
-    ],
-    "top_queries": [
-      "apply for a long term schengen visa",
-      "schengen visa multiple entry",
-      "uniform schengen visa",
-      "cheap egg chairs uk"
-    ],
-    "top_entities": [],
-    "supporting_domains": [
-      "ec.europa.eu",
-      "norway.no",
-      "3331.xg4ken.com"
-    ],
-    "strength": 123.04802823568284,
-    "representative_titles": [
-      "Searched for apply for a long term schengen visa",
-      "Visited https://www.gumtree.com/home-garden/uk/hanging+chair",
-      "Visited Which Schengen country is most likely to offer a long multiple entry ...",
-      "Visited http://ec.europa.eu/immigration/do-i-need-a-visa/do-i-need-a-long-stay-visa_en",
-      "Searched for schengen visa multiple entry",
-      "Visited Schengen Visa Types & Validity, Duration of Stay & Visa Sticker"
-    ]
-  },
-  {
-    "session_id": "s0562",
-    "label": "Mixed interest/News / geopolitics/Life admin (jobs/visa/finance)",
-    "top_communities": [
-      19,
-      2,
-      8
-    ],
-    "top_queries": [
-      "london local news",
-      "why to have your google email as part of signature",
-      "why to have your google page as part of signature",
-      "always have your google page as part of your email signature. several tools, like wisestamp, let you automatically share social media platform links in your email signature"
-    ],
-    "top_entities": [],
-    "supporting_domains": [
-      "moz.com",
-      "localguidesconnect.com",
-      "superb.digital"
-    ],
-    "strength": 119.63743456998881,
-    "representative_titles": [
-      "Searched for news",
-      "Visited https://www.skucloud.co.uk/",
-      "Searched for london local news",
-      "Visited http://www.bbc.co.uk/news/uk-england-london-43659952",
-      "Searched for why to have your google email as part of signature",
-      "Searched for why to have your google page as part of signature"
-    ]
-  },
-  {
     "session_id": "s2509",
-    "label": "Fashion / shopping/Fashion / shopping",
-    "top_communities": [
-      41,
-      0
-    ],
+    "community_id": 41,
+    "label": "Eyewear and watch shopping India",
     "top_queries": [
       "branded eyewear lucknow",
       "titan eye plus",
@@ -258,7 +93,7 @@
       "sonatawatches.in",
       "thbaker.co.uk"
     ],
-    "strength": 117.21596917208716,
+    "strength": 103.34786497868308,
     "representative_titles": [
       "Searched for branded eyewear lucknow",
       "Visited http://mylpg.in/",
@@ -269,13 +104,35 @@
     ]
   },
   {
-    "session_id": "s4218",
-    "label": "Mixed interest/Mixed interest/News / geopolitics",
-    "top_communities": [
-      12,
-      13,
-      6
+    "session_id": "s0162",
+    "community_id": 43,
+    "label": "UK oil & gas industry research",
+    "top_queries": [
+      "uk oil and gas suppliers",
+      "oil and gas information",
+      "% of headcount in procurement for uk o&g companies",
+      "is upstream oil same as procurement"
     ],
+    "top_entities": [],
+    "supporting_domains": [
+      "ramboll.co.uk",
+      "ukoilandgasdata.com",
+      "ogauthority.co.uk"
+    ],
+    "strength": 99.93713147830088,
+    "representative_titles": [
+      "Searched for boots moorgate",
+      "Visited https://www2.deloitte.com/uk/en/pages/energy-and-resources/articles/uk-upstream-independents.html",
+      "Visited London Moorgate High Street - Boots",
+      "Searched for boots london wall",
+      "Searched for UK oil and gas suppliers",
+      "Visited http://www.ramboll.co.uk/oil-gas"
+    ]
+  },
+  {
+    "session_id": "s4218",
+    "community_id": 12,
+    "label": "Sourcing sashimi-grade tuna for ceviche",
     "top_queries": [
       "making tuna ceviche",
       "sashimi grade tuna",
@@ -288,7 +145,7 @@
       "mexicanfoodmemories.co.uk",
       "seriouseats.com"
     ],
-    "strength": 110.803772152386,
+    "strength": 97.154012413055,
     "representative_titles": [
       "Searched for tuna ceviche",
       "Visited Find Billingsgate Market - City of London",
@@ -299,13 +156,61 @@
     ]
   },
   {
-    "session_id": "s9900",
-    "label": "Mixed interest/Mixed interest/News / geopolitics",
-    "top_communities": [
-      83,
-      7,
-      2
+    "session_id": "s5179",
+    "community_id": 2,
+    "label": "British Airways and health topics",
+    "top_queries": [
+      "future of health",
+      "couch to 10k",
+      "how to find a medium audience",
+      "sequence your genome"
     ],
+    "top_entities": [],
+    "supporting_domains": [
+      "myrunningtips.com",
+      "letsdothis.com",
+      "rockay.com"
+    ],
+    "strength": 88.27811948774291,
+    "representative_titles": [
+      "Searched for ba executive club",
+      "Visited https://ad.doubleclick.net/ddm/trackclk/N3643.ds.Google.com/B26054377.307631604;dc_trk_aid=500421699;dc_trk_cid=153624409;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=",
+      "Visited https://www.britishairways.com/en-gb/executive-club",
+      "Searched for future of health",
+      "Searched for couch to 10k",
+      "Visited Couch To 10K | No Problem!"
+    ]
+  },
+  {
+    "session_id": "s0562",
+    "community_id": 19,
+    "label": "London news and email signature tips",
+    "top_queries": [
+      "london local news",
+      "why to have your google email as part of signature",
+      "why to have your google page as part of signature",
+      "always have your google page as part of your email signature. several tools, like wisestamp, let you automatically share social media platform links in your email signature"
+    ],
+    "top_entities": [],
+    "supporting_domains": [
+      "moz.com",
+      "localguidesconnect.com",
+      "superb.digital"
+    ],
+    "strength": 86.76114015304763,
+    "representative_titles": [
+      "Searched for news",
+      "Visited https://www.skucloud.co.uk/",
+      "Searched for london local news",
+      "Visited http://www.bbc.co.uk/news/uk-england-london-43659952",
+      "Searched for why to have your google email as part of signature",
+      "Searched for why to have your google page as part of signature"
+    ]
+  },
+  {
+    "session_id": "s9900",
+    "community_id": 83,
+    "label": "Medical books and Costa Rica protein",
     "top_queries": [
       "better a surgeon's notes on performance",
       "bryan johnson vanity fair",
@@ -318,7 +223,7 @@
       "goodlifecr.com",
       "scicommedia.com"
     ],
-    "strength": 107.61029621052818,
+    "strength": 83.58342349998848,
     "representative_titles": [
       "Searched for kgs to pounds",
       "Visited PST to GMT Converter - Convert Pacific Time to Greenwich Time ...",
@@ -329,26 +234,69 @@
     ]
   },
   {
-    "session_id": "s3996",
-    "label": "Mixed interest/Mixed interest/Health / medicine",
-    "top_communities": [
-      24,
-      13,
-      3
-    ],
+    "session_id": "s8103",
+    "community_id": 6,
+    "label": "Second home tax efficiency research",
     "top_queries": [
-      "best investment brokers",
-      "crowdcube",
-      "seedrs",
-      "drive"
+      "download preview signature as image",
+      "tax efficient ways of buying second home",
+      "tax efficient ways of buying second home outside of uk",
+      "claiming sipp tax back"
     ],
     "top_entities": [],
     "supporting_domains": [
-      "crowdcube.com",
-      "drive.google.com",
-      "seedrs.com"
+      "keybusinessconsultants.co.uk",
+      "tanners.co.uk",
+      "bankofengland.co.uk"
     ],
-    "strength": 44.97984344861217,
+    "strength": 76.59299809345647,
+    "representative_titles": [
+      "Searched for download preview signature as image",
+      "Visited Luxury Baby Gifts | New Baby Gifts | The White Company UK",
+      "Visited https://www.cnet.com/news/how-to-extract-previews-signatures-for-use-in-other-applications/",
+      "Searched for civil partnership register search tower hamlets",
+      "Visited Copies of certificates - Tower Hamlets Council",
+      "Searched for todoist"
+    ]
+  },
+  {
+    "session_id": "s1025",
+    "community_id": 10,
+    "label": "Life admin (jobs/visa/finance)",
+    "top_queries": [
+      "apply for a long term schengen visa",
+      "schengen visa multiple entry",
+      "uniform schengen visa",
+      "cheap egg chairs uk"
+    ],
+    "top_entities": [],
+    "supporting_domains": [
+      "ec.europa.eu",
+      "norway.no",
+      "bmstores.co.uk"
+    ],
+    "strength": 71.22142769066598,
+    "representative_titles": [
+      "Searched for apply for a long term schengen visa",
+      "Visited https://www.gumtree.com/home-garden/uk/hanging+chair",
+      "Visited Which Schengen country is most likely to offer a long multiple entry ...",
+      "Visited http://ec.europa.eu/immigration/do-i-need-a-visa/do-i-need-a-long-stay-visa_en",
+      "Searched for schengen visa multiple entry",
+      "Visited Schengen Visa Types & Validity, Duration of Stay & Visa Sticker"
+    ]
+  },
+  {
+    "session_id": "s3996",
+    "community_id": 24,
+    "label": "Mixed interest",
+    "top_queries": [
+      "best investment brokers"
+    ],
+    "top_entities": [],
+    "supporting_domains": [
+      "drive.google.com"
+    ],
+    "strength": 14.840608407016468,
     "representative_titles": [
       "Searched for barclays login",
       "Visited Crowdcube: Invest in Europe's best startups",
