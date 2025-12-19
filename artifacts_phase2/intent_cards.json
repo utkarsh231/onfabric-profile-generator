@@ -28,7 +28,7 @@
   {
     "session_id": "s0738",
     "community_id": 49,
-    "label": "VAT lookup for fashion retailers",
+    "label": "Fashion retailer VAT lookup",
     "top_queries": [
       "lily lulu fashion",
       "lily lulu vat number",
@@ -52,9 +52,35 @@
     ]
   },
   {
+    "session_id": "s2117",
+    "community_id": 20,
+    "label": "Car troubleshooting in Italy",
+    "top_queries": [
+      "italy motorway speed limit",
+      "car engine warning light",
+      "fiat panda triangle warning light",
+      "fiat panda start.stop failure"
+    ],
+    "top_entities": [],
+    "supporting_domains": [
+      "fiatforum.com",
+      "drivingtesttips.biz",
+      "dash-lights.com"
+    ],
+    "strength": 110.04956450638078,
+    "representative_titles": [
+      "Searched for italy motorway speed limit",
+      "Visited https://www.fiatforum.com/panda-iii/442921-injection-system-failure-light.html",
+      "Searched for car engine warning light",
+      "Visited https://www.consumerreports.org/car-repair-maintenance/what-does-check-engine-light-mean/",
+      "Searched for fiat panda triangle warning light",
+      "Visited Fiat Panda Dashboard Warning Lights + Symbols Explained"
+    ]
+  },
+  {
     "session_id": "s2832",
     "community_id": 54,
-    "label": "EdX course and Scratch programming",
+    "label": "Scratch programming and clipart",
     "top_queries": [
       "changing sprite on scratch",
       "create a sprite on scratch",
@@ -78,9 +104,35 @@
     ]
   },
   {
+    "session_id": "s4892",
+    "community_id": 14,
+    "label": "Gym locations and newsletter research",
+    "top_queries": [
+      "virgin active broadgate",
+      "virgin active bunhill row",
+      "balaji newsletter puzzles",
+      "balaji srinivasan newsletter"
+    ],
+    "top_entities": [],
+    "supporting_domains": [
+      "canarywharf.hybrid-fit.co.uk",
+      "phillymag.com",
+      "balajis.com"
+    ],
+    "strength": 103.42936711532052,
+    "representative_titles": [
+      "Viewed Virgin Active",
+      "Visited https://www.freestylelibre.co.uk/libre/",
+      "Searched for virgin active broadgate",
+      "Searched for virgin active bunhill row",
+      "Visited Moorgate, London | Health club, gym, pool and classes | Virgin Active",
+      "Searched for hybrid fitness"
+    ]
+  },
+  {
     "session_id": "s2509",
     "community_id": 41,
-    "label": "Eyewear and watch shopping India",
+    "label": "Eyewear shopping in Lucknow",
     "top_queries": [
       "branded eyewear lucknow",
       "titan eye plus",
@@ -104,9 +156,35 @@
     ]
   },
   {
+    "session_id": "s3219",
+    "community_id": 15,
+    "label": "Weightlifting and finance interview prep",
+    "top_queries": [
+      "best weightlifting workouts for women",
+      "crake asset management glassdoor",
+      "crake asset management interview",
+      "mining case study crake asset management"
+    ],
+    "top_entities": [],
+    "supporting_domains": [
+      "software.atominvest.co",
+      "vitraltec.com.mx",
+      "finders.co.uk"
+    ],
+    "strength": 99.9371314783009,
+    "representative_titles": [
+      "Searched for atom invest",
+      "Visited Mental Math Tricks - How to multiply in your head! - YouTube",
+      "Viewed AtomInvest",
+      "Visited https://software.atominvest.co/solutions/?utm_term=atominvest&utm_campaign=General+%7C+AtomInvest+%26+Competitors+(Max+Conversions)&utm_source=adwords&utm_medium=ppc&hsa_acc=1918106291&hsa_cam=10714941815&hsa_grp=104969372879&hsa_ad=448967307333&hsa_src=g&hsa_tgt=kwd-930747241132&hsa_kw=atominvest&hsa_mt=p&hsa_net=adwords&hsa_ver=3",
+      "Searched for atominvest careers",
+      "Searched for best weightlifting workouts for women"
+    ]
+  },
+  {
     "session_id": "s0162",
     "community_id": 43,
-    "label": "UK oil & gas industry research",
+    "label": "UK oil & gas procurement research",
     "top_queries": [
       "uk oil and gas suppliers",
       "oil and gas information",
@@ -130,9 +208,35 @@
     ]
   },
   {
+    "session_id": "s9720",
+    "community_id": 25,
+    "label": "Health-focused Slack communities",
+    "top_queries": [
+      "best slacks for health",
+      "best slack channels for health",
+      "progress studies slack",
+      "slack communities for health"
+    ],
+    "top_entities": [],
+    "supporting_domains": [
+      "mentalhealthatwork.org.uk",
+      "rootsofprogress.org",
+      "tellescope.com"
+    ],
+    "strength": 97.25954371082433,
+    "representative_titles": [
+      "Searched for best slacks for health",
+      "Searched for evo",
+      "Visited Health Slack groups - Slofile",
+      "Visited Health & Wellness Apps for Slack | Slack App Directory",
+      "Visited Leapers: Slack group – Mental Health At Work",
+      "Searched for best slack channels for health"
+    ]
+  },
+  {
     "session_id": "s4218",
     "community_id": 12,
-    "label": "Sourcing sashimi-grade tuna for ceviche",
+    "label": "Sashimi-grade tuna sourcing for ceviche",
     "top_queries": [
       "making tuna ceviche",
       "sashimi grade tuna",
@@ -156,9 +260,61 @@
     ]
   },
   {
+    "session_id": "s5594",
+    "community_id": 46,
+    "label": "Mixed interest",
+    "top_queries": [
+      "aperol spritz cocktail",
+      "70cl in ml",
+      "amex points to avios calculator",
+      "how much is 75,000 amex points worth"
+    ],
+    "top_entities": [],
+    "supporting_domains": [
+      "notebookcheck.net",
+      "amd.com",
+      "tweaktown.com"
+    ],
+    "strength": 94.39215147012037,
+    "representative_titles": [
+      "Searched for aperol spritz cocktail",
+      "Visited Best external monitors for Surface Laptop 4 in 2023 - XDA Developers",
+      "Visited https://www.bbcgoodfood.com/recipes/aperol-spritz/amp",
+      "Searched for 70cl in ml",
+      "Searched for amex points to avios calculator",
+      "Visited https://www.thepointcalculator.com/gb/bank/membershiprewards/amex-points-calculators"
+    ]
+  },
+  {
+    "session_id": "s5281",
+    "community_id": 70,
+    "label": "Mixed interest",
+    "top_queries": [
+      "early signs of tampon infection",
+      "best period pants",
+      "best period pants uk",
+      "a little piece of tampon stuck"
+    ],
+    "top_entities": [],
+    "supporting_domains": [
+      "try.yoppie.com",
+      "industrialprogress.com",
+      "healthlinkbc.ca"
+    ],
+    "strength": 90.27171567696907,
+    "representative_titles": [
+      "Searched for alex epstein",
+      "Visited ageron/handson-ml2: A series of Jupyter notebooks that ... - GitHub",
+      "Visited About | Center for Industrial Progress",
+      "Searched for early signs of tampon infection",
+      "Visited Toxic Shock Syndrome | HealthLink BC",
+      "Visited Toxic Shock Syndrome (TSS): Causes, Symptoms & Treatment"
+    ]
+  },
+  {
     "session_id": "s5179",
     "community_id": 2,
-    "label": "British Airways and health topics",
+    "label": "News / geopolitics",
     "top_queries": [
       "future of health",
       "couch to 10k",
@@ -184,7 +340,7 @@
   {
     "session_id": "s0562",
     "community_id": 19,
-    "label": "London news and email signature tips",
+    "label": "Mixed interest",
     "top_queries": [
       "london local news",
       "why to have your google email as part of signature",
@@ -210,7 +366,7 @@
   {
     "session_id": "s9900",
     "community_id": 83,
-    "label": "Medical books and Costa Rica protein",
+    "label": "Mixed interest",
     "top_queries": [
       "better a surgeon's notes on performance",
       "bryan johnson vanity fair",
@@ -236,7 +392,7 @@
   {
     "session_id": "s8103",
     "community_id": 6,
-    "label": "Second home tax efficiency research",
+    "label": "News / geopolitics",
     "top_queries": [
       "download preview signature as image",
       "tax efficient ways of buying second home",

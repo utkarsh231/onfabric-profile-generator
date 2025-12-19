@@ -1,6 +1,6 @@
 # 🌈 Web Wrapped
 
-_Generated: 2025-12-19T22:55:32.062128Z_
+_Generated: 2025-12-19T23:08:13.713543Z_
 
 ## Your year in signals
 
@@ -8,8 +8,8 @@ _Generated: 2025-12-19T22:55:32.062128Z_
 - Unique domains: **7,870**
 - Unique search queries: **25,668**
 - Unique entities: **0**
-- Selected sessions (agent): **12**
-- Evidence budget used: **40 / 40**
+- Selected sessions (agent): **18**
+- Evidence budget used: **60 / 60**
 
 ## Top themes (what keeps coming back)
 
@@ -69,31 +69,31 @@ _Generated: 2025-12-19T22:55:32.062128Z_
 - intents: `pals to monaco`, `pals spain to monaco`, `stay in vineyard montpelier`, `domaines paul mas languedoc`
 - sites: `robertdyas.co.uk`, `spain-holiday.com`, `easyjet.com`
 
-### VAT lookup for fashion retailers — session `s0738`
+### Fashion retailer VAT lookup — session `s0738`
 - intents: `lily lulu fashion`, `lily lulu vat number`, `past perfect ltd`, `past perfect vat number`
 - sites: `lilylulufashion.com`, `pastperfect.com`, `annie-and-chris.com`
 
-### EdX course and Scratch programming — session `s2832`
+### Car troubleshooting in Italy — session `s2117`
+- intents: `italy motorway speed limit`, `car engine warning light`, `fiat panda triangle warning light`, `fiat panda start.stop failure`
+- sites: `fiatforum.com`, `drivingtesttips.biz`, `dash-lights.com`
+
+### Scratch programming and clipart — session `s2832`
 - intents: `changing sprite on scratch`, `create a sprite on scratch`, `female doctor clipart`, `female doctor clipart in different actions`
 - sites: `shutterstock.com`, `monitor.ppcprotect.com`, `clipartkey.com`
 
-### Eyewear and watch shopping India — session `s2509`
-- intents: `branded eyewear lucknow`, `titan eye plus`, `titan eye plus lucknow`, `indian watch brands`
-- sites: `lahoreoptical.com`, `sonatawatches.in`, `thbaker.co.uk`
-
-### UK oil & gas industry research — session `s0162`
-- intents: `uk oil and gas suppliers`, `oil and gas information`, `% of headcount in procurement for uk o&g companies`, `is upstream oil same as procurement`
-- sites: `ramboll.co.uk`, `ukoilandgasdata.com`, `ogauthority.co.uk`
+### Gym locations and newsletter research — session `s4892`
+- intents: `virgin active broadgate`, `virgin active bunhill row`, `balaji newsletter puzzles`, `balaji srinivasan newsletter`
+- sites: `canarywharf.hybrid-fit.co.uk`, `phillymag.com`, `balajis.com`
 
 ## Stable truths
 
-- The user actively plans European travel, particularly routes involving Spain, Monaco, and French wine regions.
-- They source specialty food ingredients, specifically sashimi-grade fish for preparing ceviche, and consult Billingsgate Market.
-- Professional or academic interest in the UK oil and gas industry is evident, with detailed queries about procurement, upstream operations, and workforce data.
-- The user researches tax-efficient property investment strategies, including second homes outside the UK and SIPP tax reclaims.
-- They verify VAT registration for fashion and retail businesses, possibly for business compliance or purchasing purposes.
-- Educational engagement includes EdX courses and Scratch programming, potentially for teaching or personal skill development.
-- The user reads medical and performance-focused non-fiction by surgeon-authors like Atul Gawande.
+- User conducts targeted, multi-step research within focused topic areas rather than casual browsing
+- Travel interests include European destinations, particularly Spain, Monaco, and France (Montpellier vineyards)
+- Professional background or interests likely involve finance, asset management, and UK oil & gas procurement
+- User engages in hands-on activities requiring specialized sourcing: cooking (sashimi-grade fish, ceviche), fitness (gym memberships), and programming (Scratch)
+- Shopping behavior includes verification steps such as VAT number lookups and product grade confirmation before purchase
+- User has connections to or interest in India, specifically Lucknow (eyewear shopping, Indian watch brands)
+- Problem-solving approach is research-intensive, as seen in car troubleshooting and technical queries about industry terminology
 
 ---
 ### How this was produced (one-liner)

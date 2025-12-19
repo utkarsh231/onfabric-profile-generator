@@ -1,8 +1,8 @@
 {
   "config": {
-    "budget": 40,
+    "budget": 60,
     "min_communities": 6,
-    "max_sessions": 12,
+    "max_sessions": 18,
     "max_items_per_session": 8,
     "per_domain_cap": 5,
     "tau": 12.0,
@@ -328,6 +328,166 @@
       "node_id": "d:annie-and-chris.com",
       "ntype": "domain",
       "weight": 5.962260692892584,
+      "note": "from-selected-session"
+    },
+    {
+      "community_id": 7,
+      "session_id": "s2832",
+      "node_id": "d:scratch.mit.edu",
+      "ntype": "domain",
+      "weight": 14.758373958446128,
+      "note": "from-selected-session"
+    },
+    {
+      "community_id": 54,
+      "session_id": "s2832",
+      "node_id": "d:shutterstock.com",
+      "ntype": "domain",
+      "weight": 9.449959617758484,
+      "note": "from-selected-session"
+    },
+    {
+      "community_id": 54,
+      "session_id": "s2832",
+      "node_id": "q:changing sprite on scratch",
+      "ntype": "query",
+      "weight": 5.962260692892585,
+      "note": "from-selected-session"
+    },
+    {
+      "community_id": 54,
+      "session_id": "s2832",
+      "node_id": "q:create a sprite on scratch",
+      "ntype": "query",
+      "weight": 5.962260692892585,
+      "note": "from-selected-session"
+    },
+    {
+      "community_id": 54,
+      "session_id": "s2832",
+      "node_id": "q:female doctor clipart",
+      "ntype": "query",
+      "weight": 5.962260692892585,
+      "note": "from-selected-session"
+    },
+    {
+      "community_id": 54,
+      "session_id": "s2832",
+      "node_id": "q:female doctor clipart in different actions",
+      "ntype": "query",
+      "weight": 5.962260692892585,
+      "note": "from-selected-session"
+    },
+    {
+      "community_id": 54,
+      "session_id": "s2832",
+      "node_id": "q:doctors office background",
+      "ntype": "query",
+      "weight": 5.962260692892585,
+      "note": "from-selected-session"
+    },
+    {
+      "community_id": 54,
+      "session_id": "s2832",
+      "node_id": "q:adding new background in scratch",
+      "ntype": "query",
+      "weight": 5.962260692892585,
+      "note": "from-selected-session"
+    },
+    {
+      "community_id": 12,
+      "session_id": "s4218",
+      "node_id": "d:finefoodspecialist.co.uk",
+      "ntype": "domain",
+      "weight": 9.04905556240409,
+      "note": "from-selected-session"
+    },
+    {
+      "community_id": 12,
+      "session_id": "s4218",
+      "node_id": "q:making tuna ceviche",
+      "ntype": "query",
+      "weight": 5.962260692892585,
+      "note": "from-selected-session"
+    },
+    {
+      "community_id": 12,
+      "session_id": "s4218",
+      "node_id": "q:sashimi grade tuna",
+      "ntype": "query",
+      "weight": 5.962260692892585,
+      "note": "from-selected-session"
+    },
+    {
+      "community_id": 12,
+      "session_id": "s4218",
+      "node_id": "q:buy sashimi grade fish",
+      "ntype": "query",
+      "weight": 5.962260692892585,
+      "note": "from-selected-session"
+    },
+    {
+      "community_id": 12,
+      "session_id": "s4218",
+      "node_id": "q:waitrose sashimi grade fish",
+      "ntype": "query",
+      "weight": 5.962260692892585,
+      "note": "from-selected-session"
+    },
+    {
+      "community_id": 12,
+      "session_id": "s4218",
+      "node_id": "q:itsu tuna sashimi",
+      "ntype": "query",
+      "weight": 5.962260692892585,
+      "note": "from-selected-session"
+    },
+    {
+      "community_id": 12,
+      "session_id": "s4218",
+      "node_id": "q:canary wharf fish market",
+      "ntype": "query",
+      "weight": 5.962260692892585,
+      "note": "from-selected-session"
+    },
+    {
+      "community_id": 12,
+      "session_id": "s4218",
+      "node_id": "d:mexicanfoodmemories.co.uk",
+      "ntype": "domain",
+      "weight": 5.962260692892584,
+      "note": "from-selected-session"
+    },
+    {
+      "community_id": 83,
+      "session_id": "s9900",
+      "node_id": "d:puraprote.com",
+      "ntype": "domain",
+      "weight": 9.449959617758484,
+      "note": "from-selected-session"
+    },
+    {
+      "community_id": 83,
+      "session_id": "s9900",
+      "node_id": "d:goodlifecr.com",
+      "ntype": "domain",
+      "weight": 9.449959617758484,
+      "note": "from-selected-session"
+    },
+    {
+      "community_id": 83,
+      "session_id": "s9900",
+      "node_id": "q:better a surgeon's notes on performance",
+      "ntype": "query",
+      "weight": 5.962260692892585,
+      "note": "from-selected-session"
+    },
+    {
+      "community_id": 83,
+      "session_id": "s9900",
+      "node_id": "q:bryan johnson vanity fair",
+      "ntype": "query",
+      "weight": 5.962260692892585,
       "note": "from-selected-session"
     }
   ]

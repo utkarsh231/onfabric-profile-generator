@@ -1,3 +1,3 @@
 # Profile (Short)
 
-The user frequently plans travel (Spain to Monaco, vineyard stays), researches food sourcing and recipes (sashimi-grade tuna, ceviche), and explores UK oil & gas industry data. They also look up VAT numbers for fashion retailers, investigate tax-efficient property purchases, and engage with educational content (EdX, Scratch programming).
+This user demonstrates practical, task-oriented browsing across travel logistics, shopping research, and professional interests. Sessions show a pattern of targeted searches for specific products, services, or information (VAT numbers, car warnings, sashimi-grade fish). The user appears to balance personal projects (cooking, fitness, programming) with professional research in finance and energy sectors.

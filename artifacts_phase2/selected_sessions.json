@@ -478,5 +478,212 @@
     ],
     "entities": [],
     "strength": 117.21596917208716
+  },
+  {
+    "session_node": "s:s3219",
+    "session_id": "s3219",
+    "comm_weights": {
+      "15": 99.9371314783009,
+      "1": 6.209679289890227,
+      "5": 4.79456973155581,
+      "8": 4.748338772795979
+    },
+    "domains": [
+      "finders.co.uk",
+      "forsterchase.com",
+      "glassdoor.co.nz",
+      "glassdoor.co.uk",
+      "glassdoor.ie",
+      "news.efinancialcareers.com",
+      "software.atominvest.co",
+      "streetofwalls.com",
+      "vitraltec.com.mx",
+      "wallstreetoasis.com"
+    ],
+    "queries": [
+      "asset management case studies",
+      "asset management interview case studies",
+      "atom invest",
+      "atominvest careers",
+      "best weightlifting workouts for women",
+      "crake asset management glassdoor",
+      "crake asset management interview",
+      "how to get better at mental math",
+      "mining case study crake asset management",
+      "short asset management case studies"
+    ],
+    "entities": [],
+    "strength": 115.68971927254292
+  },
+  {
+    "session_node": "s:s4892",
+    "session_id": "s4892",
+    "comm_weights": {
+      "14": 103.42936711532052,
+      "3": 10.20471487198747
+    },
+    "domains": [
+      "balajis.com",
+      "canarywharf.hybrid-fit.co.uk",
+      "freestylelibre.co.uk",
+      "insider.fitt.co",
+      "lepainquotidien.com",
+      "levelshealth.com",
+      "phillymag.com",
+      "uk.store.dexcom.com",
+      "virginactive.co.uk",
+      "yumpu.com"
+    ],
+    "queries": [
+      "balaji newsletter puzzles",
+      "balaji srinivasan newsletter",
+      "best cgm for non diabetics",
+      "dexcom g6",
+      "hybrid fitness",
+      "le pain quotidien",
+      "le pain quotidien calories",
+      "levels health monthly cost",
+      "virgin active broadgate",
+      "virgin active bunhill row"
+    ],
+    "entities": [],
+    "strength": 113.63408198730798
+  },
+  {
+    "session_node": "s:s5281",
+    "session_id": "s5281",
+    "comm_weights": {
+      "70": 90.27171567696907,
+      "3": 5.180746485322361,
+      "2": 3.3977641271622163,
+      "1": 8.964478691734211,
+      "5": 4.983748978875898
+    },
+    "domains": [
+      "github.com",
+      "healthlinkbc.ca",
+      "independent.co.uk",
+      "industrialprogress.com",
+      "lil-lets.com",
+      "my.clevelandclinic.org",
+      "shethinx.com",
+      "try.yoppie.com",
+      "yoppie.com"
+    ],
+    "queries": [
+      "a little piece of tampon stuck",
+      "alex epstein",
+      "best period pants",
+      "best period pants uk",
+      "climate finance",
+      "climate finance companies",
+      "do lil lets tampons shed",
+      "do lil lets tampons shef",
+      "early signs of tampon infection",
+      "hands on machine learning with scikit-learn and tensorflow github",
+      "yoppie"
+    ],
+    "entities": [],
+    "strength": 112.79845396006375
+  },
+  {
+    "session_node": "s:s5594",
+    "session_id": "s5594",
+    "comm_weights": {
+      "6": 3.840483354828293,
+      "46": 94.39215147012037,
+      "0": 3.9178714241282226,
+      "5": 4.8987834925625755,
+      "8": 3.615901962749325
+    },
+    "domains": [
+      "amd.com",
+      "apple.com",
+      "bbcgoodfood.com",
+      "microsoft.com",
+      "notebookcheck.net",
+      "reddit.com",
+      "thepointcalculator.com",
+      "thepointsguy.com",
+      "tweaktown.com"
+    ],
+    "queries": [
+      "70cl in ml",
+      "amd ryzen 7 4980u",
+      "amex points to avios calculator",
+      "aperol spritz cocktail",
+      "how much is 75,000 amex points worth",
+      "ryzen 4000 vega 4k screen support",
+      "ryzen 4000 vega max refresh rate",
+      "surface laptop 4 ryzen external screen",
+      "surface pro 8",
+      "what's free on apple tv"
+    ],
+    "entities": [],
+    "strength": 110.66519170438879
+  },
+  {
+    "session_node": "s:s2117",
+    "session_id": "s2117",
+    "comm_weights": {
+      "20": 110.04956450638078
+    },
+    "domains": [
+      "aftersales.fiat.com",
+      "consumerreports.org",
+      "dash-lights.com",
+      "drivingtesttips.biz",
+      "fiatforum.com",
+      "figtreeaccountancy.co.uk",
+      "motorama.com.au"
+    ],
+    "queries": [
+      "car engine warning light",
+      "fiat panda start and stop failure symbol",
+      "fiat panda start.stop failure",
+      "fiat panda triangle warning light",
+      "fiat panda vehicle stability warning",
+      "fiat panda warning triangle",
+      "flat bean warning symbol.fiat pand",
+      "italy motorway speed limit",
+      "start and stop.failure fiat panda",
+      "start stop.light fiat panda"
+    ],
+    "entities": [],
+    "strength": 110.04956450638078
+  },
+  {
+    "session_node": "s:s9720",
+    "session_id": "s9720",
+    "comm_weights": {
+      "25": 97.25954371082433,
+      "1": 5.390648789257983,
+      "8": 5.390648789257983
+    },
+    "domains": [
+      "elpha.com",
+      "jstor.org",
+      "leopard.fyi",
+      "mentalhealthatwork.org.uk",
+      "rootsofprogress.org",
+      "slack.com",
+      "slofile.com",
+      "tellescope.com",
+      "unmind.com",
+      "women-in-tech.org"
+    ],
+    "queries": [
+      "best slack channels for health",
+      "best slacks for health",
+      "evo",
+      "evolutionary kinetic",
+      "progress studies slack",
+      "slack communities",
+      "slack communities for health",
+      "slack communities for health jobs",
+      "women in tech slack community"
+    ],
+    "entities": [],
+    "strength": 108.04084128934029
   }
 ]

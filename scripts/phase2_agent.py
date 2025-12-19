@@ -1390,9 +1390,9 @@ def main() -> None:
     ap.add_argument("--artifacts", default="artifacts_phase1", help="Phase1 artifacts dir")
     ap.add_argument("--out", default="artifacts_phase2", help="Output dir for Phase2 artifacts")
 
-    ap.add_argument("--budget", type=int, default=40)
+    ap.add_argument("--budget", type=int, default=60)
     ap.add_argument("--min-communities", type=int, default=6)
-    ap.add_argument("--max-sessions", type=int, default=12)
+    ap.add_argument("--max-sessions", type=int, default=18)
     ap.add_argument("--per-domain-cap", type=int, default=5)
     ap.add_argument("--items-per-session", type=int, default=8)
 
