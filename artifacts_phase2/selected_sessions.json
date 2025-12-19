@@ -1,0 +1,482 @@
+[
+  {
+    "session_node": "s:s8103",
+    "session_id": "s8103",
+    "comm_weights": {
+      "6": 76.59299809345647,
+      "1": 9.471720919186598,
+      "8": 15.848305958096,
+      "4": 15.48021078518192,
+      "2": 4.705298779881055,
+      "11": 27.01248204306944,
+      "0": 5.392134040706369
+    },
+    "domains": [
+      "bankofengland.co.uk",
+      "barclays.co.uk",
+      "chutneymary.com",
+      "closmaggiore.com",
+      "cnet.com",
+      "keybusinessconsultants.co.uk",
+      "moneyhelper.org.uk",
+      "moneysupermarket.com",
+      "moneytothemasses.com",
+      "tanners.co.uk",
+      "thetimes.co.uk",
+      "thisismoney.co.uk",
+      "timeout.com",
+      "todoist.com",
+      "towerhamlets.gov.uk",
+      "tripadvisor.co.uk"
+    ],
+    "queries": [
+      "baby presents",
+      "bank of england interest rates\\",
+      "chutney mary",
+      "civil partnership register search tower hamlets",
+      "claiming sipp tax back",
+      "clos maggiore",
+      "download preview signature as image",
+      "jamavar",
+      "remortgage",
+      "tax efficient ways of buying second home",
+      "tax efficient ways of buying second home outside of uk",
+      "todoist",
+      "why is my isa allowance increasing"
+    ],
+    "entities": [],
+    "strength": 154.5031506195778
+  },
+  {
+    "session_node": "s:s5179",
+    "session_id": "s5179",
+    "comm_weights": {
+      "1": 9.643084500695924,
+      "2": 88.27811948774291,
+      "3": 18.1651739475607,
+      "7": 12.202310808979085,
+      "5": 17.382575756290272,
+      "8": 5.097445267839823,
+      "0": 2.464033687424282
+    },
+    "domains": [
+      "ad.doubleclick.net",
+      "amazon.co.uk",
+      "assets.publishing.service.gov.uk",
+      "britishairways.com",
+      "clickserve.dartsearch.net",
+      "england.nhs.uk",
+      "letsdothis.com",
+      "medicalfuturist.com",
+      "medium.com",
+      "myrunningtips.com",
+      "nature.com",
+      "nebula.org",
+      "rockay.com",
+      "sophiagenetics.com",
+      "towardsdatascience.com",
+      "twitter.com",
+      "uk.linkedin.com",
+      "wired.com",
+      "wordstream.com"
+    ],
+    "queries": [
+      "ba executive club",
+      "couch to 10k",
+      "future of health",
+      "how to find a medium audience",
+      "london 10k races",
+      "most innovative biotech companies",
+      "most innovative biotech startups",
+      "sequence your genome",
+      "tom kubik facebook",
+      "veritas genomics",
+      "whole genome sequencing uk"
+    ],
+    "entities": [],
+    "strength": 153.232743456533
+  },
+  {
+    "session_node": "s:s0162",
+    "session_id": "s0162",
+    "comm_weights": {
+      "1": 9.41059755976211,
+      "43": 99.93713147830088,
+      "9": 14.533508912967825,
+      "6": 3.668864991831865,
+      "24": 5.709318396042038,
+      "2": 13.749524078554458
+    },
+    "domains": [
+      "bain.com",
+      "bgs.ac.uk",
+      "boots.com",
+      "comcapfactoring.com",
+      "data.gov.uk",
+      "ey.com",
+      "ft.com",
+      "gov.uk",
+      "home.kpmg.com",
+      "investopedia.com",
+      "ogauthority.co.uk",
+      "oilandgasuk.co.uk",
+      "ramboll.co.uk",
+      "statista.com",
+      "strategyand.pwc.com",
+      "ukoilandgasdata.com",
+      "www2.deloitte.com"
+    ],
+    "queries": [
+      "% of headcount in procurement for uk o&g companies",
+      "amount spent in equipment & services by oil & gas companies",
+      "boots london wall",
+      "boots moorgate",
+      "fuelling the next generation a study of the uk upstream oil and gas workforce",
+      "is upstream oil same as procurement",
+      "oil and gas information",
+      "oil procurement",
+      "oil procurement definition",
+      "uk oil and gas suppliers"
+    ],
+    "entities": [],
+    "strength": 147.0089454174592
+  },
+  {
+    "session_node": "s:s1025",
+    "session_id": "s1025",
+    "comm_weights": {
+      "10": 71.22142769066598,
+      "7": 24.078197254368604,
+      "0": 17.194581923616973,
+      "16": 10.553821367031313
+    },
+    "domains": [
+      "3331.xg4ken.com",
+      "amazon.co.uk",
+      "bmstores.co.uk",
+      "clickserve.dartsearch.net",
+      "cultfurniture.com",
+      "diy.com",
+      "ebay.co.uk",
+      "ec.europa.eu",
+      "gumtree.com",
+      "norway.no",
+      "preloved.co.uk",
+      "quora.com",
+      "rover.ebay.com",
+      "schengenvisainfo.com",
+      "tjhughes.co.uk",
+      "wayfair.co.uk"
+    ],
+    "queries": [
+      "apply for a long term schengen visa",
+      "cheap egg chairs uk",
+      "egg chair",
+      "egg chairs hanging",
+      "egg chairs ikea",
+      "rattan egg chair",
+      "schengen visa multiple entry",
+      "uniform schengen visa"
+    ],
+    "entities": [],
+    "strength": 123.04802823568284
+  },
+  {
+    "session_node": "s:s0738",
+    "session_id": "s0738",
+    "comm_weights": {
+      "49": 111.39325438366217,
+      "2": 5.02396838666511,
+      "7": 3.1020091401729912,
+      "4": 4.43864532752899,
+      "9": 3.1148721208837498,
+      "52": 11.101452436748406
+    },
+    "domains": [
+      "amazon.co.uk",
+      "annie-and-chris.com",
+      "beta.companieshouse.gov.uk",
+      "companycheck.co.uk",
+      "ebuysave.co.uk",
+      "facebook.com",
+      "gov.uk",
+      "lilylulufashion.com",
+      "monochromecrafts.co.uk",
+      "pastperfect.com",
+      "thegazette.co.uk",
+      "vat-search.co.uk",
+      "worldcircusshop.co.uk"
+    ],
+    "queries": [
+      "butterfingers juggling",
+      "kitinatin",
+      "kitinatin camping, festival & travel kit",
+      "kitinatin dissolution",
+      "kitinatin vat",
+      "lily lulu fashion",
+      "lily lulu vat number",
+      "monochrome crafts",
+      "past perfect ltd",
+      "past perfect vat number",
+      "premium emporium"
+    ],
+    "entities": [],
+    "strength": 138.17420179566142
+  },
+  {
+    "session_node": "s:s2832",
+    "session_id": "s2832",
+    "comm_weights": {
+      "54": 104.51489399887913,
+      "7": 14.758373958446128,
+      "82": 5.709318396042038,
+      "1": 5.390648789257983,
+      "5": 3.224778751037346
+    },
+    "domains": [
+      "123rf.com",
+      "clipartkey.com",
+      "clipartstation.com",
+      "cs50.stackexchange.com",
+      "freepik.com",
+      "gettyimages.com",
+      "gograph.com",
+      "istockphoto.com",
+      "monitor.ppcprotect.com",
+      "scratch.mit.edu",
+      "shutterstock.com"
+    ],
+    "queries": [
+      "adding new background in scratch",
+      "changing sprite on scratch",
+      "create a sprite on scratch",
+      "doctor animation",
+      "doctors office background",
+      "edx",
+      "female doctor clipart",
+      "female doctor clipart in different actions",
+      "scaling uploading backdrop on scratch",
+      "zoom scratch to right size"
+    ],
+    "entities": [],
+    "strength": 133.59801389366262
+  },
+  {
+    "session_node": "s:s4218",
+    "session_id": "s4218",
+    "comm_weights": {
+      "12": 97.154012413055,
+      "6": 4.386629173097,
+      "4": 3.553812170191964,
+      "13": 5.709318396042038
+    },
+    "domains": [
+      "allrecipes.co.uk",
+      "cityoflondon.gov.uk",
+      "finefoodspecialist.co.uk",
+      "mexicanfoodmemories.co.uk",
+      "myrecipes.com",
+      "rapid.waitrose.com",
+      "seriouseats.com",
+      "shop.thewrightbrothers.co.uk",
+      "thefishsociety.co.uk",
+      "tomthefish.co.uk",
+      "tripadvisor.co.uk",
+      "waitrose.com"
+    ],
+    "queries": [
+      "buy sashimi grade fish",
+      "canary wharf fish market",
+      "itsu tuna sashimi",
+      "making tuna ceviche",
+      "sashimi grade tuna",
+      "tuna ceviche",
+      "waitrose sashimi grade fish"
+    ],
+    "entities": [],
+    "strength": 110.803772152386
+  },
+  {
+    "session_node": "s:s9900",
+    "session_id": "s9900",
+    "comm_weights": {
+      "83": 83.58342349998848,
+      "2": 5.02396838666511,
+      "5": 4.8987834925625755,
+      "1": 4.272891067354674,
+      "7": 5.390648789257984,
+      "48": 4.440580974699363
+    },
+    "domains": [
+      "goodlifecr.com",
+      "livehermosa.com",
+      "puraprote.com",
+      "scicommedia.com",
+      "vanityfair.com",
+      "worldtimebuddy.com",
+      "ycombinator.com"
+    ],
+    "queries": [
+      "being mortal",
+      "better a surgeon's notes on performance",
+      "bryan johnson vanity fair",
+      "goodlife costa rica",
+      "is kos protein powder healthy",
+      "kgs to pounds",
+      "protein powder costa rica",
+      "pura protea costa rica",
+      "scicomm media",
+      "vegan protein powder costa rica",
+      "ycombinator"
+    ],
+    "entities": [],
+    "strength": 107.61029621052818
+  },
+  {
+    "session_node": "s:s1761",
+    "session_id": "s1761",
+    "comm_weights": {
+      "4": 122.55922076114798,
+      "0": 8.342850098400149,
+      "91": 5.2769106835156565,
+      "2": 4.8987834925625755,
+      "18": 4.844502970989275,
+      "6": 2.651377897231667,
+      "37": 5.222638925901414
+    },
+    "domains": [
+      "book.montpellier-france.com",
+      "easyjet.com",
+      "expedia.com",
+      "frenchvineyard.co.uk",
+      "pinterest.com",
+      "robertdyas.co.uk",
+      "rome2rio.com",
+      "ryanair.com",
+      "spain-holiday.com",
+      "telegraph.co.uk",
+      "thecrazytourist.com",
+      "theculturetrip.com",
+      "timeanddate.com",
+      "tracker.marinsm.com",
+      "tripadvisor.co.uk"
+    ],
+    "queries": [
+      "costa brava",
+      "domaines paul mas languedoc",
+      "drive",
+      "marseilles",
+      "norwegian air fleet 737 max",
+      "norwegian fleet",
+      "pals",
+      "pals barcelona",
+      "pals spain to monaco",
+      "pals to monaco",
+      "stay in vineyard montpelier",
+      "vineyards to stay in montpellier"
+    ],
+    "entities": [],
+    "strength": 153.79628482974874
+  },
+  {
+    "session_node": "s:s3996",
+    "session_id": "s3996",
+    "comm_weights": {
+      "0": 4.591560674138728,
+      "2": 4.294039955819219,
+      "24": 14.840608407016468,
+      "13": 8.87967669795034,
+      "3": 5.529852980366203,
+      "6": 2.651377897231667,
+      "5": 4.192726836089543
+    },
+    "domains": [
+      "bank.barclays.co.uk",
+      "crowdcube.com",
+      "drive.google.com",
+      "hl.co.uk",
+      "seedrs.com"
+    ],
+    "queries": [
+      "best investment brokers",
+      "crowdcube",
+      "drive",
+      "seedrs"
+    ],
+    "entities": [],
+    "strength": 44.97984344861217
+  },
+  {
+    "session_node": "s:s0562",
+    "session_id": "s0562",
+    "comm_weights": {
+      "2": 17.63188577567372,
+      "19": 86.76114015304763,
+      "5": 5.2769106835156565,
+      "8": 9.967497957751796
+    },
+    "domains": [
+      "bbc.co.uk",
+      "localguidesconnect.com",
+      "mashable.com",
+      "moz.com",
+      "skucloud.co.uk",
+      "sociallysorted.com.au",
+      "socialmediatoday.com",
+      "sproutsocial.com",
+      "superb.digital"
+    ],
+    "queries": [
+      "always have your google page as part of your email signature",
+      "always have your google page as part of your email signature. several tools, like wisestamp, let you automatically share social media platform links in your email signature",
+      "helpful\" reviews",
+      "helpful\" reviews on google",
+      "hlpful\" reviews",
+      "london local news",
+      "news",
+      "pan peninsula",
+      "pumblechooks cafe",
+      "silkstream",
+      "sku cloud",
+      "why to have your google email as part of signature",
+      "why to have your google page as part of signature"
+    ],
+    "entities": [],
+    "strength": 119.63743456998881
+  },
+  {
+    "session_node": "s:s2509",
+    "session_id": "s2509",
+    "comm_weights": {
+      "41": 103.34786497868308,
+      "0": 13.868104193404083
+    },
+    "domains": [
+      "citizenwatch.co.uk",
+      "fashioneyewear.co.uk",
+      "lahoreoptical.com",
+      "pixel.everesttech.net",
+      "sonatawatches.in",
+      "thbaker.co.uk",
+      "thefoldlondon.com",
+      "titan.co.in",
+      "vogue-eyewear.com",
+      "walkthroughindia.com"
+    ],
+    "queries": [
+      "branded eyewear lucknow",
+      "citizen watches for women",
+      "indian watch brands",
+      "marc jacobs eyewear",
+      "rolex",
+      "sonata watch",
+      "the fold",
+      "titan eye plus",
+      "titan eye plus lucknow",
+      "titan watches",
+      "vogue eyewear"
+    ],
+    "entities": [],
+    "strength": 117.21596917208716
+  }
+]
