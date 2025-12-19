@@ -769,19 +769,93 @@ def _safe_compact_text(s: str, max_len: int = 220) -> str:
     return s[: max_len - 1] + "…"
 
 
-def _anthropic_call(prompt: str, model: str = "claude-3-5-sonnet-20241022", max_tokens: int = 700) -> str:
+def _anthropic_list_models(limit: int = 200, timeout: int = 30) -> List[str]:
+    """Return model IDs visible to this API key (ordered newest-first per Anthropic)."""
+    api_key = os.getenv("ANTHROPIC_API_KEY")
+    if not api_key:
+        raise RuntimeError("ANTHROPIC_API_KEY not set")
+
+    url = f"https://api.anthropic.com/v1/models?limit={int(limit)}"
+    req = urllib.request.Request(url, method="GET")
+    req.add_header("x-api-key", api_key)
+    req.add_header("anthropic-version", "2023-06-01")
+
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            body = resp.read().decode("utf-8")
+    except urllib.error.HTTPError as e:
+        err = e.read().decode("utf-8", errors="replace")
+        raise RuntimeError(f"Anthropic HTTPError {e.code} (list models): {err}")
+
+    obj = json.loads(body)
+    data = obj.get("data", [])
+    ids: List[str] = []
+    for it in data:
+        if isinstance(it, dict) and isinstance(it.get("id"), str):
+            ids.append(it["id"])
+    return ids
+
+
+def _anthropic_pick_model(requested: Optional[str] = None) -> str:
+    """Pick a working model.
+
+    If `requested` is provided, we try it first.
+    Otherwise, we prefer a Sonnet-class model, then fall back to the first available.
+    """
+    ids = _anthropic_list_models()
+    if not ids:
+        raise RuntimeError("Anthropic Models API returned no models for this key")
+
+    if requested:
+        if requested in ids:
+            return requested
+        # Allow aliases like `claude-sonnet-4-5` that may not appear in /v1/models.
+        # We'll still attempt them; if they 404, we'll fall back.
+        return requested
+
+    # Prefer commonly useful aliases/IDs, but only if present.
+    preferred = [
+        "claude-sonnet-4-5",
+        "claude-sonnet-4-5-20250929",
+        "claude-opus-4-5",
+        "claude-haiku-4-5",
+    ]
+    for p in preferred:
+        if p in ids:
+            return p
+
+    # Heuristic: pick the newest Sonnet-like model if present.
+    for mid in ids:
+        if "sonnet" in mid:
+            return mid
+
+    # Otherwise take the newest model overall.
+    return ids[0]
+
+
+def _anthropic_call(
+    prompt: str,
+    model: Optional[str] = None,
+    max_tokens: int = 700,
+    timeout: int = 45,
+) -> str:
     """Minimal Anthropic Messages API call using stdlib.
 
     Requires env var: ANTHROPIC_API_KEY
+
+    If `model` is None, we auto-pick a model your key can access.
+    If `model` is provided but not accessible, we fall back to the newest available model.
     """
     api_key = os.getenv("ANTHROPIC_API_KEY")
     if not api_key:
         raise RuntimeError("ANTHROPIC_API_KEY not set")
 
+    chosen = _anthropic_pick_model(model)
+
     url = "https://api.anthropic.com/v1/messages"
     payload = {
-        "model": model,
-        "max_tokens": max_tokens,
+        "model": chosen,
+        "max_tokens": int(max_tokens),
         "temperature": 0.2,
         "messages": [{"role": "user", "content": prompt}],
     }
@@ -793,11 +867,38 @@ def _anthropic_call(prompt: str, model: str = "claude-3-5-sonnet-20241022", max_
     req.add_header("anthropic-version", "2023-06-01")
 
     try:
-        with urllib.request.urlopen(req, timeout=45) as resp:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
             body = resp.read().decode("utf-8")
     except urllib.error.HTTPError as e:
         err = e.read().decode("utf-8", errors="replace")
-        raise RuntimeError(f"Anthropic HTTPError {e.code}: {err}")
+        # If the requested/alias model is unavailable, fall back once to a known-available model.
+        if e.code == 404 and chosen != None:
+            try:
+                fallback_ids = _anthropic_list_models()
+                if fallback_ids:
+                    fallback = fallback_ids[0]
+                    payload["model"] = fallback
+                    data2 = json.dumps(payload).encode("utf-8")
+                    req2 = urllib.request.Request(url, data=data2, method="POST")
+                    req2.add_header("Content-Type", "application/json")
+                    req2.add_header("x-api-key", api_key)
+                    req2.add_header("anthropic-version", "2023-06-01")
+                    with urllib.request.urlopen(req2, timeout=timeout) as resp2:
+                        body2 = resp2.read().decode("utf-8")
+                    obj2 = json.loads(body2)
+                    blocks2 = obj2.get("content", [])
+                    texts2: List[str] = []
+                    for b in blocks2:
+                        if isinstance(b, dict) and b.get("type") == "text":
+                            texts2.append(b.get("text", ""))
+                    return "\n".join(texts2).strip()
+            except Exception:
+                pass
+
+        raise RuntimeError(
+            f"Anthropic HTTPError {e.code}: {err}\n"
+            f"(Attempted model: {chosen!r}. Tip: run with --anthropic-model <id> or check /v1/models.)"
+        )
 
     obj = json.loads(body)
     blocks = obj.get("content", [])
@@ -820,7 +921,7 @@ def apply_label_map(intent_cards: List[dict], label_map: dict) -> List[dict]:
     return out
 
 
-def llm_postprocess_cards_and_summaries(intent_cards: List[dict], profile_paragraph: str) -> dict:
+def llm_postprocess_cards_and_summaries(intent_cards: List[dict], profile_paragraph: str, anthropic_model: Optional[str] = None) -> dict:
     """Return {label_map, summary_small, summary_big, truths}. Uses only already-selected evidence."""
     evidence = []
     for c in intent_cards[:10]:
@@ -849,11 +950,11 @@ def llm_postprocess_cards_and_summaries(intent_cards: List[dict], profile_paragr
         f"EVIDENCE_JSON:\n{json.dumps(evidence, ensure_ascii=False)}\n"
     )
 
-    text = _anthropic_call(prompt)
+    text = _anthropic_call(prompt, model=anthropic_model)
     return json.loads(text)
 
 
-def maybe_llm_summarize(cards: List[dict], fallback_paragraph: str, provider: str = "off") -> Tuple[dict, List[dict]]:
+def maybe_llm_summarize(cards: List[dict], fallback_paragraph: str, provider: str = "off", anthropic_model: Optional[str] = None) -> Tuple[dict, List[dict]]:
     """Optional LLM post-processing (bounded and auditable).
 
     Returns (llm_out, updated_cards) where llm_out is a dict with:
@@ -882,7 +983,7 @@ def maybe_llm_summarize(cards: List[dict], fallback_paragraph: str, provider: st
         return llm_out, cards
 
     try:
-        out = llm_postprocess_cards_and_summaries(cards, fallback_paragraph)
+        out = llm_postprocess_cards_and_summaries(cards, fallback_paragraph, anthropic_model=anthropic_model)
         updated = apply_label_map(cards, out.get("label_map", {}))
         # Ensure keys exist
         llm_out = {
@@ -1184,6 +1285,7 @@ def main() -> None:
     ap.add_argument("--trials", type=int, default=30, help="Number of tuning trials (default 30)")
     ap.add_argument("--seed", type=int, default=7, help="Random seed for tuning/stability")
     ap.add_argument("--llm", type=str, default="off", help="Optional LLM post-processing: off|anthropic|openai")
+    ap.add_argument("--anthropic-model", type=str, default="", help="Anthropic model id/alias (optional). If empty, auto-pick from /v1/models")
 
     args = ap.parse_args()
 
@@ -1222,6 +1324,7 @@ def main() -> None:
         result.get("intent_cards", []),
         result.get("profile_paragraph", ""),
         provider=args.llm,
+        anthropic_model=(args.anthropic_model.strip() or None),
     )
     result["intent_cards"] = cards
     result["llm"] = llm_out
