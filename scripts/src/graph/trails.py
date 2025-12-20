@@ -1,3 +1,16 @@
+"""trails.py
+
+What it does:
+- Builds an explainable "micro-story" (trail) per session for human-readable output.
+- Trails are computed from raw `Event`s (not from the clustered graph) so they remain faithful.
+
+Main entrypoint:
+- build_session_trails(events, max_events_per_session=8) -> Dict[session_id, trail]
+
+Notes:
+- Uses the same utility-query detection as Phase-1 graph building.
+"""
+
 from __future__ import annotations
 
 from collections import Counter, defaultdict
@@ -7,6 +20,7 @@ from typing import Dict, List
 import re
 
 from src.ingest.parse_takeout import Event
+from src.graph.build_graph import is_utility_query
 
 
 def build_session_trails(events: List[Event], *, max_events_per_session: int = 8) -> Dict[str, dict]:
@@ -21,23 +35,6 @@ def build_session_trails(events: List[Event], *, max_events_per_session: int = 8
     for e in events:
         sid = e.id.split(":", 1)[0]
         by_session[sid].append(e)
-
-    # Minimal utility detection for trails (kept local to avoid circular imports)
-    UTILITY_QUERY_PATTERNS = (
-        re.compile(r"\b(speed\s*test|internet\s*speed|fast\.com|ookla)\b", re.I),
-        re.compile(r"\b(weather|temperature|forecast)\b", re.I),
-        re.compile(r"\b(time\s+in|timezone|utc\s*to)\b", re.I),
-        re.compile(r"\b(translate|meaning\s+of|define\s+)\b", re.I),
-        re.compile(r"\b(map|directions\s+to|near\s+me)\b", re.I),
-        re.compile(r"\b(convert|converter|cm\s+to|kg\s+to|usd\s+to|inr\s+to)\b", re.I),
-        re.compile(r"\b(login|sign\s*in|password|otp)\b", re.I),
-    )
-
-    def is_utility_query(q: str) -> bool:
-        qq = (q or "").strip().lower()
-        if not qq:
-            return True
-        return any(p.search(qq) is not None for p in UTILITY_QUERY_PATTERNS)
 
     trails: Dict[str, dict] = {}
     for sid, es in by_session.items():

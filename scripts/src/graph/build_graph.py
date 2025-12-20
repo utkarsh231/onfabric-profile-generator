@@ -1,3 +1,19 @@
+"""build_graph.py
+
+What it does:
+- Builds the Phase-1 heterogeneous graph from sessionized 'Event's.
+- Current graph schema is intentionally minimal and stable:
+    sessions (s:), domains (d:), queries (q:)
+- Utility/admin queries are retained but downweighted and excluded from topic clustering.
+
+Main entrypoints:
+- build_history_graph(events) -> nx.Graph
+- basic_graph_stats(G) -> Dict[str, int]
+
+Notes:
+- We keep the graph small/clean to improve community detection stability.
+"""
+
 from __future__ import annotations
 
 from collections import Counter, defaultdict
@@ -10,16 +26,6 @@ import networkx as nx
 
 from src.ingest.parse_takeout import Event
 
-
-# -----------------------------
-# Semantic extraction (lightweight, no extra deps)
-# -----------------------------
-
-_STOPWORDS = {
-    "a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "from", "has", "have", "how",
-    "i", "in", "is", "it", "its", "me", "my", "of", "on", "or", "our", "so", "that", "the", "their",
-    "this", "to", "was", "we", "what", "when", "where", "which", "who", "why", "with", "you", "your",
-}
 
 # -----------------------------
 # Phase-1 graph policy (sessions + domains + queries only)
@@ -45,7 +51,7 @@ HUB_DOMAINS = {
 }
 
 
-def _is_utility_query(q: str) -> bool:
+def is_utility_query(q: str) -> bool:
     qq = (q or "").strip().lower()
     if not qq:
         return True
@@ -91,91 +97,6 @@ def _query_quality(q: str) -> float:
     return float(max(0.0, min(1.0, score)))
 
 
-def _strip_event_prefix(title: str) -> str:
-    t = (title or "").strip()
-    # Titles are often like: "Visited ..." / "Viewed ..." / "Searched for ..."
-    for p in ("Visited ", "Viewed ", "Searched for "):
-        if t.lower().startswith(p.lower()):
-            return t[len(p):].strip()
-    return t
-
-
-def _normalize_text(s: str) -> str:
-    s = (s or "").lower().strip()
-    s = re.sub(r"\s+", " ", s)
-    # remove most punctuation but keep hyphens inside tokens
-    s = re.sub(r"[^a-z0-9\s\-]", " ", s)
-    s = re.sub(r"\s+", " ", s).strip()
-    return s
-
-
-def _phrase_quality(p: str) -> float:
-    """Heuristic phrase quality in [0,1] (deterministic, explainable)."""
-    pp = _normalize_text(p)
-    if not pp:
-        return 0.0
-    toks = [t for t in pp.split() if t]
-    if not toks:
-        return 0.0
-    if len(pp) <= 2:
-        return 0.05
-    # penalize if mostly digits
-    alpha = sum(ch.isalpha() for ch in pp)
-    digit = sum(ch.isdigit() for ch in pp)
-    if alpha / max(1, len(pp)) < 0.35:
-        return 0.25
-    # reward multi-token specificity slightly
-    base = 0.55
-    if len(toks) >= 2:
-        base += 0.25
-    if len(toks) >= 3:
-        base += 0.10
-    # penalize stopword-only
-    non_stop = [t for t in toks if t not in _STOPWORDS]
-    if not non_stop:
-        return 0.1
-    return float(max(0.0, min(1.0, base)))
-
-
-def _extract_phrases(text: str, *, max_phrases: int = 18) -> List[str]:
-    """Extract small set of candidate phrases (1–3 grams) from short text."""
-    s = _normalize_text(text)
-    if not s:
-        return []
-    toks = [t for t in s.split() if t and t not in _STOPWORDS and len(t) >= 3]
-    if not toks:
-        return []
-
-    cands: List[str] = []
-    # unigrams
-    cands.extend(toks)
-    # bigrams
-    for i in range(len(toks) - 1):
-        cands.append(toks[i] + " " + toks[i + 1])
-    # trigrams
-    for i in range(len(toks) - 2):
-        cands.append(toks[i] + " " + toks[i + 1] + " " + toks[i + 2])
-
-    # score by quality then by length (prefer more specific phrases)
-    scored = [(float(_phrase_quality(p)), len(p), p) for p in cands]
-    scored.sort(reverse=True)
-
-    out: List[str] = []
-    seen = set()
-    for q, _, p in scored:
-        if q < 0.25:
-            continue
-        if p in seen:
-            continue
-        seen.add(p)
-        out.append(p)
-        if len(out) >= max_phrases:
-            break
-    return out
-
-
-
-
 def build_history_graph(events: List[Event]) -> nx.Graph:
     """Build heterogeneous graph with only sessions, domains, queries.
 
@@ -212,7 +133,7 @@ def build_history_graph(events: List[Event]) -> nx.Graph:
             session_domains[sid][e.domain] += 1
 
         if e.query:
-            if _is_utility_query(e.query):
+            if is_utility_query(e.query):
                 session_queries_utility[sid][e.query] += 1
             else:
                 session_queries_interest[sid][e.query] += 1
@@ -304,7 +225,7 @@ def build_history_graph(events: List[Event]) -> nx.Graph:
 
     for (u, v), w in w_sq.items():
         q_text = v.split(":", 1)[1] if ":" in v else v
-        qclass = "utility" if _is_utility_query(q_text) else "interest"
+        qclass = "utility" if is_utility_query(q_text) else "interest"
         qqual = _query_quality(q_text)
         G.add_node(u, ntype="session")
         G.add_node(v, ntype="query", qclass=qclass, qquality=float(qqual))
@@ -315,7 +236,7 @@ def build_history_graph(events: List[Event]) -> nx.Graph:
 
     for (u, v), w in w_dq.items():
         q_text = v.split(":", 1)[1] if ":" in v else v
-        qclass = "utility" if _is_utility_query(q_text) else "interest"
+        qclass = "utility" if is_utility_query(q_text) else "interest"
         qqual = _query_quality(q_text)
         G.add_node(u, ntype="domain")
         G.add_node(v, ntype="query", qclass=qclass, qquality=float(qqual))

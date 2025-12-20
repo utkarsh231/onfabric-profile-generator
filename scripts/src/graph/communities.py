@@ -1,9 +1,25 @@
+"""communities.py
+
+What it does:
+- Produces topical communities by clustering a projection of the heterogeneous graph.
+- We project onto domain/query nodes only (dropping session bridges) for cleaner topics.
+
+Main entrypoints:
+- detect_topic_communities(G, min_size=8) -> node_to_comm
+- summarize_topic_communities(G, node_to_comm, top_k=8) -> summaries
+
+Notes:
+- Uses greedy modularity (NetworkX) for deterministic-ish clustering without extra deps.
+"""
+
 from __future__ import annotations
 
 from typing import Dict, List
 
 import networkx as nx
 from networkx.algorithms.community import greedy_modularity_communities
+
+from src.graph.build_graph import MIN_QUERY_QUALITY
 
 
 def _node_type(G: nx.Graph, n: str) -> str:
@@ -42,7 +58,7 @@ def build_domain_query_projection(G: nx.Graph) -> nx.Graph:
             # Route utility + very low-quality queries away from topical communities
             qclass = G.nodes[n].get("qclass")
             qqual = float(G.nodes[n].get("qquality", 1.0))
-            if qclass == "utility" or qqual < 0.25:
+            if qclass == "utility" or qqual < MIN_QUERY_QUALITY:
                 continue
             H.add_node(n, **G.nodes[n])
             continue
@@ -136,7 +152,7 @@ def summarize_communities(G: nx.Graph, node_to_comm: Dict[str, int], top_k: int 
             for n in nodes
             if n.startswith("q:")
             and sub.nodes[n].get("qclass") != "utility"
-            and float(sub.nodes[n].get("qquality", 1.0)) >= 0.25
+            and float(sub.nodes[n].get("qquality", 1.0)) >= MIN_QUERY_QUALITY
         ]
 
         domains_sorted = sorted(domains, key=lambda n: deg.get(n, 0.0), reverse=True)[:top_k]
