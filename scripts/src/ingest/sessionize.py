@@ -1,3 +1,16 @@
+"""sessionize.py
+
+What it does:
+- Assigns session IDs to events based on time gaps (default: 30 minutes).
+- Rewrites Event.id to include the session prefix (e.g., s0003:<original_id>) so later joins are easy.
+
+Main entrypoint:
+- assign_sessions(events, gap_minutes=30) -> (new_events, session_to_event_ids)
+
+Notes:
+- This is deterministic given the event ordering.
+"""
+
 from __future__ import annotations
 
 from dataclasses import replace
@@ -17,8 +30,12 @@ def assign_sessions(events: List[Event], *, gap_minutes: int = 30) -> Tuple[List
         return [], {}
 
     gap = timedelta(minutes=gap_minutes)
+
+    def _sid(i: int) -> str:
+        return f"s{i:04d}"
+
     session_idx = 0
-    session_id = f"s{session_idx:04d}"
+    session_id = _sid(session_idx)
     session_to_event_ids: Dict[str, List[str]] = {session_id: []}
 
     new_events: List[Event] = []
@@ -27,7 +44,7 @@ def assign_sessions(events: List[Event], *, gap_minutes: int = 30) -> Tuple[List
     for e in events:
         if (e.time - prev_time) > gap:
             session_idx += 1
-            session_id = f"s{session_idx:04d}"
+            session_id = _sid(session_idx)
             session_to_event_ids[session_id] = []
 
         prev_time = e.time

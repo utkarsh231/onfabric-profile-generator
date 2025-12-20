@@ -1,3 +1,20 @@
+"""
+What this file does:
+- Loads Google Takeout / Chrome history JSON (already exported into a flat list of events).
+- Normalizes timestamps, URLs (including Google redirect URLs), and domains.
+- Extracts *search queries* ONLY from true "Searched for ..." events.
+
+Main entrypoint:
+- load_events(json_path) -> List[Event]
+
+Outputs:
+- Event dataclass objects (sorted by time, UTC)
+
+Notes:
+- We intentionally do NOT synthesize queries for visit/view events; doing so creates supernodes and
+  collapses communities.
+"""
+
 from __future__ import annotations
 
 import json
@@ -5,13 +22,15 @@ import re
 from dataclasses import dataclass, asdict
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Optional
+from typing import Any, Dict, List, Optional
 from urllib.parse import parse_qs, unquote, urlparse
 
 
 SEARCH_RE = re.compile(r"^Searched for (.+)$", re.IGNORECASE)
 VISIT_RE = re.compile(r"^Visited (.+)$", re.IGNORECASE)
 VIEW_RE = re.compile(r"^Viewed (.+)$", re.IGNORECASE)
+
+EPOCH_UTC = datetime(1970, 1, 1, tzinfo=timezone.utc)
 
 
 @dataclass(frozen=True)
@@ -38,7 +57,7 @@ def _parse_time(s: Any) -> datetime:
     """
     if not isinstance(s, str) or not s:
         # fallback: epoch start UTC
-        return datetime(1970, 1, 1, tzinfo=timezone.utc)
+        return EPOCH_UTC
 
     # normalize 'Z'
     s2 = s.replace("Z", "+00:00")
@@ -48,7 +67,7 @@ def _parse_time(s: Any) -> datetime:
             dt = dt.replace(tzinfo=timezone.utc)
         return dt.astimezone(timezone.utc)
     except Exception:
-        return datetime(1970, 1, 1, tzinfo=timezone.utc)
+        return EPOCH_UTC
 
 
 def _clean_google_redirect(maybe_url: Any) -> Optional[str]:
@@ -74,6 +93,7 @@ def _clean_google_redirect(maybe_url: Any) -> Optional[str]:
     except Exception:
         return url
 
+
 def _normalize_domain(host: str) -> str:
     """Normalize domains to reduce fragmentation (www/mobile/language/country variants).
 
@@ -95,9 +115,6 @@ def _normalize_domain(host: str) -> str:
     # but keep meaningful service subdomains like scholar.google.com.
     # -----------------------------
     if h in {"google.com", "local.google.com"}:
-        return "google.com"
-
-    if h.startswith("www.google."):
         return "google.com"
 
     # google.<ccTLD>, google.co.<ccTLD>, google.com.<ccTLD> -> google.com
@@ -123,6 +140,7 @@ def _normalize_domain(host: str) -> str:
 
     return h
 
+
 def _extract_domain(url: Optional[str]) -> str:
     if not url:
         return ""
@@ -144,7 +162,7 @@ def _infer_event_type(title: str) -> str:
     return "other"
 
 
-def _extract_query(title: str, title_url: Optional[str]) -> str:
+def _extract_query(title: str) -> str:
     """Extract a *search query* only for true search events.
 
     Important: we intentionally do NOT synthesize queries for visited/viewed events.
@@ -182,6 +200,28 @@ def _normalize_query(q: str) -> str:
 
 
 def load_events(json_path: str) -> List[Event]:
+    """
+    Load and noralize browsing/search events from an exported takeout JSON file.
+
+    Parameters:
+    - json_path: Path to the JSON file containing the browsing/search events.
+    Returns:
+    - List[Event]: List of Event dataclass objects, sorted by time (UTC).
+    
+    Behavior:
+    - Parses event time into a timezone aware UTC datetime (invalid times fall back to EPOCH_UTC 
+    to keep ingestion consistent).
+    - Cleans up Google redirect URLs to extract the original destination URL.
+    - Extracts domains from the cleaned URL and normalizes common families (Google/Youtube/Wikipedia) 
+    to reduce fragmentation.
+    - Classifies events as search/visit/view/other based on the title text.
+
+    Notes:
+    We intentionally do not synthesize queries for visit/view events; 
+    doing so creates supernodes (large high degree nodes) like `q:google.com` that
+    collapse communities and make the graph less meaningful.
+    """
+
     p = Path(json_path)
     if not p.exists():
         raise FileNotFoundError(f"search_history.json not found: {p}")
@@ -216,7 +256,7 @@ def load_events(json_path: str) -> List[Event]:
                 elif isinstance(s, str):
                     subtitles.append(s)
 
-        query = _normalize_query(_extract_query(title, title_url))
+        query = _normalize_query(_extract_query(title))
 
         out.append(
             Event(
