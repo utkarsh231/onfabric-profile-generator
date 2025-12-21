@@ -228,3 +228,6 @@ artifacts_phase1_run2/
 artifacts_phase1_run2/**
 artifacts_phase1_run3/
 artifacts_phase1_run3/**
+
+archive/
+archive/**

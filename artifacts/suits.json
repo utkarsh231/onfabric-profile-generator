@@ -1,0 +1,3834 @@
+{
+  "config": {
+    "seed_psignal_min": 0.35,
+    "seed_max_items": 6000,
+    "sim_threshold": 0.27,
+    "expand_sim_threshold": 0.18,
+    "max_suits": 8,
+    "top_queries_per_suit": 10,
+    "top_domains_per_suit": 8,
+    "top_sessions_per_suit": 10,
+    "session_expand_items": 20,
+    "session_gate_sim": 0.24,
+    "domain_max_session_frac": 0.18
+  },
+  "n_events": 55383,
+  "n_suits": 8,
+  "suits": [
+    {
+      "suit_id": 0,
+      "label": "Kitchen Islands & Cabinets",
+      "mass": 151.90832595919,
+      "top_queries": [
+        "ikea kitchen cabinets",
+        "kitchen island cabinets",
+        "ikea uk",
+        "ikea#",
+        "ikea",
+        "ikea india",
+        "kitchen island",
+        "kitchen island at home",
+        "filing cabinets",
+        "office filing cabinets"
+      ],
+      "top_domains": [
+        "ikea.com"
+      ],
+      "top_sessions": [
+        "s3358",
+        "s3390",
+        "s0419",
+        "s0611",
+        "s0634",
+        "s2649",
+        "s3061",
+        "s3434",
+        "s3435",
+        "s3438"
+      ],
+      "paragraph": "This topic represents a user's interest in home and office furniture, with a strong focus on IKEA products and kitchen islands. The user has searched for IKEA multiple times across different regions (UK, India), explored kitchen island options both generally and specifically from IKEA, and also looked into cabinet solutions including kitchen cabinets and office filing cabinets. The searches suggest someone planning or researching furniture purchases for home organization and kitchen design. The original label appears to have been corrupted by a word-overlap error where 'island' from 'kitchen island' incorrectly bridged to 'Dental_Island', creating a completely inaccurate categorization.",
+      "evidence_primary": [
+        {
+          "item_id": "q:ikea kitchen cabinets",
+          "kind": "query",
+          "text": "ikea kitchen cabinets",
+          "cosine": 0.9957658982267874,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:kitchen island cabinets",
+          "kind": "query",
+          "text": "kitchen island cabinets",
+          "cosine": 0.4509501124046872,
+          "psignal": 0.797719812882648,
+          "df_sessions": 1,
+          "mass": 7.920727937973202,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "d:ikea.com",
+          "kind": "domain",
+          "text": "ikea.com",
+          "cosine": 0.35245319006817877,
+          "psignal": 1.0,
+          "df_sessions": 39,
+          "mass": 177.0273173173726,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:ikea uk",
+          "kind": "query",
+          "text": "ikea uk",
+          "cosine": 0.35245319006817877,
+          "psignal": 0.6417225660315453,
+          "df_sessions": 1,
+          "mass": 3.30815794052501,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:ikea#",
+          "kind": "query",
+          "text": "ikea#",
+          "cosine": 0.35245319006817877,
+          "psignal": 0.5042105875961505,
+          "df_sessions": 1,
+          "mass": 2.198435624287441,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:ikea",
+          "kind": "query",
+          "text": "ikea",
+          "cosine": 0.35245319006817877,
+          "psignal": 0.4803455400056792,
+          "df_sessions": 10,
+          "mass": 17.491489523427436,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:ikea india",
+          "kind": "query",
+          "text": "ikea india",
+          "cosine": 0.35245319006817877,
+          "psignal": 0.7743535420748487,
+          "df_sessions": 2,
+          "mass": 8.837522566303898,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:kitchen island",
+          "kind": "query",
+          "text": "kitchen island",
+          "cosine": 0.281150013804102,
+          "psignal": 0.7596809149456812,
+          "df_sessions": 4,
+          "mass": 18.85503644688542,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:kitchen island at home",
+          "kind": "query",
+          "text": "kitchen island at home",
+          "cosine": 0.281150013804102,
+          "psignal": 0.8021515518793941,
+          "df_sessions": 2,
+          "mass": 12.422436850876428,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:filing cabinets",
+          "kind": "query",
+          "text": "filing cabinets",
+          "cosine": 0.2804971294849216,
+          "psignal": 0.7606153689632263,
+          "df_sessions": 2,
+          "mass": 11.269140988280409,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:office filing cabinets",
+          "kind": "query",
+          "text": "office filing cabinets",
+          "cosine": 0.2193856639717645,
+          "psignal": 0.8250718706119371,
+          "df_sessions": 1,
+          "mass": 5.127887004947245,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:office storage cabinets",
+          "kind": "query",
+          "text": "office storage cabinets",
+          "cosine": 0.21824877198614342,
+          "psignal": 0.8250718706118827,
+          "df_sessions": 1,
+          "mass": 5.127887004946985,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:tom's kitchen calories",
+          "kind": "query",
+          "text": "tom's kitchen calories",
+          "cosine": 0.21049214884243472,
+          "psignal": 0.8126040115770056,
+          "df_sessions": 2,
+          "mass": 9.706791409607463,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "d:cinnamon-kitchen.com",
+          "kind": "domain",
+          "text": "cinnamon-kitchen.com",
+          "cosine": 0.20873455154618903,
+          "psignal": 1.0,
+          "df_sessions": 1,
+          "mass": 5.962260692892584,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:cinnamon kitchen london",
+          "kind": "query",
+          "text": "cinnamon kitchen london",
+          "cosine": 0.20873455154618903,
+          "psignal": 0.8250718706117144,
+          "df_sessions": 1,
+          "mass": 5.1278870049461815,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:cinnamon kitchen",
+          "kind": "query",
+          "text": "cinnamon kitchen",
+          "cosine": 0.20873455154618903,
+          "psignal": 0.7792345444668765,
+          "df_sessions": 1,
+          "mass": 4.6365155271162255,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:how to use kitchen island as a dining table",
+          "kind": "query",
+          "text": "how to use kitchen island as a dining table",
+          "cosine": 0.20363351545401912,
+          "psignal": 0.8250718706118267,
+          "df_sessions": 1,
+          "mass": 5.127887004946718,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:kitchen island contractors",
+          "kind": "query",
+          "text": "kitchen island contractors",
+          "cosine": 0.2013758200936178,
+          "psignal": 0.8210577697202143,
+          "df_sessions": 2,
+          "mass": 9.784015724619803,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:kitchen island contractors london",
+          "kind": "query",
+          "text": "kitchen island contractors london",
+          "cosine": 0.2013758200936178,
+          "psignal": 0.8250718706116589,
+          "df_sessions": 1,
+          "mass": 5.127887004945917,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:katsu kitchen calories",
+          "kind": "query",
+          "text": "katsu kitchen calories",
+          "cosine": 0.19973782328818893,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:scandinavian kitchen",
+          "kind": "query",
+          "text": "scandinavian kitchen",
+          "cosine": 0.19973782328818893,
+          "psignal": 0.7792345444668765,
+          "df_sessions": 1,
+          "mass": 4.6365155271162255,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:grateful kitchen",
+          "kind": "query",
+          "text": "grateful kitchen",
+          "cosine": 0.19911073703214371,
+          "psignal": 0.7792345444665666,
+          "df_sessions": 1,
+          "mass": 4.636515527114829,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:kitchen island with seating",
+          "kind": "query",
+          "text": "kitchen island with seating",
+          "cosine": 0.1990711767131432,
+          "psignal": 0.7989083824390235,
+          "df_sessions": 1,
+          "mass": 7.9297134854217175,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:rubeza kitchen island",
+          "kind": "query",
+          "text": "rubeza kitchen island",
+          "cosine": 0.197929430441106,
+          "psignal": 0.8006571934507419,
+          "df_sessions": 2,
+          "mass": 12.404793410462023,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:benches for kitchen island",
+          "kind": "query",
+          "text": "benches for kitchen island",
+          "cosine": 0.19353409972925179,
+          "psignal": 0.8250718706116589,
+          "df_sessions": 1,
+          "mass": 5.127887004945917,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "d:pandanthai.kitchen",
+          "kind": "domain",
+          "text": "pandanthai.kitchen",
+          "cosine": 0.19328764235108925,
+          "psignal": 1.0,
+          "df_sessions": 1,
+          "mass": 5.962260692892584,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "d:alices.kitchen",
+          "kind": "domain",
+          "text": "alices.kitchen",
+          "cosine": 0.19328764235108925,
+          "psignal": 1.0,
+          "df_sessions": 1,
+          "mass": 5.962260692892584,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:ikea free delivery",
+          "kind": "query",
+          "text": "ikea free delivery",
+          "cosine": 0.18094610597535582,
+          "psignal": 0.8250718706117705,
+          "df_sessions": 1,
+          "mass": 5.127887004946449,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:ikea share price",
+          "kind": "query",
+          "text": "ikea share price",
+          "cosine": 0.1808452883918956,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        }
+      ],
+      "evidence_supporting": [
+        {
+          "item_id": "q:kitchen island at home",
+          "kind": "query",
+          "text": "kitchen island at home",
+          "cosine": 0.281150013804102,
+          "psignal": 0.8021515518793941,
+          "df_sessions": 2,
+          "mass": 12.422436850876428,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:kitchen island contractors",
+          "kind": "query",
+          "text": "kitchen island contractors",
+          "cosine": 0.2013758200936178,
+          "psignal": 0.8210577697202143,
+          "df_sessions": 2,
+          "mass": 9.784015724619803,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:kitchen island contractors london",
+          "kind": "query",
+          "text": "kitchen island contractors london",
+          "cosine": 0.2013758200936178,
+          "psignal": 0.8250718706116589,
+          "df_sessions": 1,
+          "mass": 5.127887004945917,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:kitchen island with seating",
+          "kind": "query",
+          "text": "kitchen island with seating",
+          "cosine": 0.1990711767131432,
+          "psignal": 0.7989083824390235,
+          "df_sessions": 1,
+          "mass": 7.9297134854217175,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:rubeza kitchen island",
+          "kind": "query",
+          "text": "rubeza kitchen island",
+          "cosine": 0.197929430441106,
+          "psignal": 0.8006571934507419,
+          "df_sessions": 2,
+          "mass": 12.404793410462023,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:rubeza",
+          "kind": "query",
+          "text": "rubeza",
+          "cosine": 8.815462928214908e-05,
+          "psignal": 0.5042105875960137,
+          "df_sessions": 1,
+          "mass": 2.198435624287042,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:ikea kitchen cabinets",
+          "kind": "query",
+          "text": "ikea kitchen cabinets",
+          "cosine": 0.9957658982267874,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "d:ikea.com",
+          "kind": "domain",
+          "text": "ikea.com",
+          "cosine": 0.35245319006817877,
+          "psignal": 1.0,
+          "df_sessions": 39,
+          "mass": 177.0273173173726,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:kitchen island cabinets",
+          "kind": "query",
+          "text": "kitchen island cabinets",
+          "cosine": 0.4509501124046872,
+          "psignal": 0.797719812882648,
+          "df_sessions": 1,
+          "mass": 7.920727937973202,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:office filing cabinets",
+          "kind": "query",
+          "text": "office filing cabinets",
+          "cosine": 0.2193856639717645,
+          "psignal": 0.8250718706119371,
+          "df_sessions": 1,
+          "mass": 5.127887004947245,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:ikea",
+          "kind": "query",
+          "text": "ikea",
+          "cosine": 0.35245319006817877,
+          "psignal": 0.4803455400056792,
+          "df_sessions": 10,
+          "mass": 17.491489523427436,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:ikea free delivery",
+          "kind": "query",
+          "text": "ikea free delivery",
+          "cosine": 0.18094610597535582,
+          "psignal": 0.8250718706117705,
+          "df_sessions": 1,
+          "mass": 5.127887004946449,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:filing cabinets",
+          "kind": "query",
+          "text": "filing cabinets",
+          "cosine": 0.2804971294849216,
+          "psignal": 0.7606153689632263,
+          "df_sessions": 2,
+          "mass": 11.269140988280409,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:office storage cabinets",
+          "kind": "query",
+          "text": "office storage cabinets",
+          "cosine": 0.21824877198614342,
+          "psignal": 0.8250718706118827,
+          "df_sessions": 1,
+          "mass": 5.127887004946985,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:ikea uk",
+          "kind": "query",
+          "text": "ikea uk",
+          "cosine": 0.35245319006817877,
+          "psignal": 0.6417225660315453,
+          "df_sessions": 1,
+          "mass": 3.30815794052501,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:ikea#",
+          "kind": "query",
+          "text": "ikea#",
+          "cosine": 0.35245319006817877,
+          "psignal": 0.5042105875961505,
+          "df_sessions": 1,
+          "mass": 2.198435624287441,
+          "reason": "session-context-gated"
+        }
+      ],
+      "llm_judge": {
+        "model": "claude-sonnet-4-5",
+        "drop_queries": [],
+        "rationale": "The current label 'Dental_Island Damira_Dental Damira Dental' appears to be completely erroneous and unrelated to the actual content. All queries focus on IKEA furniture, specifically kitchen islands and various types of cabinets (kitchen and filing). The word 'island' in 'kitchen island' likely created a false bridge to 'Dental_Island' in the original label. There is no dental-related content in any query. All queries are coherent and related to furniture shopping, primarily IKEA products and kitchen/office storage solutions."
+      }
+    },
+    {
+      "suit_id": 1,
+      "label": "EU Settlement Scheme",
+      "mass": 150.3959631000037,
+      "top_queries": [
+        "apply to eu settlement scheme",
+        "apply for eu settlement scheme"
+      ],
+      "top_domains": [
+        "apply.workable.com",
+        "apply.joinef.com"
+      ],
+      "top_sessions": [
+        "s3736",
+        "s3775",
+        "s3777"
+      ],
+      "paragraph": "This topic focuses specifically on the EU Settlement Scheme, a UK immigration program allowing EU/EEA/Swiss citizens and their families to obtain settled or pre-settled status post-Brexit. The two retained queries directly reference applying to this scheme. The dropped queries, while immigration-related, concern different processes: Schengen visas (short-term travel permits for Europe), US visas, UK travel visas, and British passport applications. These are distinct legal processes with different requirements, timelines, and outcomes from settlement schemes.",
+      "evidence_primary": [
+        {
+          "item_id": "q:apply for uk travel visa",
+          "kind": "query",
+          "text": "apply for uk travel visa",
+          "cosine": 0.9999501278207497,
+          "psignal": 0.8250718706119371,
+          "df_sessions": 1,
+          "mass": 5.127887004947245,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:apply for a schengen visa from uk",
+          "kind": "query",
+          "text": "apply for a schengen visa from uk",
+          "cosine": 0.9999501278207497,
+          "psignal": 0.8250718706117705,
+          "df_sessions": 1,
+          "mass": 5.127887004946449,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:apply for german schengen visa from uk",
+          "kind": "query",
+          "text": "apply for german schengen visa from uk",
+          "cosine": 0.9999501278207497,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:apply for schengen visa",
+          "kind": "query",
+          "text": "apply for schengen visa",
+          "cosine": 0.9999501278207497,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:apply for a us visa",
+          "kind": "query",
+          "text": "apply for a us visa",
+          "cosine": 0.9999501278207497,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:apply to eu settlement scheme",
+          "kind": "query",
+          "text": "apply to eu settlement scheme",
+          "cosine": 0.5375485627129809,
+          "psignal": 0.7997704660979311,
+          "df_sessions": 1,
+          "mass": 7.936230810032763,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:apply for eu settlement scheme",
+          "kind": "query",
+          "text": "apply for eu settlement scheme",
+          "cosine": 0.5375485627129809,
+          "psignal": 0.8157169062653099,
+          "df_sessions": 2,
+          "mass": 9.73522742066167,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:apply for 5 year schengen visa",
+          "kind": "query",
+          "text": "apply for 5 year schengen visa",
+          "cosine": 0.5266934497486061,
+          "psignal": 0.8250718706117705,
+          "df_sessions": 1,
+          "mass": 5.127887004946449,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:apply for british passport",
+          "kind": "query",
+          "text": "apply for british passport",
+          "cosine": 0.5152030987284432,
+          "psignal": 0.8250718706118267,
+          "df_sessions": 1,
+          "mass": 5.127887004946718,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:apply for french schengen visa from uk",
+          "kind": "query",
+          "text": "apply for french schengen visa from uk",
+          "cosine": 0.5152030987284432,
+          "psignal": 0.8215137567347266,
+          "df_sessions": 2,
+          "mass": 9.788181124700301,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:apply for polish visa in uk",
+          "kind": "query",
+          "text": "apply for polish visa in uk",
+          "cosine": 0.5131366692351927,
+          "psignal": 0.8250718706116589,
+          "df_sessions": 1,
+          "mass": 5.127887004945917,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:polish schengen visa apply",
+          "kind": "query",
+          "text": "polish schengen visa apply",
+          "cosine": 0.5131366692351927,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:apply for british citizenship",
+          "kind": "query",
+          "text": "apply for british citizenship",
+          "cosine": 0.5111381335244733,
+          "psignal": 0.8194035201976919,
+          "df_sessions": 2,
+          "mass": 9.768904305050876,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:gov uk apply for citizenship",
+          "kind": "query",
+          "text": "gov uk apply for citizenship",
+          "cosine": 0.5111381335244733,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:apply for uk partner visa",
+          "kind": "query",
+          "text": "apply for uk partner visa",
+          "cosine": 0.5107821959766953,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:apply for a long term schengen visa",
+          "kind": "query",
+          "text": "apply for a long term schengen visa",
+          "cosine": 0.5053915161278614,
+          "psignal": 0.8250718706116589,
+          "df_sessions": 1,
+          "mass": 5.127887004945917,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:apply for greek schengen visa",
+          "kind": "query",
+          "text": "apply for greek schengen visa",
+          "cosine": 0.49465828753106333,
+          "psignal": 0.8250718706117705,
+          "df_sessions": 1,
+          "mass": 5.127887004946449,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:apply for.ilr",
+          "kind": "query",
+          "text": "apply for.ilr",
+          "cosine": 0.49465828753106333,
+          "psignal": 0.7792345444668765,
+          "df_sessions": 1,
+          "mass": 4.6365155271162255,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:apply for ilr",
+          "kind": "query",
+          "text": "apply for ilr",
+          "cosine": 0.49465828753106333,
+          "psignal": 0.8250718706118827,
+          "df_sessions": 1,
+          "mass": 5.127887004946985,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:apply for british tourist visa",
+          "kind": "query",
+          "text": "apply for british tourist visa",
+          "cosine": 0.4843415648857884,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:how soon to apply for schengen visa",
+          "kind": "query",
+          "text": "how soon to apply for schengen visa",
+          "cosine": 0.4816987224437613,
+          "psignal": 0.8250718706116589,
+          "df_sessions": 1,
+          "mass": 5.127887004945917,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "d:apply.workable.com",
+          "kind": "domain",
+          "text": "apply.workable.com",
+          "cosine": 0.46984194094414133,
+          "psignal": 1.0,
+          "df_sessions": 3,
+          "mass": 16.58955894109861,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "d:apply.joinef.com",
+          "kind": "domain",
+          "text": "apply.joinef.com",
+          "cosine": 0.46984194094414133,
+          "psignal": 1.0,
+          "df_sessions": 2,
+          "mass": 14.758373958446128,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:apply for indian evisa",
+          "kind": "query",
+          "text": "apply for indian evisa",
+          "cosine": 0.4629470038617653,
+          "psignal": 0.8250718706116589,
+          "df_sessions": 1,
+          "mass": 5.127887004945917,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:apply for 5 year schengen visa italy",
+          "kind": "query",
+          "text": "apply for 5 year schengen visa italy",
+          "cosine": 0.39649222042675003,
+          "psignal": 0.8250718706117705,
+          "df_sessions": 1,
+          "mass": 5.127887004946449,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:apply for greek schengen visa vfs",
+          "kind": "query",
+          "text": "apply for greek schengen visa vfs",
+          "cosine": 0.3830093889812728,
+          "psignal": 0.8250718706117705,
+          "df_sessions": 1,
+          "mass": 5.127887004946449,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:can i apply for a tier 2 visa myself",
+          "kind": "query",
+          "text": "can i apply for a tier 2 visa myself",
+          "cosine": 0.3636960392475178,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:how many people apply for google grad scheme",
+          "kind": "query",
+          "text": "how many people apply for google grad scheme",
+          "cosine": 0.31435904007975035,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:apply for mit data science masters",
+          "kind": "query",
+          "text": "apply for mit data science masters",
+          "cosine": 0.3140619548670918,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:apply a choice of formatting, charts, totals, tables, or sparklines without having to use ribbon",
+          "kind": "query",
+          "text": "apply a choice of formatting, charts, totals, tables, or sparklines without having to use ribbon",
+          "cosine": 0.1802103919734901,
+          "psignal": 0.8250718706116589,
+          "df_sessions": 1,
+          "mass": 5.127887004945917,
+          "reason": "semantic-affinity"
+        }
+      ],
+      "evidence_supporting": [
+        {
+          "item_id": "q:apply for german schengen visa from uk",
+          "kind": "query",
+          "text": "apply for german schengen visa from uk",
+          "cosine": 0.9999501278207497,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:apply for schengen visa",
+          "kind": "query",
+          "text": "apply for schengen visa",
+          "cosine": 0.9999501278207497,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:apply for a schengen visa from uk",
+          "kind": "query",
+          "text": "apply for a schengen visa from uk",
+          "cosine": 0.9999501278207497,
+          "psignal": 0.8250718706117705,
+          "df_sessions": 1,
+          "mass": 5.127887004946449,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:apply for 5 year schengen visa",
+          "kind": "query",
+          "text": "apply for 5 year schengen visa",
+          "cosine": 0.5266934497486061,
+          "psignal": 0.8250718706117705,
+          "df_sessions": 1,
+          "mass": 5.127887004946449,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:apply for 5 year schengen visa italy",
+          "kind": "query",
+          "text": "apply for 5 year schengen visa italy",
+          "cosine": 0.39649222042675003,
+          "psignal": 0.8250718706117705,
+          "df_sessions": 1,
+          "mass": 5.127887004946449,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:apply for british passport",
+          "kind": "query",
+          "text": "apply for british passport",
+          "cosine": 0.5152030987284432,
+          "psignal": 0.8250718706118267,
+          "df_sessions": 1,
+          "mass": 5.127887004946718,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:apply for british citizenship",
+          "kind": "query",
+          "text": "apply for british citizenship",
+          "cosine": 0.5111381335244733,
+          "psignal": 0.8194035201976919,
+          "df_sessions": 2,
+          "mass": 9.768904305050876,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:apply for uk travel visa",
+          "kind": "query",
+          "text": "apply for uk travel visa",
+          "cosine": 0.9999501278207497,
+          "psignal": 0.8250718706119371,
+          "df_sessions": 1,
+          "mass": 5.127887004947245,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:apply for a us visa",
+          "kind": "query",
+          "text": "apply for a us visa",
+          "cosine": 0.9999501278207497,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:apply for greek schengen visa",
+          "kind": "query",
+          "text": "apply for greek schengen visa",
+          "cosine": 0.49465828753106333,
+          "psignal": 0.8250718706117705,
+          "df_sessions": 1,
+          "mass": 5.127887004946449,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:apply for greek schengen visa vfs",
+          "kind": "query",
+          "text": "apply for greek schengen visa vfs",
+          "cosine": 0.3830093889812728,
+          "psignal": 0.8250718706117705,
+          "df_sessions": 1,
+          "mass": 5.127887004946449,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:apply for uk partner visa",
+          "kind": "query",
+          "text": "apply for uk partner visa",
+          "cosine": 0.5107821959766953,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:can i apply for a tier 2 visa myself",
+          "kind": "query",
+          "text": "can i apply for a tier 2 visa myself",
+          "cosine": 0.3636960392475178,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:can you work on a uk partner visa",
+          "kind": "query",
+          "text": "can you work on a uk partner visa",
+          "cosine": 2.62914144037007e-05,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:uk partner visa processing time",
+          "kind": "query",
+          "text": "uk partner visa processing time",
+          "cosine": 1.358093611415278e-05,
+          "psignal": 0.8188401711885105,
+          "df_sessions": 2,
+          "mass": 9.763758162872458,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:uk partner visa processing time 2021",
+          "kind": "query",
+          "text": "uk partner visa processing time 2021",
+          "cosine": 1.0305076913578417e-05,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:applying to settle as the dependent child or partner if you work, establish a business or invest in the uk",
+          "kind": "query",
+          "text": "applying to settle as the dependent child or partner if you work, establish a business or invest in the uk",
+          "cosine": 5.748381583559248e-06,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:apply to eu settlement scheme",
+          "kind": "query",
+          "text": "apply to eu settlement scheme",
+          "cosine": 0.5375485627129809,
+          "psignal": 0.7997704660979311,
+          "df_sessions": 1,
+          "mass": 7.936230810032763,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:eu settlement scheme for partners",
+          "kind": "query",
+          "text": "eu settlement scheme for partners",
+          "cosine": 0.002995895363964725,
+          "psignal": 0.8250718706116589,
+          "df_sessions": 1,
+          "mass": 5.127887004945917,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:uk immigration eu settlement",
+          "kind": "query",
+          "text": "uk immigration eu settlement",
+          "cosine": 0.0028461710200176787,
+          "psignal": 0.8250718706116589,
+          "df_sessions": 1,
+          "mass": 5.127887004945917,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:eu settlement scheme for partners processing time",
+          "kind": "query",
+          "text": "eu settlement scheme for partners processing time",
+          "cosine": 0.00220084323878166,
+          "psignal": 0.8250718706116589,
+          "df_sessions": 1,
+          "mass": 5.127887004945917,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:non-eu applying to eu settlement scheme",
+          "kind": "query",
+          "text": "non-eu applying to eu settlement scheme",
+          "cosine": 0.002199906278101801,
+          "psignal": 0.8250718706116589,
+          "df_sessions": 1,
+          "mass": 5.127887004945917,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:immigration advice eu settlement scheme",
+          "kind": "query",
+          "text": "immigration advice eu settlement scheme",
+          "cosine": 0.002107211234344135,
+          "psignal": 0.8250718706116589,
+          "df_sessions": 1,
+          "mass": 5.127887004945917,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:apply for eu settlement scheme",
+          "kind": "query",
+          "text": "apply for eu settlement scheme",
+          "cosine": 0.5375485627129809,
+          "psignal": 0.8157169062653099,
+          "df_sessions": 2,
+          "mass": 9.73522742066167,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:eu settlement scheme login",
+          "kind": "query",
+          "text": "eu settlement scheme login",
+          "cosine": 0.005982418461781706,
+          "psignal": 0.7860141995532219,
+          "df_sessions": 6,
+          "mass": 25.76316923078119,
+          "reason": "session-context-gated"
+        }
+      ],
+      "llm_judge": {
+        "model": "claude-sonnet-4-5",
+        "drop_queries": [
+          "apply for uk travel visa",
+          "apply for a schengen visa from uk",
+          "apply for german schengen visa from uk",
+          "apply for schengen visa",
+          "apply for a us visa",
+          "apply for 5 year schengen visa",
+          "apply for british passport",
+          "apply for french schengen visa from uk"
+        ],
+        "rationale": "The current label 'Settlement' is ambiguous and could refer to many contexts (legal settlements, residential settlements, immigration settlements, etc.). Examining the evidence, only 2 queries explicitly mention 'EU settlement scheme' - a specific UK immigration status for EU citizens. The remaining 8 queries are about various visa applications (Schengen, US, UK travel) and passport applications. These are related to immigration/travel but are NOT about settlement schemes. The word-overlap bridge here is 'apply for' which connects immigration-related queries, but settlement schemes are fundamentally different from visa applications - they grant residency rights rather than temporary travel permission. The topic should be narrowly defined around the EU Settlement Scheme specifically."
+      }
+    },
+    {
+      "suit_id": 2,
+      "label": "Russia-Ukraine Conflict",
+      "mass": 145.3162580713035,
+      "top_queries": [
+        "russia-ukraine news",
+        "russia ukraine",
+        "russia ukraine history",
+        "ukraine",
+        "ukraine. news",
+        "russia",
+        "russia news",
+        "ukraine conflict in pictures",
+        "why support ukraine and not palestine",
+        "ukraine resistance"
+      ],
+      "top_domains": [],
+      "top_sessions": [
+        "s5981",
+        "s5966",
+        "s5967",
+        "s5973",
+        "s5975",
+        "s5985",
+        "s5999",
+        "s5951",
+        "s5952",
+        "s5955"
+      ],
+      "paragraph": "This topic centers on the Russia-Ukraine conflict and related geopolitical matters. The user has consistently searched for news updates about the conflict, historical context of Russia-Ukraine relations, visual documentation of the conflict, Ukraine's resistance efforts, and comparative geopolitical questions (e.g., support for Ukraine vs Palestine). All queries demonstrate a clear interest in understanding the ongoing conflict, its background, and current developments. No spurious queries were found that might have been caused by word overlap with other topic labels in the system.",
+      "evidence_primary": [
+        {
+          "item_id": "q:russia-ukraine news",
+          "kind": "query",
+          "text": "russia-ukraine news",
+          "cosine": 0.9758139332782756,
+          "psignal": 0.7545245834146334,
+          "df_sessions": 1,
+          "mass": 7.1722748765038755,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:russia ukraine",
+          "kind": "query",
+          "text": "russia ukraine",
+          "cosine": 0.9758139332782756,
+          "psignal": 0.7638529644293786,
+          "df_sessions": 5,
+          "mass": 20.21115470482087,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:russia ukraine history",
+          "kind": "query",
+          "text": "russia ukraine history",
+          "cosine": 0.7379096866698195,
+          "psignal": 0.8250718706117705,
+          "df_sessions": 1,
+          "mass": 5.127887004946449,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:ukraine",
+          "kind": "query",
+          "text": "ukraine",
+          "cosine": 0.6490047623090058,
+          "psignal": 0.45618401058973274,
+          "df_sessions": 68,
+          "mass": 100.21973544026024,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:ukraine. news",
+          "kind": "query",
+          "text": "ukraine. news",
+          "cosine": 0.6490047623090058,
+          "psignal": 0.7792345444668765,
+          "df_sessions": 1,
+          "mass": 4.6365155271162255,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:russia",
+          "kind": "query",
+          "text": "russia",
+          "cosine": 0.4774657117539422,
+          "psignal": 0.4844313836586017,
+          "df_sessions": 9,
+          "mass": 18.105344093905007,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:russia news",
+          "kind": "query",
+          "text": "russia news",
+          "cosine": 0.4774657117539422,
+          "psignal": 0.7792345444669093,
+          "df_sessions": 1,
+          "mass": 4.636515527116373,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:ukraine conflict in pictures",
+          "kind": "query",
+          "text": "ukraine conflict in pictures",
+          "cosine": 0.40785099945550607,
+          "psignal": 0.8011251343142678,
+          "df_sessions": 1,
+          "mass": 7.946472057984636,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:why support ukraine and not palestine",
+          "kind": "query",
+          "text": "why support ukraine and not palestine",
+          "cosine": 0.3434708025751752,
+          "psignal": 0.8250718706119371,
+          "df_sessions": 1,
+          "mass": 5.127887004947245,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:ukraine resistance",
+          "kind": "query",
+          "text": "ukraine resistance",
+          "cosine": 0.34064561237416074,
+          "psignal": 0.7792345444668295,
+          "df_sessions": 1,
+          "mass": 4.636515527116014,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:western ukraine",
+          "kind": "query",
+          "text": "western ukraine",
+          "cosine": 0.33302153217609753,
+          "psignal": 0.779234544466778,
+          "df_sessions": 1,
+          "mass": 4.636515527115781,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:ukraine plane crash",
+          "kind": "query",
+          "text": "ukraine plane crash",
+          "cosine": 0.3128872081455518,
+          "psignal": 0.8191535655228741,
+          "df_sessions": 2,
+          "mass": 9.766620991733893,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:bella hadid ukraine",
+          "kind": "query",
+          "text": "bella hadid ukraine",
+          "cosine": 0.27928600040329893,
+          "psignal": 0.797719812882648,
+          "df_sessions": 1,
+          "mass": 7.920727937973202,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:ukraine resistance magazine",
+          "kind": "query",
+          "text": "ukraine resistance magazine",
+          "cosine": 0.2580695875622804,
+          "psignal": 0.8250718706119371,
+          "df_sessions": 1,
+          "mass": 5.127887004947245,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:ukraine peace talks",
+          "kind": "query",
+          "text": "ukraine peace talks",
+          "cosine": 0.2554591118212001,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:russia covid vaccine",
+          "kind": "query",
+          "text": "russia covid vaccine",
+          "cosine": 0.2538399625008394,
+          "psignal": 0.600071870612636,
+          "df_sessions": 1,
+          "mass": 4.054680080229913,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:russia pipeline",
+          "kind": "query",
+          "text": "russia pipeline",
+          "cosine": 0.23288178088548453,
+          "psignal": 0.7792345444669093,
+          "df_sessions": 1,
+          "mass": 4.636515527116373,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:is russia threatening the uk",
+          "kind": "query",
+          "text": "is russia threatening the uk",
+          "cosine": 0.23288178088548453,
+          "psignal": 0.7924707272427438,
+          "df_sessions": 1,
+          "mass": 7.881045020111401,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:surface area of russia",
+          "kind": "query",
+          "text": "surface area of russia",
+          "cosine": 0.19335946172341756,
+          "psignal": 0.600071870612636,
+          "df_sessions": 1,
+          "mass": 4.054680080229913,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:russia romanian plane",
+          "kind": "query",
+          "text": "russia romanian plane",
+          "cosine": 0.19112328223133726,
+          "psignal": 0.7979699820254906,
+          "df_sessions": 1,
+          "mass": 7.922619208611178,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:russia nuclear threat",
+          "kind": "query",
+          "text": "russia nuclear threat",
+          "cosine": 0.18950696373340553,
+          "psignal": 0.8226679083299401,
+          "df_sessions": 2,
+          "mass": 9.7987241949953,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:lithuania france russia",
+          "kind": "query",
+          "text": "lithuania france russia",
+          "cosine": 0.18723354276912726,
+          "psignal": 0.7953402167434723,
+          "df_sessions": 1,
+          "mass": 7.902738268035774,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:russia investigates britain",
+          "kind": "query",
+          "text": "russia investigates britain",
+          "cosine": 0.18126435666751572,
+          "psignal": 0.7957488460871704,
+          "df_sessions": 1,
+          "mass": 7.905827492673037,
+          "reason": "semantic-affinity"
+        }
+      ],
+      "evidence_supporting": [
+        {
+          "item_id": "q:russia ukraine history",
+          "kind": "query",
+          "text": "russia ukraine history",
+          "cosine": 0.7379096866698195,
+          "psignal": 0.8250718706117705,
+          "df_sessions": 1,
+          "mass": 5.127887004946449,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:ukraine",
+          "kind": "query",
+          "text": "ukraine",
+          "cosine": 0.6490047623090058,
+          "psignal": 0.45618401058973274,
+          "df_sessions": 68,
+          "mass": 100.21973544026024,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:russia",
+          "kind": "query",
+          "text": "russia",
+          "cosine": 0.4774657117539422,
+          "psignal": 0.4844313836586017,
+          "df_sessions": 9,
+          "mass": 18.105344093905007,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:ukraine peace talks",
+          "kind": "query",
+          "text": "ukraine peace talks",
+          "cosine": 0.2554591118212001,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:russia investigates britain",
+          "kind": "query",
+          "text": "russia investigates britain",
+          "cosine": 0.18126435666751572,
+          "psignal": 0.7957488460871704,
+          "df_sessions": 1,
+          "mass": 7.905827492673037,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:ukraine conflict in pictures",
+          "kind": "query",
+          "text": "ukraine conflict in pictures",
+          "cosine": 0.40785099945550607,
+          "psignal": 0.8011251343142678,
+          "df_sessions": 1,
+          "mass": 7.946472057984636,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:why support ukraine and not palestine",
+          "kind": "query",
+          "text": "why support ukraine and not palestine",
+          "cosine": 0.3434708025751752,
+          "psignal": 0.8250718706119371,
+          "df_sessions": 1,
+          "mass": 5.127887004947245,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:russia-ukraine news",
+          "kind": "query",
+          "text": "russia-ukraine news",
+          "cosine": 0.9758139332782756,
+          "psignal": 0.7545245834146334,
+          "df_sessions": 1,
+          "mass": 7.1722748765038755,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:russia ukraine",
+          "kind": "query",
+          "text": "russia ukraine",
+          "cosine": 0.9758139332782756,
+          "psignal": 0.7638529644293786,
+          "df_sessions": 5,
+          "mass": 20.21115470482087,
+          "reason": "session-context-gated"
+        }
+      ],
+      "llm_judge": {
+        "model": "claude-sonnet-4-5",
+        "drop_queries": [],
+        "rationale": "All queries directly relate to Ukraine, Russia, and the Russia-Ukraine conflict. There are no off-topic queries caused by word-overlap bridges - no queries about 'Settlement', 'Dental', 'Sku Cloud', 'Otta', 'Student Records', or 'Drive' appear in the evidence. The topic is clearly focused on geopolitical news and information about Ukraine and its conflict with Russia."
+      }
+    },
+    {
+      "suit_id": 3,
+      "label": "UK Settled Status",
+      "mass": 142.55989970774317,
+      "top_queries": [
+        "check settled status employer",
+        "how do i check my settled status uk",
+        "check settled status",
+        "eu settled status",
+        "uk settled status",
+        "eu settled status login",
+        "settled status uk",
+        "check.settled status",
+        "uk settled status check"
+      ],
+      "top_domains": [
+        "settled.org.uk",
+        "eu-settled-status-enquiries.service.gov.uk"
+      ],
+      "top_sessions": [
+        "s4581",
+        "s8526",
+        "s3930",
+        "s3985",
+        "s3988",
+        "s3992",
+        "s3998",
+        "s4006",
+        "s4009",
+        "s4031"
+      ],
+      "paragraph": "This topic captures the user's interest in UK Settled Status, specifically the EU Settlement Scheme that allows EU, EEA, and Swiss citizens to continue living in the UK after Brexit. The queries show the user is seeking information on how to check their settled status, how employers verify it, and how to access the online system. One query about translating 'employer' to German appears unrelated to the immigration status theme and was likely included due to word overlap.",
+      "evidence_primary": [
+        {
+          "item_id": "q:check settled status employer",
+          "kind": "query",
+          "text": "check settled status employer",
+          "cosine": 0.9979513303420255,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:employer in german",
+          "kind": "query",
+          "text": "employer in german",
+          "cosine": 0.5562844708208722,
+          "psignal": 0.600071870612636,
+          "df_sessions": 1,
+          "mass": 4.054680080229913,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "d:settled.org.uk",
+          "kind": "domain",
+          "text": "settled.org.uk",
+          "cosine": 0.5193863164334418,
+          "psignal": 1.0,
+          "df_sessions": 1,
+          "mass": 5.962260692892584,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:how do i check my settled status uk",
+          "kind": "query",
+          "text": "how do i check my settled status uk",
+          "cosine": 0.5193863164334418,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:check settled status",
+          "kind": "query",
+          "text": "check settled status",
+          "cosine": 0.5193863164334418,
+          "psignal": 0.76815541610849,
+          "df_sessions": 17,
+          "mass": 63.578944215205304,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:eu settled status",
+          "kind": "query",
+          "text": "eu settled status",
+          "cosine": 0.5193863164334418,
+          "psignal": 0.815473501077734,
+          "df_sessions": 2,
+          "mass": 9.733003936317479,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:uk settled status",
+          "kind": "query",
+          "text": "uk settled status",
+          "cosine": 0.5193863164334418,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:eu settled status login",
+          "kind": "query",
+          "text": "eu settled status login",
+          "cosine": 0.5193863164334418,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:settled status uk",
+          "kind": "query",
+          "text": "settled status uk",
+          "cosine": 0.5193863164334418,
+          "psignal": 0.8250718706119371,
+          "df_sessions": 1,
+          "mass": 5.127887004947245,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:check.settled status",
+          "kind": "query",
+          "text": "check.settled status",
+          "cosine": 0.5193863164334418,
+          "psignal": 0.7701694176845264,
+          "df_sessions": 2,
+          "mass": 8.801424391014926,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:uk settled status check",
+          "kind": "query",
+          "text": "uk settled status check",
+          "cosine": 0.5193863164334418,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:eu settled status check",
+          "kind": "query",
+          "text": "eu settled status check",
+          "cosine": 0.5193863164334418,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:how can i get settled status in uk",
+          "kind": "query",
+          "text": "how can i get settled status in uk",
+          "cosine": 0.5193863164334418,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:pre settled to settled status",
+          "kind": "query",
+          "text": "pre settled to settled status",
+          "cosine": 0.400067079555125,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:switch from pre settled to settled status",
+          "kind": "query",
+          "text": "switch from pre settled to settled status",
+          "cosine": 0.3592686435489276,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:switch pre settled to settled",
+          "kind": "query",
+          "text": "switch pre settled to settled",
+          "cosine": 0.3592686435489276,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:switch pre settled to settled status",
+          "kind": "query",
+          "text": "switch pre settled to settled status",
+          "cosine": 0.3592686435489276,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:pre settled to settled status application",
+          "kind": "query",
+          "text": "pre settled to settled status application",
+          "cosine": 0.348533082355497,
+          "psignal": 0.8250718706118267,
+          "df_sessions": 1,
+          "mass": 5.127887004946718,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:how to change pre settled to settled",
+          "kind": "query",
+          "text": "how to change pre settled to settled",
+          "cosine": 0.3423000295914045,
+          "psignal": 0.8250718706118267,
+          "df_sessions": 1,
+          "mass": 5.127887004946718,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:pre settled to settled timing",
+          "kind": "query",
+          "text": "pre settled to settled timing",
+          "cosine": 0.3345243029189898,
+          "psignal": 0.8250718706119371,
+          "df_sessions": 1,
+          "mass": 5.127887004947245,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:eu pre-settled status",
+          "kind": "query",
+          "text": "eu pre-settled status",
+          "cosine": 0.3103331553587039,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:pre settled status",
+          "kind": "query",
+          "text": "pre settled status",
+          "cosine": 0.3103331553587039,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:check pre settled status",
+          "kind": "query",
+          "text": "check pre settled status",
+          "cosine": 0.3103331553587039,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:schengen visa employer letter",
+          "kind": "query",
+          "text": "schengen visa employer letter",
+          "cosine": 0.30264842532671726,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:settled status application",
+          "kind": "query",
+          "text": "settled status application",
+          "cosine": 0.2805205617402126,
+          "psignal": 0.8250718706118827,
+          "df_sessions": 1,
+          "mass": 5.127887004946985,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:settled status application check",
+          "kind": "query",
+          "text": "settled status application check",
+          "cosine": 0.2805205617402126,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:check eu settled status application",
+          "kind": "query",
+          "text": "check eu settled status application",
+          "cosine": 0.2805205617402126,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:check uk settled.status application status",
+          "kind": "query",
+          "text": "check uk settled.status application status",
+          "cosine": 0.2805205617402126,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:uk settled status switch",
+          "kind": "query",
+          "text": "uk settled status switch",
+          "cosine": 0.27103383263403946,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:uk switch to settled status",
+          "kind": "query",
+          "text": "uk switch to settled status",
+          "cosine": 0.27103383263403946,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:pre settled to settled timing for application response",
+          "kind": "query",
+          "text": "pre settled to settled timing for application response",
+          "cosine": 0.2686608765782965,
+          "psignal": 0.8250718706119371,
+          "df_sessions": 1,
+          "mass": 5.127887004947245,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:european settled status check",
+          "kind": "query",
+          "text": "european settled status check",
+          "cosine": 0.26123982592533723,
+          "psignal": 0.8163314593253198,
+          "df_sessions": 2,
+          "mass": 9.740841307207042,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:eu settled status delays",
+          "kind": "query",
+          "text": "eu settled status delays",
+          "cosine": 0.2512822710929678,
+          "psignal": 0.7729297356799363,
+          "df_sessions": 2,
+          "mass": 14.81047682336492,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:how long is pre-settled to settled application taking for non-european family member",
+          "kind": "query",
+          "text": "how long is pre-settled to settled application taking for non-european family member",
+          "cosine": 0.21988610702279937,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:can your employer pay into your sipp",
+          "kind": "query",
+          "text": "can your employer pay into your sipp",
+          "cosine": 0.2043648717299677,
+          "psignal": 0.8231942951311626,
+          "df_sessions": 2,
+          "mass": 9.803532690751545,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "d:eu-settled-status-enquiries.service.gov.uk",
+          "kind": "domain",
+          "text": "eu-settled-status-enquiries.service.gov.uk",
+          "cosine": 0.18814958668387036,
+          "psignal": 1.0,
+          "df_sessions": 1,
+          "mass": 5.962260692892584,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:german shares settled at clearstream",
+          "kind": "query",
+          "text": "german shares settled at clearstream",
+          "cosine": 0.18762546311448702,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        }
+      ],
+      "evidence_supporting": [
+        {
+          "item_id": "q:uk settled status",
+          "kind": "query",
+          "text": "uk settled status",
+          "cosine": 0.5193863164334418,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:eu settled status",
+          "kind": "query",
+          "text": "eu settled status",
+          "cosine": 0.5193863164334418,
+          "psignal": 0.815473501077734,
+          "df_sessions": 2,
+          "mass": 9.733003936317479,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:eu settled status login",
+          "kind": "query",
+          "text": "eu settled status login",
+          "cosine": 0.5193863164334418,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:switch pre settled to settled",
+          "kind": "query",
+          "text": "switch pre settled to settled",
+          "cosine": 0.3592686435489276,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:switch pre settled to settled status",
+          "kind": "query",
+          "text": "switch pre settled to settled status",
+          "cosine": 0.3592686435489276,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:check settled status employer",
+          "kind": "query",
+          "text": "check settled status employer",
+          "cosine": 0.9979513303420255,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:check settled status",
+          "kind": "query",
+          "text": "check settled status",
+          "cosine": 0.5193863164334418,
+          "psignal": 0.76815541610849,
+          "df_sessions": 17,
+          "mass": 63.578944215205304,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:settled status uk",
+          "kind": "query",
+          "text": "settled status uk",
+          "cosine": 0.5193863164334418,
+          "psignal": 0.8250718706119371,
+          "df_sessions": 1,
+          "mass": 5.127887004947245,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:pre settled to settled timing",
+          "kind": "query",
+          "text": "pre settled to settled timing",
+          "cosine": 0.3345243029189898,
+          "psignal": 0.8250718706119371,
+          "df_sessions": 1,
+          "mass": 5.127887004947245,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:pre settled to settled timing for application response",
+          "kind": "query",
+          "text": "pre settled to settled timing for application response",
+          "cosine": 0.2686608765782965,
+          "psignal": 0.8250718706119371,
+          "df_sessions": 1,
+          "mass": 5.127887004947245,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:eu settled status check",
+          "kind": "query",
+          "text": "eu settled status check",
+          "cosine": 0.5193863164334418,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:check.settled status",
+          "kind": "query",
+          "text": "check.settled status",
+          "cosine": 0.5193863164334418,
+          "psignal": 0.7701694176845264,
+          "df_sessions": 2,
+          "mass": 8.801424391014926,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:switch from pre settled to settled status",
+          "kind": "query",
+          "text": "switch from pre settled to settled status",
+          "cosine": 0.3592686435489276,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:www.gov.uk/settled-status-eu-citizens-families/eligibility",
+          "kind": "query",
+          "text": "www.gov.uk/settled-status-eu-citizens-families/eligibility",
+          "cosine": 0.13502157364696324,
+          "psignal": 0.6257470608762661,
+          "df_sessions": 1,
+          "mass": 5.149370713294202,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:eu settled status delays",
+          "kind": "query",
+          "text": "eu settled status delays",
+          "cosine": 0.2512822710929678,
+          "psignal": 0.7729297356799363,
+          "df_sessions": 2,
+          "mass": 14.81047682336492,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:pre settled to settled status application",
+          "kind": "query",
+          "text": "pre settled to settled status application",
+          "cosine": 0.348533082355497,
+          "psignal": 0.8250718706118267,
+          "df_sessions": 1,
+          "mass": 5.127887004946718,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:how to change pre settled to settled",
+          "kind": "query",
+          "text": "how to change pre settled to settled",
+          "cosine": 0.3423000295914045,
+          "psignal": 0.8250718706118267,
+          "df_sessions": 1,
+          "mass": 5.127887004946718,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:eu pre-settled status",
+          "kind": "query",
+          "text": "eu pre-settled status",
+          "cosine": 0.3103331553587039,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:pre settled status",
+          "kind": "query",
+          "text": "pre settled status",
+          "cosine": 0.3103331553587039,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:employer in german",
+          "kind": "query",
+          "text": "employer in german",
+          "cosine": 0.5562844708208722,
+          "psignal": 0.600071870612636,
+          "df_sessions": 1,
+          "mass": 4.054680080229913,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:how do i check my settled status uk",
+          "kind": "query",
+          "text": "how do i check my settled status uk",
+          "cosine": 0.5193863164334418,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "session-context-gated"
+        }
+      ],
+      "llm_judge": {
+        "model": "claude-sonnet-4-5",
+        "drop_queries": [
+          "employer in german"
+        ],
+        "rationale": "The topic is clearly about UK/EU Settled Status, which is an immigration status for EU citizens in the UK post-Brexit. All queries except 'employer in german' directly relate to checking, managing, or understanding settled status. The query 'employer in german' appears to be off-topic and likely bridged through the word 'employer' which appears in 'check settled status employer', but it's asking about a German translation unrelated to immigration status."
+      }
+    },
+    {
+      "suit_id": 4,
+      "label": "Zoom Video Conferencing",
+      "mass": 126.6781450592261,
+      "top_queries": [
+        "zoom",
+        "zoom.us",
+        "download zoom",
+        "zoom download",
+        "zoom premium",
+        "zoom cloud",
+        "zoom uk dial in number"
+      ],
+      "top_domains": [
+        "zoom.us"
+      ],
+      "top_sessions": [
+        "s9954",
+        "s3659",
+        "s6844",
+        "s7125",
+        "s7129",
+        "s8920",
+        "s6174",
+        "s5121",
+        "s6885",
+        "s9839"
+      ],
+      "paragraph": "This topic captures the user's interest in Zoom video conferencing platform. The queries demonstrate practical engagement with Zoom services including downloading the software, accessing the platform (zoom.us), exploring premium subscription options, and using Zoom's cloud features. The user also searched for UK dial-in numbers, suggesting active use of Zoom's telephony features. The AI notetaker queries have been excluded as they represent separate third-party applications (Read AI and Fathom) that integrate with Zoom rather than being part of the core Zoom platform itself.",
+      "evidence_primary": [
+        {
+          "item_id": "q:zoom notetaker read ai",
+          "kind": "query",
+          "text": "zoom notetaker read ai",
+          "cosine": 0.9912370276871965,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:zoom notetaker ai",
+          "kind": "query",
+          "text": "zoom notetaker ai",
+          "cosine": 0.8384306265298483,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "d:zoom.us",
+          "kind": "domain",
+          "text": "zoom.us",
+          "cosine": 0.42509923852527565,
+          "psignal": 1.0,
+          "df_sessions": 7,
+          "mass": 35.68211687487876,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "d:support.zoom.us",
+          "kind": "domain",
+          "text": "support.zoom.us",
+          "cosine": 0.42509923852527565,
+          "psignal": 1.0,
+          "df_sessions": 1,
+          "mass": 5.962260692892584,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "d:zoom.com",
+          "kind": "domain",
+          "text": "zoom.com",
+          "cosine": 0.42509923852527565,
+          "psignal": 1.0,
+          "df_sessions": 1,
+          "mass": 9.449959617758484,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:download zoom",
+          "kind": "query",
+          "text": "download zoom",
+          "cosine": 0.42509923852527565,
+          "psignal": 0.7792345444668765,
+          "df_sessions": 1,
+          "mass": 4.6365155271162255,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:zoom.us",
+          "kind": "query",
+          "text": "zoom.us",
+          "cosine": 0.42509923852527565,
+          "psignal": 0.5042105875962354,
+          "df_sessions": 1,
+          "mass": 2.1984356242876886,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:zoom",
+          "kind": "query",
+          "text": "zoom",
+          "cosine": 0.42509923852527565,
+          "psignal": 0.4984936649399116,
+          "df_sessions": 2,
+          "mass": 4.178424458327643,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:zoom download",
+          "kind": "query",
+          "text": "zoom download",
+          "cosine": 0.42509923852527565,
+          "psignal": 0.7724168140381925,
+          "df_sessions": 2,
+          "mass": 8.820813610825427,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "d:read.ai",
+          "kind": "domain",
+          "text": "read.ai",
+          "cosine": 0.3425464766050165,
+          "psignal": 1.0,
+          "df_sessions": 1,
+          "mass": 5.962260692892584,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:zoom uk dial in number",
+          "kind": "query",
+          "text": "zoom uk dial in number",
+          "cosine": 0.22841247096939193,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:ai notetaker by fathom review",
+          "kind": "query",
+          "text": "ai notetaker by fathom review",
+          "cosine": 0.22548630632343888,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:zoom premium",
+          "kind": "query",
+          "text": "zoom premium",
+          "cosine": 0.2136629498022891,
+          "psignal": 0.7792345444668765,
+          "df_sessions": 1,
+          "mass": 4.6365155271162255,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:zoom cloud",
+          "kind": "query",
+          "text": "zoom cloud",
+          "cosine": 0.21362394593879946,
+          "psignal": 0.764892000857696,
+          "df_sessions": 3,
+          "mass": 12.720994726236901,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:tdr capital zoom uk number",
+          "kind": "query",
+          "text": "tdr capital zoom uk number",
+          "cosine": 0.20416627287126848,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "d:explore.zoom.us",
+          "kind": "domain",
+          "text": "explore.zoom.us",
+          "cosine": 0.2017229615632377,
+          "psignal": 1.0,
+          "df_sessions": 1,
+          "mass": 5.962260692892584,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "d:devforum.zoom.us",
+          "kind": "domain",
+          "text": "devforum.zoom.us",
+          "cosine": 0.19510434205321986,
+          "psignal": 1.0,
+          "df_sessions": 1,
+          "mass": 5.962260692892584,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:read google calendar api",
+          "kind": "query",
+          "text": "read google calendar api",
+          "cosine": 0.1888589518705262,
+          "psignal": 0.600071870612636,
+          "df_sessions": 1,
+          "mass": 4.054680080229913,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:read google calendar api ios",
+          "kind": "query",
+          "text": "read google calendar api ios",
+          "cosine": 0.1888589518705262,
+          "psignal": 0.600071870612636,
+          "df_sessions": 1,
+          "mass": 4.054680080229913,
+          "reason": "semantic-affinity"
+        }
+      ],
+      "evidence_supporting": [
+        {
+          "item_id": "q:zoom notetaker read ai",
+          "kind": "query",
+          "text": "zoom notetaker read ai",
+          "cosine": 0.9912370276871965,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:zoom notetaker ai",
+          "kind": "query",
+          "text": "zoom notetaker ai",
+          "cosine": 0.8384306265298483,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "d:read.ai",
+          "kind": "domain",
+          "text": "read.ai",
+          "cosine": 0.3425464766050165,
+          "psignal": 1.0,
+          "df_sessions": 1,
+          "mass": 5.962260692892584,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:ai notetaker by fathom review",
+          "kind": "query",
+          "text": "ai notetaker by fathom review",
+          "cosine": 0.22548630632343888,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "d:zoom.us",
+          "kind": "domain",
+          "text": "zoom.us",
+          "cosine": 0.42509923852527565,
+          "psignal": 1.0,
+          "df_sessions": 7,
+          "mass": 35.68211687487876,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:zoom",
+          "kind": "query",
+          "text": "zoom",
+          "cosine": 0.42509923852527565,
+          "psignal": 0.4984936649399116,
+          "df_sessions": 2,
+          "mass": 4.178424458327643,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:zoom cloud",
+          "kind": "query",
+          "text": "zoom cloud",
+          "cosine": 0.21362394593879946,
+          "psignal": 0.764892000857696,
+          "df_sessions": 3,
+          "mass": 12.720994726236901,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:download zoom",
+          "kind": "query",
+          "text": "download zoom",
+          "cosine": 0.42509923852527565,
+          "psignal": 0.7792345444668765,
+          "df_sessions": 1,
+          "mass": 4.6365155271162255,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:have zoom as a small window on top of screen",
+          "kind": "query",
+          "text": "have zoom as a small window on top of screen",
+          "cosine": 0.11774305541409591,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:zoom.us",
+          "kind": "query",
+          "text": "zoom.us",
+          "cosine": 0.42509923852527565,
+          "psignal": 0.5042105875962354,
+          "df_sessions": 1,
+          "mass": 2.1984356242876886,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:zoom download",
+          "kind": "query",
+          "text": "zoom download",
+          "cosine": 0.42509923852527565,
+          "psignal": 0.7724168140381925,
+          "df_sessions": 2,
+          "mass": 8.820813610825427,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "d:support.zoom.us",
+          "kind": "domain",
+          "text": "support.zoom.us",
+          "cosine": 0.42509923852527565,
+          "psignal": 1.0,
+          "df_sessions": 1,
+          "mass": 5.962260692892584,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:read google calendar api",
+          "kind": "query",
+          "text": "read google calendar api",
+          "cosine": 0.1888589518705262,
+          "psignal": 0.600071870612636,
+          "df_sessions": 1,
+          "mass": 4.054680080229913,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:read google calendar api ios",
+          "kind": "query",
+          "text": "read google calendar api ios",
+          "cosine": 0.1888589518705262,
+          "psignal": 0.600071870612636,
+          "df_sessions": 1,
+          "mass": 4.054680080229913,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:zoom uk dial in number",
+          "kind": "query",
+          "text": "zoom uk dial in number",
+          "cosine": 0.22841247096939193,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:zoom premium",
+          "kind": "query",
+          "text": "zoom premium",
+          "cosine": 0.2136629498022891,
+          "psignal": 0.7792345444668765,
+          "df_sessions": 1,
+          "mass": 4.6365155271162255,
+          "reason": "session-context-gated"
+        }
+      ],
+      "llm_judge": {
+        "model": "claude-sonnet-4-5",
+        "drop_queries": [
+          "zoom notetaker read ai",
+          "zoom notetaker ai",
+          "ai notetaker by fathom review"
+        ],
+        "rationale": "The current label 'Sku_Cloud Sku Cloud' is generic and doesn't reflect the actual topic. The evidence shows clear interest in Zoom video conferencing platform - searching for the service, downloading it, and exploring features like premium plans and cloud storage. The notetaker queries (read ai, fathom) are dropped because they represent third-party AI notetaking tools that integrate with Zoom, not Zoom itself. These queries share only the word 'zoom' but are about separate products (Read AI, Fathom) that happen to work with Zoom meetings. The core topic is specifically about Zoom video conferencing software."
+      }
+    },
+    {
+      "suit_id": 5,
+      "label": "Otta Job Platform",
+      "mass": 119.26063483887852,
+      "top_queries": [
+        "otta",
+        "otta cleo",
+        "otta deliveroo finance and atratevy associate",
+        "otta deliveroo finance and strategy associate",
+        "lendable otta",
+        "otta checkout.com",
+        "otta cleo commercial associate"
+      ],
+      "top_domains": [
+        "app.otta.com",
+        "otta.com",
+        "deliveroo.co.uk"
+      ],
+      "top_sessions": [
+        "s3708",
+        "s3282",
+        "s3586",
+        "s3602",
+        "s3641",
+        "s3784",
+        "s3790",
+        "s3791",
+        "s3792",
+        "s3802"
+      ],
+      "paragraph": "This topic represents user activity on Otta, a job search and career platform. The user searched for Otta generally and then specifically looked for positions at multiple companies through the platform: commercial associate roles at Cleo, finance and strategy associate positions at Deliveroo, and opportunities at Lendable and Checkout.com. All core queries show the characteristic 'otta [company]' or 'otta [company] [role]' pattern. The two dropped queries about Deliveroo pricing and the general Deliveroo search are unrelated to job searching and instead concern the food delivery service itself.",
+      "evidence_primary": [
+        {
+          "item_id": "d:app.otta.com",
+          "kind": "domain",
+          "text": "app.otta.com",
+          "cosine": 0.8329770526115675,
+          "psignal": 1.0,
+          "df_sessions": 11,
+          "mass": 58.1340356518713,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "d:otta.com",
+          "kind": "domain",
+          "text": "otta.com",
+          "cosine": 0.8329770526115675,
+          "psignal": 1.0,
+          "df_sessions": 91,
+          "mass": 325.2185211253372,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:otta",
+          "kind": "query",
+          "text": "otta",
+          "cosine": 0.8329770526115675,
+          "psignal": 0.43558361094494547,
+          "df_sessions": 91,
+          "mass": 109.00486082898321,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:otta cleo",
+          "kind": "query",
+          "text": "otta cleo",
+          "cosine": 0.8329770526115675,
+          "psignal": 0.7792345444668765,
+          "df_sessions": 1,
+          "mass": 4.6365155271162255,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:otta deliveroo finance and atratevy associate",
+          "kind": "query",
+          "text": "otta deliveroo finance and atratevy associate",
+          "cosine": 0.7638778573533979,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:otta deliveroo finance and strategy associate",
+          "kind": "query",
+          "text": "otta deliveroo finance and strategy associate",
+          "cosine": 0.6789286157245461,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:lendable otta",
+          "kind": "query",
+          "text": "lendable otta",
+          "cosine": 0.46429250227660396,
+          "psignal": 0.7792345444668765,
+          "df_sessions": 1,
+          "mass": 4.6365155271162255,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:otta checkout.com",
+          "kind": "query",
+          "text": "otta checkout.com",
+          "cosine": 0.44755564816350996,
+          "psignal": 0.7792345444665666,
+          "df_sessions": 1,
+          "mass": 4.636515527114829,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:otta cleo commercial associate",
+          "kind": "query",
+          "text": "otta cleo commercial associate",
+          "cosine": 0.44423811633623045,
+          "psignal": 0.8250718706116589,
+          "df_sessions": 1,
+          "mass": 5.127887004945917,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "d:deliveroo.co.uk",
+          "kind": "domain",
+          "text": "deliveroo.co.uk",
+          "cosine": 0.19481973764410776,
+          "psignal": 1.0,
+          "df_sessions": 2,
+          "mass": 11.418636792084076,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:deliveroo price",
+          "kind": "query",
+          "text": "deliveroo price",
+          "cosine": 0.19481973764410776,
+          "psignal": 0.7581331039264732,
+          "df_sessions": 2,
+          "mass": 11.241461818213812,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:deliveroo",
+          "kind": "query",
+          "text": "deliveroo",
+          "cosine": 0.19481973764410776,
+          "psignal": 0.6393253730503096,
+          "df_sessions": 2,
+          "mass": 6.318594131015389,
+          "reason": "semantic-affinity"
+        }
+      ],
+      "evidence_supporting": [
+        {
+          "item_id": "q:otta deliveroo finance and atratevy associate",
+          "kind": "query",
+          "text": "otta deliveroo finance and atratevy associate",
+          "cosine": 0.7638778573533979,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:otta deliveroo finance and strategy associate",
+          "kind": "query",
+          "text": "otta deliveroo finance and strategy associate",
+          "cosine": 0.6789286157245461,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:deliveroo ipo",
+          "kind": "query",
+          "text": "deliveroo ipo",
+          "cosine": 0.10680615968748831,
+          "psignal": 0.7792345444669093,
+          "df_sessions": 1,
+          "mass": 4.636515527116373,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "d:otta.com",
+          "kind": "domain",
+          "text": "otta.com",
+          "cosine": 0.8329770526115675,
+          "psignal": 1.0,
+          "df_sessions": 91,
+          "mass": 325.2185211253372,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:otta",
+          "kind": "query",
+          "text": "otta",
+          "cosine": 0.8329770526115675,
+          "psignal": 0.43558361094494547,
+          "df_sessions": 91,
+          "mass": 109.00486082898321,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:commercial associate cleo",
+          "kind": "query",
+          "text": "commercial associate cleo",
+          "cosine": 0.09368572134876828,
+          "psignal": 0.8127810418918664,
+          "df_sessions": 3,
+          "mass": 14.104854988757848,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:monzo special projects associate",
+          "kind": "query",
+          "text": "monzo special projects associate",
+          "cosine": 0.05237117803140814,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "session-context-gated"
+        }
+      ],
+      "llm_judge": {
+        "model": "claude-sonnet-4-5",
+        "drop_queries": [
+          "deliveroo price",
+          "deliveroo"
+        ],
+        "rationale": "The core topic is clearly 'Otta' - a job/career platform used to search for positions at various companies (Cleo, Deliveroo, Lendable, Checkout.com). The queries 'deliveroo price' and 'deliveroo' are off-topic - they relate to the food delivery service Deliveroo directly, not to job searching via Otta. These appear due to word-overlap: 'deliveroo' appears in legitimate Otta job search queries, creating a bridge to unrelated Deliveroo service queries."
+      }
+    },
+    {
+      "suit_id": 6,
+      "label": "KCL Student Records",
+      "mass": 118.69690184574978,
+      "top_queries": [
+        "organise student event at kcl",
+        "kings college - organise student event",
+        "kcl student records",
+        "student records kcl",
+        "student records",
+        "student services kings"
+      ],
+      "top_domains": [],
+      "top_sessions": [
+        "s2612",
+        "s0730",
+        "s0056",
+        "s0258",
+        "s0304",
+        "s0315",
+        "s0337",
+        "s0423",
+        "s0436",
+        "s0444"
+      ],
+      "paragraph": "This topic centers on King's College London student services and records management. The user has searched for KCL-specific resources including student records systems, student services at Kings, and organizing student events at the university. Off-topic queries about Apple product events, fintech conferences, iPhone discounts, and entrepreneurship programs are included only due to shared words like 'event' and 'student' but lack the core KCL administrative context. The retained queries all relate directly to KCL's student administration infrastructure and campus life organization.",
+      "evidence_primary": [
+        {
+          "item_id": "q:organise student event at kcl",
+          "kind": "query",
+          "text": "organise student event at kcl",
+          "cosine": 0.9894203721644677,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:kings college - organise student event",
+          "kind": "query",
+          "text": "kings college - organise student event",
+          "cosine": 0.7373359577334718,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:apple event",
+          "kind": "query",
+          "text": "apple event",
+          "cosine": 0.3581256672945107,
+          "psignal": 0.7516198709094402,
+          "df_sessions": 4,
+          "mass": 16.31812907645335,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:fintech event london",
+          "kind": "query",
+          "text": "fintech event london",
+          "cosine": 0.3581256672945107,
+          "psignal": 0.8181032663597523,
+          "df_sessions": 2,
+          "mass": 9.757026604000517,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:kcl student records",
+          "kind": "query",
+          "text": "kcl student records",
+          "cosine": 0.26887767020522524,
+          "psignal": 0.7688261520837887,
+          "df_sessions": 22,
+          "mass": 79.59085973539449,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:student records kcl",
+          "kind": "query",
+          "text": "student records kcl",
+          "cosine": 0.26887767020522524,
+          "psignal": 0.8040799493875025,
+          "df_sessions": 3,
+          "mass": 13.989377159195369,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:student records",
+          "kind": "query",
+          "text": "student records",
+          "cosine": 0.21829940806144982,
+          "psignal": 0.7792345444667251,
+          "df_sessions": 1,
+          "mass": 4.636515527115544,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:student services kings",
+          "kind": "query",
+          "text": "student services kings",
+          "cosine": 0.21651558818741254,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:iphone 8 student discount",
+          "kind": "query",
+          "text": "iphone 8 student discount",
+          "cosine": 0.21207879143648165,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:entrepreneur first student",
+          "kind": "query",
+          "text": "entrepreneur first student",
+          "cosine": 0.20634931101093892,
+          "psignal": 0.8250718706119371,
+          "df_sessions": 1,
+          "mass": 5.127887004947245,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:kings student records",
+          "kind": "query",
+          "text": "kings student records",
+          "cosine": 0.1998168679401196,
+          "psignal": 0.815473501077734,
+          "df_sessions": 2,
+          "mass": 9.733003936317479,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:event dresses",
+          "kind": "query",
+          "text": "event dresses",
+          "cosine": 0.19355561655868977,
+          "psignal": 0.7792345444665666,
+          "df_sessions": 1,
+          "mass": 4.636515527114829,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:event gowns",
+          "kind": "query",
+          "text": "event gowns",
+          "cosine": 0.18175227923341877,
+          "psignal": 0.7792345444665666,
+          "df_sessions": 1,
+          "mass": 4.636515527114829,
+          "reason": "semantic-affinity"
+        }
+      ],
+      "evidence_supporting": [
+        {
+          "item_id": "q:organise student event at kcl",
+          "kind": "query",
+          "text": "organise student event at kcl",
+          "cosine": 0.9894203721644677,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:kings college - organise student event",
+          "kind": "query",
+          "text": "kings college - organise student event",
+          "cosine": 0.7373359577334718,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:kcl.employees",
+          "kind": "query",
+          "text": "kcl.employees",
+          "cosine": 0.1281423810921345,
+          "psignal": 0.6417225660315453,
+          "df_sessions": 1,
+          "mass": 3.30815794052501,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:employ kcl students",
+          "kind": "query",
+          "text": "employ kcl students",
+          "cosine": 0.09119551669103618,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:kcl student records",
+          "kind": "query",
+          "text": "kcl student records",
+          "cosine": 0.26887767020522524,
+          "psignal": 0.7688261520837887,
+          "df_sessions": 22,
+          "mass": 79.59085973539449,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:student records kcl",
+          "kind": "query",
+          "text": "student records kcl",
+          "cosine": 0.26887767020522524,
+          "psignal": 0.8040799493875025,
+          "df_sessions": 3,
+          "mass": 13.989377159195369,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:event dresses",
+          "kind": "query",
+          "text": "event dresses",
+          "cosine": 0.19355561655868977,
+          "psignal": 0.7792345444665666,
+          "df_sessions": 1,
+          "mass": 4.636515527114829,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:event gowns",
+          "kind": "query",
+          "text": "event gowns",
+          "cosine": 0.18175227923341877,
+          "psignal": 0.7792345444665666,
+          "df_sessions": 1,
+          "mass": 4.636515527114829,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:soles & heels london services",
+          "kind": "query",
+          "text": "soles & heels london services",
+          "cosine": 0.007572610320457247,
+          "psignal": 0.8250718706116589,
+          "df_sessions": 1,
+          "mass": 5.127887004945917,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:apple event",
+          "kind": "query",
+          "text": "apple event",
+          "cosine": 0.3581256672945107,
+          "psignal": 0.7516198709094402,
+          "df_sessions": 4,
+          "mass": 16.31812907645335,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:fintech event london",
+          "kind": "query",
+          "text": "fintech event london",
+          "cosine": 0.3581256672945107,
+          "psignal": 0.8181032663597523,
+          "df_sessions": 2,
+          "mass": 9.757026604000517,
+          "reason": "session-context-gated"
+        }
+      ],
+      "llm_judge": {
+        "model": "claude-sonnet-4-5",
+        "drop_queries": [
+          "apple event",
+          "fintech event london",
+          "iphone 8 student discount",
+          "entrepreneur first student"
+        ],
+        "rationale": "The topic is clearly about King's College London (KCL) student administration and services. The word 'event' creates a bridge to unrelated queries about Apple events and fintech events. The word 'student' creates bridges to iPhone student discounts and entrepreneurship programs. These are off-topic due to word overlap only."
+      }
+    },
+    {
+      "suit_id": 7,
+      "label": "Cloud Storage Services",
+      "mass": 115.92880391336512,
+      "top_queries": [
+        "download google drive",
+        "google drive",
+        "google drive app",
+        "one drive"
+      ],
+      "top_domains": [
+        "drive.google.com"
+      ],
+      "top_sessions": [
+        "s2717",
+        "s3050",
+        "s3676",
+        "s4577",
+        "s4906"
+      ],
+      "paragraph": "This topic focuses on the user's interest in cloud storage services, specifically Google Drive and OneDrive. The user has searched for information about downloading Google Drive, the Google Drive app, and OneDrive. Several queries about '1 Park Drive' and 'One Park Drive' (a residential building in Canary Wharf) appear due to word overlap with 'drive' but are off-topic for cloud storage. The ambiguous standalone query 'drive' has been removed as it lacks context to definitively place it in the cloud storage category.",
+      "evidence_primary": [
+        {
+          "item_id": "q:1 park drive buy flat",
+          "kind": "query",
+          "text": "1 park drive buy flat",
+          "cosine": 0.9955571375166645,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "d:drive.google.com",
+          "kind": "domain",
+          "text": "drive.google.com",
+          "cosine": 0.5365647773928885,
+          "psignal": 1.0,
+          "df_sessions": 4,
+          "mass": 21.562595157031932,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:drive",
+          "kind": "query",
+          "text": "drive",
+          "cosine": 0.5365647773928885,
+          "psignal": 0.48372050725900495,
+          "df_sessions": 26,
+          "mass": 40.46370298239636,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:one park drive",
+          "kind": "query",
+          "text": "one park drive",
+          "cosine": 0.5365647773928885,
+          "psignal": 0.7997338680649464,
+          "df_sessions": 6,
+          "mass": 26.104344228006333,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:park drive canary wharf",
+          "kind": "query",
+          "text": "park drive canary wharf",
+          "cosine": 0.5365647773928885,
+          "psignal": 0.8250718706119371,
+          "df_sessions": 1,
+          "mass": 5.127887004947245,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:1 park drive sale",
+          "kind": "query",
+          "text": "1 park drive sale",
+          "cosine": 0.5365647773928885,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:download google drive",
+          "kind": "query",
+          "text": "download google drive",
+          "cosine": 0.5365647773928885,
+          "psignal": 0.600071870612636,
+          "df_sessions": 1,
+          "mass": 4.054680080229913,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:one park drive buy",
+          "kind": "query",
+          "text": "one park drive buy",
+          "cosine": 0.5365647773928885,
+          "psignal": 0.8250718706118827,
+          "df_sessions": 1,
+          "mass": 5.127887004946985,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:google drive",
+          "kind": "query",
+          "text": "google drive",
+          "cosine": 0.5365647773928885,
+          "psignal": 0.776576152184325,
+          "df_sessions": 2,
+          "mass": 8.856697944912739,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:one drive",
+          "kind": "query",
+          "text": "one drive",
+          "cosine": 0.5365647773928885,
+          "psignal": 0.7792345444666191,
+          "df_sessions": 1,
+          "mass": 4.636515527115066,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:google drive app",
+          "kind": "query",
+          "text": "google drive app",
+          "cosine": 0.5365647773928885,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:google drive app for mac",
+          "kind": "query",
+          "text": "google drive app for mac",
+          "cosine": 0.5365647773928885,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:the drive",
+          "kind": "query",
+          "text": "the drive",
+          "cosine": 0.5365647773928885,
+          "psignal": 0.7792345444668765,
+          "df_sessions": 1,
+          "mass": 4.6365155271162255,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:park drive canary wharf restaurant",
+          "kind": "query",
+          "text": "park drive canary wharf restaurant",
+          "cosine": 0.5365647773928885,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:buy flat in london",
+          "kind": "query",
+          "text": "buy flat in london",
+          "cosine": 0.49212855135221667,
+          "psignal": 0.8250718706117144,
+          "df_sessions": 1,
+          "mass": 5.1278870049461815,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:buy flat canary wharf",
+          "kind": "query",
+          "text": "buy flat canary wharf",
+          "cosine": 0.49212855135221667,
+          "psignal": 0.8250718706117144,
+          "df_sessions": 1,
+          "mass": 5.1278870049461815,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:buy a flat in london",
+          "kind": "query",
+          "text": "buy a flat in london",
+          "cosine": 0.49212855135221667,
+          "psignal": 0.8250718706116589,
+          "df_sessions": 1,
+          "mass": 5.127887004945917,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:canary wharf one bedroom flat sale",
+          "kind": "query",
+          "text": "canary wharf one bedroom flat sale",
+          "cosine": 0.28291826318914426,
+          "psignal": 0.8188098268629396,
+          "df_sessions": 2,
+          "mass": 9.763480970206539,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:buy one bedroom flat london",
+          "kind": "query",
+          "text": "buy one bedroom flat london",
+          "cosine": 0.28291826318914426,
+          "psignal": 0.8250718706119371,
+          "df_sessions": 1,
+          "mass": 5.127887004947245,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:2 bedroom flat london buy",
+          "kind": "query",
+          "text": "2 bedroom flat london buy",
+          "cosine": 0.28291826318914426,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:1 bedroom flat for sale canary wharf",
+          "kind": "query",
+          "text": "1 bedroom flat for sale canary wharf",
+          "cosine": 0.28291826318914426,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:one.bedroom.apartment 1 park drive",
+          "kind": "query",
+          "text": "one.bedroom.apartment 1 park drive",
+          "cosine": 0.2725486669271324,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:1 bed flat canary wharf to buy",
+          "kind": "query",
+          "text": "1 bed flat canary wharf to buy",
+          "cosine": 0.26799560463895733,
+          "psignal": 0.8250718706118267,
+          "df_sessions": 1,
+          "mass": 5.127887004946718,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:london to edinburgh drive",
+          "kind": "query",
+          "text": "london to edinburgh drive",
+          "cosine": 0.2648668285518728,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:garda bike hotel.google drive",
+          "kind": "query",
+          "text": "garda bike hotel.google drive",
+          "cosine": 0.26388657091133655,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:download photos from drive to iphone",
+          "kind": "query",
+          "text": "download photos from drive to iphone",
+          "cosine": 0.26057089619422685,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:one park drive apartments for sale",
+          "kind": "query",
+          "text": "one park drive apartments for sale",
+          "cosine": 0.2576229568646076,
+          "psignal": 0.8250718706116589,
+          "df_sessions": 1,
+          "mass": 5.127887004945917,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:roe one park drive",
+          "kind": "query",
+          "text": "roe one park drive",
+          "cosine": 0.254283628231036,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:i mac with cd drive",
+          "kind": "query",
+          "text": "i mac with cd drive",
+          "cosine": 0.2532133675406134,
+          "psignal": 0.600071870612636,
+          "df_sessions": 1,
+          "mass": 4.054680080229913,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:one drive sync",
+          "kind": "query",
+          "text": "one drive sync",
+          "cosine": 0.2520001092824835,
+          "psignal": 0.8250718706117144,
+          "df_sessions": 1,
+          "mass": 5.1278870049461815,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:icloud drive",
+          "kind": "query",
+          "text": "icloud drive",
+          "cosine": 0.2520001092824835,
+          "psignal": 0.7792345444669093,
+          "df_sessions": 1,
+          "mass": 4.636515527116373,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:flat iron",
+          "kind": "query",
+          "text": "flat iron",
+          "cosine": 0.24809184803029088,
+          "psignal": 0.7792345444665666,
+          "df_sessions": 1,
+          "mass": 4.636515527114829,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:cat n a flat",
+          "kind": "query",
+          "text": "cat n a flat",
+          "cosine": 0.247427199710881,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:why is google drive crashing",
+          "kind": "query",
+          "text": "why is google drive crashing",
+          "cosine": 0.24432396266727022,
+          "psignal": 0.600071870612636,
+          "df_sessions": 1,
+          "mass": 4.054680080229913,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:1 marina park drive restaurant",
+          "kind": "query",
+          "text": "1 marina park drive restaurant",
+          "cosine": 0.24238488871364994,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:cutrisimone google drive",
+          "kind": "query",
+          "text": "cutrisimone google drive",
+          "cosine": 0.24068282160221363,
+          "psignal": 0.8158821304214322,
+          "df_sessions": 2,
+          "mass": 9.7367367283641,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:mulholland drive",
+          "kind": "query",
+          "text": "mulholland drive",
+          "cosine": 0.24067808046819844,
+          "psignal": 0.5667345444674895,
+          "df_sessions": 1,
+          "mass": 3.679241449204566,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:flat swap london paris",
+          "kind": "query",
+          "text": "flat swap london paris",
+          "cosine": 0.23828400701386657,
+          "psignal": 0.8250718706118267,
+          "df_sessions": 1,
+          "mass": 5.127887004946718,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:flat dogs",
+          "kind": "query",
+          "text": "flat dogs",
+          "cosine": 0.23748542288961164,
+          "psignal": 0.779234544466778,
+          "df_sessions": 1,
+          "mass": 4.636515527115781,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:1 bhk flat",
+          "kind": "query",
+          "text": "1 bhk flat",
+          "cosine": 0.22740896473240335,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:1 bedroom flat to rent canary wharf",
+          "kind": "query",
+          "text": "1 bedroom flat to rent canary wharf",
+          "cosine": 0.21631883464659057,
+          "psignal": 0.8155184828368834,
+          "df_sessions": 3,
+          "mass": 14.141185339081959,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:london luxury 3 bedroom flat to buy",
+          "kind": "query",
+          "text": "london luxury 3 bedroom flat to buy",
+          "cosine": 0.2094655552442721,
+          "psignal": 0.8250718706118827,
+          "df_sessions": 1,
+          "mass": 5.127887004946985,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:one bedroom flat wood wharf",
+          "kind": "query",
+          "text": "one bedroom flat wood wharf",
+          "cosine": 0.2055054624353399,
+          "psignal": 0.8250718706116589,
+          "df_sessions": 1,
+          "mass": 5.127887004945917,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:one bedroom flat to buy wood wharf",
+          "kind": "query",
+          "text": "one bedroom flat to buy wood wharf",
+          "cosine": 0.2055054624353399,
+          "psignal": 0.8250718706116589,
+          "df_sessions": 1,
+          "mass": 5.127887004945917,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:1 bed flat to rent canary wharf]",
+          "kind": "query",
+          "text": "1 bed flat to rent canary wharf]",
+          "cosine": 0.20344991751629968,
+          "psignal": 0.8250718706116589,
+          "df_sessions": 1,
+          "mass": 5.127887004945917,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:places near chennai drive",
+          "kind": "query",
+          "text": "places near chennai drive",
+          "cosine": 0.20232856517993833,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:reduce zoom in google drive",
+          "kind": "query",
+          "text": "reduce zoom in google drive",
+          "cosine": 0.19901511705346073,
+          "psignal": 0.8250718706116589,
+          "df_sessions": 1,
+          "mass": 5.127887004945917,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:1 bed flat to buy greenwich",
+          "kind": "query",
+          "text": "1 bed flat to buy greenwich",
+          "cosine": 0.19660601830168062,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:naples to rome drive",
+          "kind": "query",
+          "text": "naples to rome drive",
+          "cosine": 0.19612712300764457,
+          "psignal": 0.8250718706118267,
+          "df_sessions": 1,
+          "mass": 5.127887004946718,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:delete mac hard drive",
+          "kind": "query",
+          "text": "delete mac hard drive",
+          "cosine": 0.19547343324438385,
+          "psignal": 0.8250718706116589,
+          "df_sessions": 1,
+          "mass": 5.127887004945917,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:peter attia drive",
+          "kind": "query",
+          "text": "peter attia drive",
+          "cosine": 0.19443574382409887,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:10 park drive brochure",
+          "kind": "query",
+          "text": "10 park drive brochure",
+          "cosine": 0.19254720434552797,
+          "psignal": 0.8250718706118827,
+          "df_sessions": 1,
+          "mass": 5.127887004946985,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:kolkata to ooty drive",
+          "kind": "query",
+          "text": "kolkata to ooty drive",
+          "cosine": 0.19194955399133012,
+          "psignal": 0.8250718706116589,
+          "df_sessions": 1,
+          "mass": 5.127887004945917,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:navigate to full org google drive",
+          "kind": "query",
+          "text": "navigate to full org google drive",
+          "cosine": 0.1915296956016216,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:1 bed flat to buy wardian",
+          "kind": "query",
+          "text": "1 bed flat to buy wardian",
+          "cosine": 0.18963433983616731,
+          "psignal": 0.8250718706116589,
+          "df_sessions": 1,
+          "mass": 5.127887004945917,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:upload ipynb to google drive",
+          "kind": "query",
+          "text": "upload ipynb to google drive",
+          "cosine": 0.18899944370504076,
+          "psignal": 0.8250718706118827,
+          "df_sessions": 1,
+          "mass": 5.127887004946985,
+          "reason": "semantic-affinity"
+        },
+        {
+          "item_id": "q:counting words in google drive",
+          "kind": "query",
+          "text": "counting words in google drive",
+          "cosine": 0.18811450518439213,
+          "psignal": 0.8250718706117705,
+          "df_sessions": 1,
+          "mass": 5.127887004946449,
+          "reason": "semantic-affinity"
+        }
+      ],
+      "evidence_supporting": [
+        {
+          "item_id": "q:one park drive",
+          "kind": "query",
+          "text": "one park drive",
+          "cosine": 0.5365647773928885,
+          "psignal": 0.7997338680649464,
+          "df_sessions": 6,
+          "mass": 26.104344228006333,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:one park drive buy",
+          "kind": "query",
+          "text": "one park drive buy",
+          "cosine": 0.5365647773928885,
+          "psignal": 0.8250718706118827,
+          "df_sessions": 1,
+          "mass": 5.127887004946985,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:10 park drive brochure",
+          "kind": "query",
+          "text": "10 park drive brochure",
+          "cosine": 0.19254720434552797,
+          "psignal": 0.8250718706118827,
+          "df_sessions": 1,
+          "mass": 5.127887004946985,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:google drive app",
+          "kind": "query",
+          "text": "google drive app",
+          "cosine": 0.5365647773928885,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:google drive app for mac",
+          "kind": "query",
+          "text": "google drive app for mac",
+          "cosine": 0.5365647773928885,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:1 park drive buy flat",
+          "kind": "query",
+          "text": "1 park drive buy flat",
+          "cosine": 0.9955571375166645,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:buy flat in london",
+          "kind": "query",
+          "text": "buy flat in london",
+          "cosine": 0.49212855135221667,
+          "psignal": 0.8250718706117144,
+          "df_sessions": 1,
+          "mass": 5.1278870049461815,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:buy flat canary wharf",
+          "kind": "query",
+          "text": "buy flat canary wharf",
+          "cosine": 0.49212855135221667,
+          "psignal": 0.8250718706117144,
+          "df_sessions": 1,
+          "mass": 5.1278870049461815,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:flat 606 1 pan peninsula square",
+          "kind": "query",
+          "text": "flat 606 1 pan peninsula square",
+          "cosine": 0.1373092177195684,
+          "psignal": 0.8250718706117144,
+          "df_sessions": 1,
+          "mass": 5.1278870049461815,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:park drive canary wharf",
+          "kind": "query",
+          "text": "park drive canary wharf",
+          "cosine": 0.5365647773928885,
+          "psignal": 0.8250718706119371,
+          "df_sessions": 1,
+          "mass": 5.127887004947245,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:buy one bedroom flat london",
+          "kind": "query",
+          "text": "buy one bedroom flat london",
+          "cosine": 0.28291826318914426,
+          "psignal": 0.8250718706119371,
+          "df_sessions": 1,
+          "mass": 5.127887004947245,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:one drive",
+          "kind": "query",
+          "text": "one drive",
+          "cosine": 0.5365647773928885,
+          "psignal": 0.7792345444666191,
+          "df_sessions": 1,
+          "mass": 4.636515527115066,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:one drive sync",
+          "kind": "query",
+          "text": "one drive sync",
+          "cosine": 0.2520001092824835,
+          "psignal": 0.8250718706117144,
+          "df_sessions": 1,
+          "mass": 5.1278870049461815,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:park drive canary wharf restaurant",
+          "kind": "query",
+          "text": "park drive canary wharf restaurant",
+          "cosine": 0.5365647773928885,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:1 marina park drive restaurant",
+          "kind": "query",
+          "text": "1 marina park drive restaurant",
+          "cosine": 0.24238488871364994,
+          "psignal": 0.8250718706120216,
+          "df_sessions": 1,
+          "mass": 5.127887004947647,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:the drive",
+          "kind": "query",
+          "text": "the drive",
+          "cosine": 0.5365647773928885,
+          "psignal": 0.7792345444668765,
+          "df_sessions": 1,
+          "mass": 4.6365155271162255,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:peter attia drive",
+          "kind": "query",
+          "text": "peter attia drive",
+          "cosine": 0.19443574382409887,
+          "psignal": 0.8250718706119868,
+          "df_sessions": 1,
+          "mass": 5.127887004947482,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:canary wharf one bedroom flat sale",
+          "kind": "query",
+          "text": "canary wharf one bedroom flat sale",
+          "cosine": 0.28291826318914426,
+          "psignal": 0.8188098268629396,
+          "df_sessions": 2,
+          "mass": 9.763480970206539,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:1 bed flat canary wharf to buy",
+          "kind": "query",
+          "text": "1 bed flat canary wharf to buy",
+          "cosine": 0.26799560463895733,
+          "psignal": 0.8250718706118267,
+          "df_sessions": 1,
+          "mass": 5.127887004946718,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:harbour central one bed flat for sale",
+          "kind": "query",
+          "text": "harbour central one bed flat for sale",
+          "cosine": 0.15903851668761718,
+          "psignal": 0.8250718706118267,
+          "df_sessions": 1,
+          "mass": 5.127887004946718,
+          "reason": "session-context-gated"
+        },
+        {
+          "item_id": "q:drive",
+          "kind": "query",
+          "text": "drive",
+          "cosine": 0.5365647773928885,
+          "psignal": 0.48372050725900495,
+          "df_sessions": 26,
+          "mass": 40.46370298239636,
+          "reason": "session-context-gated"
+        }
+      ],
+      "llm_judge": {
+        "model": "claude-sonnet-4-5",
+        "drop_queries": [
+          "drive",
+          "1 park drive buy flat",
+          "one park drive",
+          "park drive canary wharf",
+          "1 park drive sale",
+          "one park drive buy"
+        ],
+        "rationale": "The topic is about cloud storage services (Google Drive, OneDrive). The word 'drive' creates a bridge to unrelated real estate queries about 'Park Drive' addresses in Canary Wharf. The standalone 'drive' query is ambiguous and could refer to either cloud storage or the street/action, so it's dropped. Only queries explicitly mentioning cloud storage platforms are retained."
+      }
+    }
+  ],
+  "llm_judge": true,
+  "snapshot": {
+    "location": "United Kingdom",
+    "lifestyle": "Researching kitchen renovations, specifically kitchen islands and cabinets from IKEA",
+    "fashion": "Evidence suggests some fashion/shopping activity.",
+    "travel": "Evidence suggests some travel planning activity.",
+    "work": "Likely a student or staff member at King's College London (KCL); actively job searching through Otta platform for roles at companies like Deliveroo (finance and strategy associate), Cleo (commercial associate), Checkout.com, and Lendable; uses Zoom for video conferencing",
+    "other_interests": "Follows Russia-Ukraine conflict news closely, including historical context and visual coverage",
+    "confidence_notes": "High confidence on UK location (searches for IKEA UK, UK settled status, Zoom UK dial-in, KCL); High confidence on EU/EEA national status or connection (multiple searches about EU Settlement Scheme and checking settled status); Moderate confidence on student/job seeker profile (KCL student records searches combined with extensive job platform usage); Some searches about IKEA India suggest possible connection to India",
+    "other_places_searched": "chennai drive",
+    "fashion_examples": [
+      "desk with wheels",
+      "is van cleef worth it",
+      "event dresses",
+      "event gowns",
+      "soles & heels london services"
+    ],
+    "travel_examples": [
+      "apply for uk travel visa",
+      "apply for a schengen visa from uk",
+      "apply for german schengen visa from uk",
+      "apply for schengen visa",
+      "apply for a us visa",
+      "apply for 5 year schengen visa"
+    ]
+  }
+}
