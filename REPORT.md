@@ -351,17 +351,17 @@ This view makes it easy to see how a session connects to domains and queries (an
 This run produces a **snapshot + 8 themes (“suits”)**, each grounded with **top queries/domains + representative sessions**. Even though the underlying graph is large (≈43,948 nodes, ≈145,219 edges, ≈10,410 sessions, ≈25,668 queries), the output stays debuggable because every claim links back to concrete evidence.
 
 ### Example output highlights (from [PROFILE.md](artifacts/PROFILE.md))
-- **High-confidence location: United Kingdom.** Multiple independent UK cues converge: IKEA UK pages, UK settled-status / EU Settlement Scheme queries, Zoom UK dial-in, and KCL student-records usage.
-- **Home / lifestyle: IKEA kitchen planning.** The top theme (*Kitchen Islands & Cabinets*, mass≈151.9) is highly coherent: repeated IKEA queries (“ikea uk”, “ikea kitchen cabinets”, “kitchen island”), plus direct visits to IKEA UK category pages.
-- **Work: student/admin + job search workflow.** KCL student-records queries combined with heavy Otta activity (Deliveroo/Cleo/Checkout.com/Lendable roles) and Zoom usage forms a consistent “student/job-seeker in the UK” picture.
-- **News: Russia–Ukraine focus.** The *Russia–Ukraine Conflict* theme is stable, supported by repeated news/history queries and long-running coverage browsing.
-- **Secondary signals:** light fashion/shopping (e.g., Van Cleef, event dresses/gowns) and travel/visa planning (Schengen/UK travel visa queries), plus a weak India link (“chennai drive”, IKEA India).
+- **High-confidence location: London, UK (Canary Wharf / Wood Wharf).** The top themes (*Canary Wharf Property Search*, *Canary Wharf*) include highly specific local queries (1-bedroom flats in Canary Wharf/Wood Wharf, M&S Canary Wharf, local restaurants/yoga, police raid/accident searches).
+- **Lifestyle signal: active housing + local amenities.** Repeated property listing searches plus local retail/dining/wellness queries suggest day-to-day life in the area rather than one-off curiosity.
+- **Work/finance planning: UK salary + tax calculators.** A large theme (*UK Tax Salary Calculator*, mass≈230.9) shows sustained interest in take-home pay, bonuses, and salary sacrifice—consistent with compensation planning or offer evaluation.
+- **International coordination: Eastern Time ↔ UK/India conversions.** The *Eastern Time Conversions* theme (mass≈151.5) includes repeated ET→UK and ET→IST conversions, suggesting ongoing US coordination and/or cross-timezone personal connections.
+- **Travel planning / personal ties: India city activities.** The *Travel Activities India* theme (mass≈222.3) centers on Kochi/Lucknow/Bangalore “things to do” queries, with a small amount of London ‘things to do’ mixed by phrase overlap.
+- **Other persistent interests:** German↔English translation + bilingual lyrics (Rammstein), and engagement with a specific local healthcare provider (*Island Health UK*, mass≈146.1).
 
 ### Where the LLM improved quality in this run (and why it’s included)
-The graph is strongest at **structure + retrieval**, but weak at turning sparse/noisy evidence into clean profile statements. In this specific output, the LLM adds value by:
-- **Fixing label corruption from word overlap.** A furniture topic was previously mislabeled due to the word “island” bridging into an unrelated label (e.g., “Dental_Island”). The LLM judge correctly renames it to *Kitchen Islands & Cabinets* and explains the failure mode.
-- **Separating adjacent intents inside a cluster.** Immigration-related queries often co-occur. The LLM prunes general visa/travel queries and keeps the theme narrowly about the **EU Settlement Scheme**, preventing a “mixed immigration blob.”
-- **Inferring stable concepts from multiple weak cues.** Example: graph-only logic can output “can’t figure out” when no single query is explicit; the LLM can combine multiple UK-specific signals into a confident “UK” conclusion while staying grounded in evidence.
+- **Inferring a specific location from many weak cues.** The graph surfaces Canary Wharf/Zoopla/M&S/local incidents as evidence; the LLM compresses this into a clean “London (Canary Wharf)” statement without requiring any single explicit “I live in…” query.
+- **Handling phrase-overlap contamination.** The *Travel Activities India* cluster includes a London outlier due to the shared “things to do” template; the LLM helps keep the narrative focused on India travel planning while treating London as secondary.
+- **Pruning mixed-session artifacts.** When a session contains unrelated items (e.g., entertainment + salary calculator + shopping), the LLM tends to drop the one-off neighbor and keep the persistent theme signal.
 
 ### How to interpret “mass”
 Mass is a ranking signal (persistence/connectedness), not a probability. I always show evidence lists + sessions so each theme can be audited.
