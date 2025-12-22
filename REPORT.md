@@ -13,7 +13,7 @@
     - [4) Session drill-down](#4-session-drill-down)
     - [5) Session ego-graph](#5-session-ego-graph)
   - [Results](#results)
-    - [Example output highlights (from `[PROFILE.md](artifacts/PROFILE.md)`)](#example-output-highlights-from-profilemdartifactsprofilemd)
+    - [Example output highlights (from PROFILE.md)](#example-output-highlights-from-profilemd)
     - [Where the LLM improved quality in this run (and why it’s included)](#where-the-llm-improved-quality-in-this-run-and-why-its-included)
     - [How to interpret “mass”](#how-to-interpret-mass)
   - [Failed attempts](#failed-attempts)
@@ -350,7 +350,7 @@ This view makes it easy to see how a session connects to domains and queries (an
 
 This run produces a **snapshot + 8 themes (“suits”)**, each grounded with **top queries/domains + representative sessions**. Even though the underlying graph is large (≈43,948 nodes, ≈145,219 edges, ≈10,410 sessions, ≈25,668 queries), the output stays debuggable because every claim links back to concrete evidence.
 
-### Example output highlights (from `[PROFILE.md](artifacts/PROFILE.md)`)
+### Example output highlights (from [PROFILE.md](artifacts/PROFILE.md))
 - **High-confidence location: United Kingdom.** Multiple independent UK cues converge: IKEA UK pages, UK settled-status / EU Settlement Scheme queries, Zoom UK dial-in, and KCL student-records usage.
 - **Home / lifestyle: IKEA kitchen planning.** The top theme (*Kitchen Islands & Cabinets*, mass≈151.9) is highly coherent: repeated IKEA queries (“ikea uk”, “ikea kitchen cabinets”, “kitchen island”), plus direct visits to IKEA UK category pages.
 - **Work: student/admin + job search workflow.** KCL student-records queries combined with heavy Otta activity (Deliveroo/Cleo/Checkout.com/Lendable roles) and Zoom usage forms a consistent “student/job-seeker in the UK” picture.
