@@ -330,7 +330,7 @@ This view shows what a detected community *means* in plain terms: the most centr
 
 ### 3) Community subgraph (interactive)
 
-![Community subgraph](static/community_subgraph.jpeg)
+![Community subgraph](static/community_subgraph.png)
 
 This view is useful for spotting “topic bleed” (bridge domains/queries) and verifying that the community is not being held together by hub-like sites.
 
