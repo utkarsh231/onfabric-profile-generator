@@ -13,7 +13,7 @@
     - [4) Session drill-down](#4-session-drill-down)
     - [5) Session ego-graph](#5-session-ego-graph)
   - [Results](#results)
-    - [Example output highlights (from `artifacts/PROFILE.md`)](#example-output-highlights-from-artifactsprofilemd)
+    - [Example output highlights (from `[PROFILE.md](artifacts/PROFILE.md)`)](#example-output-highlights-from-profilemdartifactsprofilemd)
     - [Where the LLM improved quality in this run (and why it’s included)](#where-the-llm-improved-quality-in-this-run-and-why-its-included)
     - [How to interpret “mass”](#how-to-interpret-mass)
   - [Failed attempts](#failed-attempts)
@@ -58,7 +58,7 @@ So ingest normalizes a few high-impact families (Google / YouTube / Wikipedia) i
 Many Takeout rows store titleUrl as a Google redirect (/url?q=...). If you keep that, the graph overrepresents Google and underrepresents what the user actually visited.
 So ingest extracts the actual target URL where possible.
 
-<ins>[Sessionization](scripts/src/ingest/sessionize.py)</ins>
+<ins>Sessionization</ins>
 
 After normalization, events are grouped into sessions using a simple time-gap rule (default: 30 minutes). Session IDs are deterministic (s0000, s0001, …) and embedded into the event ID to make downstream joins easy.
 
@@ -316,8 +316,6 @@ Main challenges and mitigations
 
 ## Figures
 
-> Note: place the screenshots in `docs/images/` (or update the paths below to wherever you store them in the repo).
-
 ### 1) Overall graph + query stats
 
 ![Overview dashboard](static/overview.png)
@@ -352,7 +350,7 @@ This view makes it easy to see how a session connects to domains and queries (an
 
 This run produces a **snapshot + 8 themes (“suits”)**, each grounded with **top queries/domains + representative sessions**. Even though the underlying graph is large (≈43,948 nodes, ≈145,219 edges, ≈10,410 sessions, ≈25,668 queries), the output stays debuggable because every claim links back to concrete evidence.
 
-### Example output highlights (from `artifacts/PROFILE.md`)
+### Example output highlights (from `[PROFILE.md](artifacts/PROFILE.md)`)
 - **High-confidence location: United Kingdom.** Multiple independent UK cues converge: IKEA UK pages, UK settled-status / EU Settlement Scheme queries, Zoom UK dial-in, and KCL student-records usage.
 - **Home / lifestyle: IKEA kitchen planning.** The top theme (*Kitchen Islands & Cabinets*, mass≈151.9) is highly coherent: repeated IKEA queries (“ikea uk”, “ikea kitchen cabinets”, “kitchen island”), plus direct visits to IKEA UK category pages.
 - **Work: student/admin + job search workflow.** KCL student-records queries combined with heavy Otta activity (Deliveroo/Cleo/Checkout.com/Lendable roles) and Zoom usage forms a consistent “student/job-seeker in the UK” picture.
