@@ -2,198 +2,199 @@
 
 ## Snapshot
 
-- **Location:** United Kingdom
-- **Lifestyle:** Researching kitchen renovations, specifically kitchen islands and cabinets from IKEA
+- **Location:** London, UK - specifically in or near Canary Wharf area
+- **Lifestyle:** Actively searching for 1-bedroom flat in Canary Wharf area (both rental and purchase options). Uses local amenities including M&S, restaurants, and fitness facilities (yoga) in Canary Wharf. Registered with Island Health medical practice in Crossharbour.
 - **Fashion:** Evidence suggests some fashion/shopping activity.
-- **Travel:** Evidence suggests some travel planning activity.
-- **Work:** Likely a student or staff member at King's College London (KCL); actively job searching through Otta platform for roles at companies like Deliveroo (finance and strategy associate), Cleo (commercial associate), Checkout.com, and Lendable; uses Zoom for video conferencing
-- **Other places searched:** chennai drive
-- **Fashion evidence:** desk with wheels, is van cleef worth it, event dresses, event gowns
-- **Travel evidence:** apply for uk travel visa, apply for a schengen visa from uk, apply for german schengen visa from uk, apply for schengen visa
-- **Other interests:** Follows Russia-Ukraine conflict news closely, including historical context and visual coverage
-- **Notes:** High confidence on UK location (searches for IKEA UK, UK settled status, Zoom UK dial-in, KCL); High confidence on EU/EEA national status or connection (multiple searches about EU Settlement Scheme and checking settled status); Moderate confidence on student/job seeker profile (KCL student records searches combined with extensive job platform usage); Some searches about IKEA India suggest possible connection to India
+- **Travel:** Researching travel activities in Indian cities including Kochi, Lucknow, and Bangalore. Frequently converts between Eastern Time (US) and UK time zones, suggesting international work or personal connections.
+- **Work:** Likely employed in London with interest in salary calculations (researching post-tax salary, bonus calculators for UK). Frequent time zone conversions between Eastern Time and UK time suggest work involving US coordination. Working on or involved with EU Settlement Scheme application (possibly for self or partner).
+- **Other places searched:** me canary wharf, lucknow, bangalore, london, mumbai, goa
+- **Fashion evidence:** canary wharf jewellery, canary wharf hairdresser, designer shoes sale
+- **Travel evidence:** kochi things to do, things to do lucknow, things to do in lucknow, things to do.in bangalore
+- **Other interests:** Interest in German language and German music lyrics (Rammstein songs: Engel, Zeit, Zeig Dich, Seemann) with English translations. Monitoring local Canary Wharf news (police raids, accidents).
+- **Notes:** High confidence on London/Canary Wharf location based on property searches, local business searches, and medical practice location. EU Settlement Scheme searches suggest EU national or has EU partner navigating post-Brexit immigration. Indian travel interest could indicate personal/family connections or planned trip. German music interest is clear but purpose unclear (learning language, fan of band, or cultural interest).
 
-## Kitchen Islands & Cabinets (mass=151.91)
+## Canary Wharf Property Search (mass=237.89)
 
-This topic represents a user's interest in home and office furniture, with a strong focus on IKEA products and kitchen islands. The user has searched for IKEA multiple times across different regions (UK, India), explored kitchen island options both generally and specifically from IKEA, and also looked into cabinet solutions including kitchen cabinets and office filing cabinets. The searches suggest someone planning or researching furniture purchases for home organization and kitchen design. The original label appears to have been corrupted by a word-overlap error where 'island' from 'kitchen island' incorrectly bridged to 'Dental_Island', creating a completely inaccurate categorization.
-
-**Top domains**
-- ikea.com
+This topic captures the user's interest in Canary Wharf, a major business and residential district in East London. The user has searched for various property listings in this specific area, including one-bedroom flats for sale and rent in Canary Wharf, as well as properties in the adjacent Wood Wharf development. They've also searched for general information about Canary Wharf and specific retailers there like M&S. The geographic specificity to Canary Wharf/Wood Wharf distinguishes this from generic London property searches.
 
 **Top queries**
-- ikea kitchen cabinets
-- kitchen island cabinets
-- ikea uk
-- ikea#
-- ikea
-- ikea india
-- kitchen island
-- kitchen island at home
-- filing cabinets
-- office filing cabinets
+- 1 bedroom flat for sale canary wharf
+- canary wharf one bedroom flat sale
+- 1 bedroom flat to rent canary wharf
+- canary wharf
+- m&s canary wharf
+- one bedroom flat wood wharf
+- one bedroom flat to buy wood wharf
 
 **Representative sessions**
-- s3358: Searched for ikea kitchen cabinets | Visited https://www.ikea.com/gb/en/cat/metod-system-23598/
-- s3390: Searched for office filing cabinets | Visited https://www.overstock.com/Home-Garden/Kitchen-Islands/18571/subcat.html | Visited https://www.laredoute.co.uk/ppdp/prod-350033312.aspx?dim1=1&dim2=1&mkwid=s_dt|pcrid|442402191504|pkw||pmt||slid||pgrid|104202833898|ptaid|aud-309169168715:pla-921466613902|productid|35003331200010001873220&omniturecode=Google-Shopping-PPC-Shopping+Home+%26+Furniture+%3E+Dining+Room+%26+Kitchen-Home+%26+Furniture+%3E+Dining+Room+%26+Kitchen+%3E+Sideboards%2C+Cabinets+%26+Dressers
-- s0419: Searched for ikea uk | Visited http://www.ikea.com/gb/en/
-- s0611: Searched for porch swing | Visited https://rover.ebay.com/rover/1/710-134428-41853-0/2?mpre=https%3A%2F%2Fwww.ebay.co.uk%2Fi%2F222807896874%3Fchn%3Dps%26var%3D521656550450&itemid=521656550450_222807896874&targetid=442150980364&device=c&adtype=pla&googleloc=9045885&poi=&campaignid=1057756799&adgroupid=54807651994&rlsatarget=pla-442150980364&abcId=1133956&merchantid=119392679 | Searched for swing
-- s0634: Searched for keep | Visited http://click.pump.to/fm-d0196/VY5NCoMwEIWvEmbRVWrQRatZFIpS6qLSA2QTYqxSf0KMSCm9eycBKd3MMO~NN2~esNgeOLTOGS6YYOu6Rq7Va9s5rabByPEVYRdseQp2nwb9sHKUTu-LrmmWWVvBDBq3oiiBQgM8zg4UOuBpnFAwOFNQWHEYgWco2XyqNUYGpqrO4LVKDkH7BZAtIPidQjs5Blw63MzlWPd6JjtysdIjSpMTuSL~J2xHZv-cQbSs~TNp9vkC?cm_mmc=GProductFeed-_-UK_ALL_GO_TWC_NC_PLA_GEN_CANDLE_FRAGRANCE-_-Home_Fragrances-_-PMDDINNA&ProGrpCode=AT146 | Visited Google Keep: Free Note Taking App for Personal Use
-- s2649: Searched for indirect function excel | Visited How to Care for Phalaenopsis Orchids After They Bloom | Searched for indirect function excel use different tabs
+- s3043: Searched for 1 bedroom flat for sale canary wharf | Visited 1 Bedroom flats and apartments for sale in Canary Wharf - Zoopla
+- s3017: Searched for canary wharf new buildings | Visited Mortgage Calculator | MoneySuperMarket | Visited Canary Wharf to hit the heights with more towers | News | Building
+- s1912: Searched for canary wharf one bedroom flat sale | Visited Property for sale in Pan Peninsula Square, London E14 - Zoopla | Visited 1 Bedroom flats and apartments for sale in Canary Wharf - Zoopla
+- s3249: Searched for canary wharf one bedroom flat sale | Visited 1 bedroom flats for sale in Canary Wharf - Properties For Sale in ... | Searched for harbour central one bed flat for sale
+- s0302: Searched for linkedin | Visited https://maps.google.co.uk/ | Visited LinkedIn: Log In or Sign Up
+- s2251: Searched for 2 bedroom flat london buy | Visited LiFE Residential - Canary Wharf, E14 - Property to rent from LiFE ... | Visited https://www.foxtons.co.uk/properties-for-sale/london/2-bedrooms/
 
-## EU Settlement Scheme (mass=150.40)
+## UK Tax Salary Calculator (mass=230.88)
 
-This topic focuses specifically on the EU Settlement Scheme, a UK immigration program allowing EU/EEA/Swiss citizens and their families to obtain settled or pre-settled status post-Brexit. The two retained queries directly reference applying to this scheme. The dropped queries, while immigration-related, concern different processes: Schengen visas (short-term travel permits for Europe), US visas, UK travel visas, and British passport applications. These are distinct legal processes with different requirements, timelines, and outcomes from settlement schemes.
-
-**Top domains**
-- apply.workable.com
-- apply.joinef.com
+The user has demonstrated consistent interest in UK tax and salary calculators, with particular focus on after-tax salary calculations. They have searched for various specific use cases including post-tax salary calculations, after-tax calculations in London specifically, bonus calculations in the UK, and salary sacrifice calculators. The repeated searches for 'after tax salary calculator' (appearing 3 times) and 'uk tax calculator' (appearing 3 times) show this is a sustained interest rather than a one-time need. The user appears to be evaluating compensation or financial planning scenarios that require understanding net take-home pay after UK tax deductions.
 
 **Top queries**
+- post tax salary calculator
+- after tax salary calculator
+- salary calculator
+- after tax salary calculator london
+- bonus salary calculator uk
+- tax calculator
+- uk tax calculator
+- uk.tax calculator
+- salary sacrifice calculator
+
+**Representative sessions**
+- s7269: Searched for paypal login | Visited Take-Home tax calculator - The Salary Calculator | Visited Log in to your account - PayPal
+- s7424: Searched for latin for pig | Visited Take-Home tax calculator - The Salary Calculator | Searched for kashira cancer center conference
+- s7558: Searched for after tax salary calculator | Visited Take-Home tax calculator - The Salary Calculator
+- s7695: Searched for double breasted | Visited Take-Home tax calculator - The Salary Calculator | Searched for massimo dutti white blazer
+- s8688: Searched for last night in soho | Visited Take-Home tax calculator - The Salary Calculator | Searched for pulp fiction
+- s6412: Searched for salary calculator | Visited Take-Home tax calculator - The Salary Calculator
+
+## Travel Activities India (mass=222.25)
+
+This topic represents a user's interest in exploring tourist activities and attractions in various Indian cities. The search history shows focused research on what to do in Kochi (Kerala), Lucknow (Uttar Pradesh), and Bangalore (Karnataka), indicating travel planning or local exploration interests within India. The queries about London are outliers that don't fit the Indian city tourism pattern and likely got grouped due to the common 'things to do' phrase structure. The user appears to be researching multiple Indian destinations, possibly planning trips or relocating between cities.
+
+**Top queries**
+- things to.do kochi
+- kochi things to do
+- kochi
+- things to do lucknow
+- things to do in lucknow
+- things to.do.in bangalore
+- things to do.in bangalore
+- things to do in bangalore
+
+**Representative sessions**
+- s1896: Searched for chennai to kerala | Visited Welcome to Kerala Tourism - Official Website of Department of ... | Searched for chennai to kochi
+- s8655: Searched for jaagir lodge dudhwa | Visited https://www.tajhotels.com/en-in/taj/taj-bangalore/ | Viewed Jaagir Manor, Dudhwa – IHCL SeleQtions
+- s7701: Searched for weekend trips india | Searched for gerblin.urban.dictionary | Visited Jodhpur, India: All You Need to Know Before You Go (2024 ...
+- s8809: Searched for natural history museum | Searched for kochi things to do | Searched for things to do in london this weekend
+- s2265: Searched for delhi to lucknow flight | Visited 20 Best Restaurants In Lucknow 2023: Eat A King Size Meal | Visited The 10 Best Things to Do in Lucknow - 2024 (with Photos ...
+- s5380: Searched for movies in lucknow | Visited https://theculturetrip.com/asia/india/articles/the-top-10-things-to-see-do-in-lucknow/ | Searched for things to do in lucknow
+
+## EU Settlement Scheme (mass=194.60)
+
+This topic captures user interest in the EU Settlement Scheme, the UK's post-Brexit immigration program for EU, EEA, and Swiss citizens. All queries demonstrate genuine intent to interact with or learn about the scheme, including accessing the application portal (login queries), applying for status, obtaining contact information, understanding partner eligibility, and retrieving scheme reference numbers. No spurious matches exist; each query centers on the official scheme itself.
+
+**Top queries**
+- login to eu settlement scheme
+- eu settlement scheme
+- eu settlement scheme login
+- eu settlement scheme application login
+- eu settlement scheme application
+- eu settlement scheme number
+- eu settlement scheme for partners
+- contact eu settlement scheme
+- eu settlement scheme contact
 - apply to eu settlement scheme
-- apply for eu settlement scheme
 
 **Representative sessions**
+- s9758: Searched for eu settlement scheme | Searched for eu settlement scheme number
+- s4309: Searched for eu settlement scheme | Searched for p45 form | Searched for eu settlement scheme contact
+- s8979: Searched for tony fadell podcast | Visited Google Search | Searched for eu settlement scheme
+- s9529: Visited View and prove your immigration status: get a share code - GOV.UK | Visited Apply to the EU Settlement Scheme (settled and pre-settled status ... | Searched for eu settlement scheme login
+- s8808: Searched for eu settlement scheme login | Visited Apply to the EU Settlement Scheme (settled and pre-settled status ... | Visited View and prove your immigration status: get a share code - GOV.UK
 - s3736: Searched for non-eu applying to eu settlement scheme | Visited Apply to the EU Settlement Scheme (settled and pre-settled status ... | Searched for immigration advice eu settlement scheme
-- s3775: Searched for ukvcas appointment | Visited Apply to the EU Settlement Scheme (settled and pre-settled status ... | Searched for ukvcas appointment delay
-- s3777: Searched for apply for eu settlement scheme | Visited Apply to the EU Settlement Scheme (settled and pre-settled status ...
 
-## Russia-Ukraine Conflict (mass=145.32)
+## Eastern Time Conversions (mass=151.51)
 
-This topic centers on the Russia-Ukraine conflict and related geopolitical matters. The user has consistently searched for news updates about the conflict, historical context of Russia-Ukraine relations, visual documentation of the conflict, Ukraine's resistance efforts, and comparative geopolitical questions (e.g., support for Ukraine vs Palestine). All queries demonstrate a clear interest in understanding the ongoing conflict, its background, and current developments. No spurious queries were found that might have been caused by word overlap with other topic labels in the system.
+This topic focuses on Eastern Time zone queries, including determining the current time in Eastern Time and converting Eastern Time to other time zones (particularly UK/London time and Indian Standard Time). Users search for general Eastern Time information, specific time conversions (e.g., '11am eastern time in uk', '5pm eastern time to uk'), and which cities use Eastern Time. One query about converting IST directly to UK time was excluded as it doesn't involve Eastern Time and only appeared through incidental word overlap.
 
 **Top queries**
-- russia-ukraine news
-- russia ukraine
-- russia ukraine history
-- ukraine
-- ukraine. news
-- russia
-- russia news
-- ukraine conflict in pictures
-- why support ukraine and not palestine
-- ukraine resistance
+- eastern time to ist
+- eastern time
+- eastern time to uk
+- eastern time now
+- 11am eastern time in uk
+- 5pm eastern time to uk
+- us eastern time zone to london time
+- 12 pm eastern time in uk
+- which city is currently on eastern time
 
 **Representative sessions**
-- s5981: Searched for ukraine. | Visited https://www.vox.com/platform/amp/22950915/ukraine-history-timothy-snyder-today-explained | Visited https://news.sky.com/story/ukraine-russia-war-latest-news-putin-nuclear-deterrent-invasion-belarus-live-updates-12541713
-- s5966: Searched for russia | Searched for map | Visited Russia warns of 'military consequences' if Finland and Sweden join ...
-- s5967: Searched for is van cleef worth it | Visited https://www.aljazeera.com/amp/news/2022/2/25/unsc-to-vote-on-resolution-condemning-russia-invasion-liveblog | Visited https://clickserve.dartsearch.net/link/click?lid=92700058137330158&ds_s_kwgid=58700005806048855&ds_s_inventory_feed_id=97700000006536470&ds_a_cid=280041017&ds_a_caid=9826043906&ds_a_agid=99786976283&ds_a_fiid=&ds_a_lid=aud-458673969323:pla-984883720023&ds_a_extid=&&ds_e_adid=430697578508&ds_e_matchtype=search&ds_e_device=m&ds_e_network=g&ds_e_product_group_id=984883720023&ds_e_product_id=ID_VCARF69100&ds_e_product_merchant_id=115071045&ds_e_product_country=GB&ds_e_product_language=en&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&ds_dest_url=https://www.vancleefarpels.com/gb/en/collections/jewelry/alhambra/vcarf69100---sweet-alhambra-pendant.html?gclsrc=aw.ds&
-- s5973: Visited https://www.politico.eu/article/elon-musk-activates-starlink-satellites-to-give-ukraine-data-backup/amp/ | Visited https://amp.cnn.com/cnn/europe/live-news/ukraine-russia-news-02-27-22/index.html | Visited As it happened: Ukraine live updates: Deadly blast at Kyiv TV tower ...
-- s5975: Searched for ukraine | Visited https://www.independent.co.uk/news/world/europe/russia-ukraine-crisis-latest-putin-kyiv-zelensky-war-update-b2024247.html?amp | Visited Ukraine conflict: Liz Truss backs people from UK who want to fight ...
-- s5985: Viewed Piazza Italiana | Visited https://amp.theguardian.com/world/live/2022/feb/28/russia-ukraine-war-latest-news-update-conflict-belarus-putin-nuclear-deterrence-order-kyiv-russian-invasion-live-updates | Searched for piazza italiana
+- s2494: Searched for delhi to london flights | Visited https://amp.usatoday.com/amp/2842056001 | Searched for delhi
+- s4047: Searched for eastern time | Searched for deliveroo price | Searched for Jane Broughton talktalk
+- s9417: Searched for raclette | Searched for eastern time | Searched for naked wines
+- s9820: Searched for paolo exceptional ventures | Searched for alex j merrifield venture capital | Visited Exceptional Ventures: Home
+- s9855: Searched for eataly coffee | Visited https://www.wework.com/en-GB/l/coworking-space/shoreditch--east-london--london | Viewed Eataly London
+- s10126: Searched for eastern time to uk | Searched for marissa mayer
 
-## UK Settled Status (mass=142.56)
+## German-English Translation (mass=150.89)
 
-This topic captures the user's interest in UK Settled Status, specifically the EU Settlement Scheme that allows EU, EEA, and Swiss citizens to continue living in the UK after Brexit. The queries show the user is seeking information on how to check their settled status, how employers verify it, and how to access the online system. One query about translating 'employer' to German appears unrelated to the immigration status theme and was likely included due to word overlap.
+This topic centers on German-English translation services and bilingual lyrics for German songs. The user demonstrates interest in translating between German and English, as well as finding both German and English versions of song lyrics, particularly for songs like 'Engel,' 'Zeit,' 'Zeig Dich,' and 'Seemann' (likely Rammstein songs). The generic 'english' query and 'french to english' query were excluded as they don't align with the German language focus of this topic—the former being too vague and the latter involving French rather than German translation.
+
+**Top queries**
+- english to german
+- german to english
+- engel lyrics english and german
+- engel.lyrics english and german
+- zeit lyrics english and german
+- zeit lyrics english
+- zeig dich english and german lyrics
+- seemann lyrics english
+
+**Representative sessions**
+- s5940: Searched for amon amarth new album | Searched for german to english | Visited https://www.blabbermouth.net/news/amon-amarth-releases-new-single-put-your-back-into-the-oar/
+- s5768: Searched for der vs das | Searched for german to english | Searched for special offer in german
+- s6062: Searched for ukraine | Visited Rammstein - Zeit (English translation) - Lyrics Translations | Visited https://amp.theguardian.com/world/live/2022/mar/12/ukraine-news-russia-war-ceasefire-broken-humanitarian-corridors-kyiv-russian-invasion-live-vladimir-putin-volodymyr-zelenskiy-latest-updates-live
+- s5927: Searched for engel.lyrics english and german | Visited Rammstein Engel lyric with English translation - Affenknecht
+- s5662: Searched for designer shoes sale | Searched for english to german
+- s5889: Searched for i love you in german | Searched for lady bug in polish | Searched for english to german
+
+## Canary Wharf (mass=149.72)
+
+This topic focuses exclusively on Canary Wharf, the major business and shopping district in East London. The user demonstrates consistent interest in various aspects of this location, including news events (police raids, accidents), retail outlets (M&S, Boots, Virgin), dining options (lunch, dinner, restaurants), and wellness activities (yoga). The searches suggest someone who either works in, visits frequently, or has strong connections to the Canary Wharf area, with interests spanning from staying informed about local incidents to finding practical amenities and leisure activities in the district.
 
 **Top domains**
-- settled.org.uk
-- eu-settled-status-enquiries.service.gov.uk
+- police.uk
 
 **Top queries**
-- check settled status employer
-- how do i check my settled status uk
-- check settled status
-- eu settled status
-- uk settled status
-- eu settled status login
-- settled status uk
-- check.settled status
-- uk settled status check
+- canary wharf
+- canary wharf police raid
+- m&s canary wharf
+- canary wharf accident
+- virgin canary wharf
+- lunch canary wharf
+- yoga canary wharf
+- canary wharf restaurants
+- boots canary wharf
+- canary wharf dinner
 
 **Representative sessions**
-- s4581: Searched for uk settled status | Visited https://www.tsb.co.uk/branch-locator/ | Visited Apply to the EU Settlement Scheme (settled and pre-settled status ...
-- s8526: Searched for zoplo | Visited View and prove your immigration status: get a share code - GOV.UK | Visited Zoplo App | Post. Vote. Debate.
-- s3930: Searched for mothers day uk | Searched for How do I check my settled status UK | Searched for does settlement scheme page not work after application is complete
-- s3985: Searched for check settled status | Visited View and prove your immigration status: get a share code - GOV.UK
-- s3988: Searched for check settled status | Visited Otta | The better way to find a job in tech | Visited View and prove your immigration status: get a share code - GOV.UK
-- s3992: Searched for check settled status | Visited macOS Big Sur: The new Battery system preference | Macworld | Visited http://clickserve.dartsearch.net/link/click?lid=43700057176968737&ds_s_kwgid=58700006201473159&ds_a_cid=319716893&ds_a_caid=10654435385&ds_a_agid=108177720947&ds_a_fiid=&ds_a_lid=kwd-870231508742&&ds_e_adid=494963707849&ds_e_matchtype=search&ds_e_device=m&ds_e_network=g&&ds_url_v=2&ds_dest_url=https://www.gov.uk/settled-status-eu-citizens-families/applying-for-settled-status?utm_campaign=EU_SettlementScheme(apply)&utm_medium=PaidSearch&utm_source=GoogleBing&utm_content=ExpandedLink&gclsrc=aw.ds&
+- s4423: Searched for pan peninsula canary wharf | Visited https://www.thesun.co.uk/news/2285423/anti-terror-cops-dawn-raid-on-canary-wharf-shopping-centre-in-six-hour-terror-training-excercise/amp/ | Searched for canary wharf police raid
+- s0688: Searched for canary wharf
+- s1944: Searched for canary wharf | Searched for hotel merilys meribel
+- s4944: Searched for anthologist owner | Searched for canary wharf | Visited Drake & Morgan | London Cocktail Bar & Restaurant Group
+- s6600: Searched for instagram | Searched for metal turning green how to clean | Visited https://www.instagram.com/?hl=en
+- s1371: Searched for m&s canary wharf
 
-## Zoom Video Conferencing (mass=126.68)
+## Island Health UK (mass=146.08)
 
-This topic captures the user's interest in Zoom video conferencing platform. The queries demonstrate practical engagement with Zoom services including downloading the software, accessing the platform (zoom.us), exploring premium subscription options, and using Zoom's cloud features. The user also searched for UK dial-in numbers, suggesting active use of Zoom's telephony features. The AI notetaker queries have been excluded as they represent separate third-party applications (Read AI and Fathom) that integrate with Zoom rather than being part of the core Zoom platform itself.
-
-**Top domains**
-- zoom.us
+This topic represents user interest in Island Health, a UK healthcare provider associated with Damira and located in the Cross Harbour area. The user has repeatedly searched for contact details (email addresses, telephone numbers), booking information (appointments, telephone consultations), and specific services including dental care. All searches consistently reference 'island health' as the core term, with various service-related qualifiers, indicating ongoing engagement with this particular medical practice for healthcare needs.
 
 **Top queries**
-- zoom
-- zoom.us
-- download zoom
-- zoom download
-- zoom premium
-- zoom cloud
-- zoom uk dial in number
+- island health uk email
+- island health
+- island health email
+- island health appointment
+- island health dentist
+- island health appointments
+- island health telephone number
+- island health crossharbour
+- damira island health
+- island health telephone consultation
 
 **Representative sessions**
-- s9954: Searched for hume ai | Visited Sign In | Zoom | Visited Home • Hume AI
-- s3659: Searched for fintech embedded | Visited Zoom Conference Directions | Searched for fintech embedded bain
-- s6844: Visited Death Note - Wikipedia | Visited Zoom: One platform to connect | Searched for death note anime
-- s7125: Searched for zoom | Visited Zoom: One platform to connect
-- s7129: Searched for zoom download
-- s8920: Searched for use less memory arc browser | Visited Sign into Jump Desktop | Visited ARC Browser's Memory Management: A Serious Deal Breaker : r ...
-
-## Otta Job Platform (mass=119.26)
-
-This topic represents user activity on Otta, a job search and career platform. The user searched for Otta generally and then specifically looked for positions at multiple companies through the platform: commercial associate roles at Cleo, finance and strategy associate positions at Deliveroo, and opportunities at Lendable and Checkout.com. All core queries show the characteristic 'otta [company]' or 'otta [company] [role]' pattern. The two dropped queries about Deliveroo pricing and the general Deliveroo search are unrelated to job searching and instead concern the food delivery service itself.
-
-**Top domains**
-- app.otta.com
-- otta.com
-- deliveroo.co.uk
-
-**Top queries**
-- otta
-- otta cleo
-- otta deliveroo finance and atratevy associate
-- otta deliveroo finance and strategy associate
-- lendable otta
-- otta checkout.com
-- otta cleo commercial associate
-
-**Representative sessions**
-- s3708: Searched for otta deliveroo finance and strategy associate | Visited https://www.businessinsider.com/deliveroo-history-and-timeline-2018-9?amp | Searched for otta deliveroo finance and atratevy associate
-- s3282: Viewed Otta | Visited https://otta.com/?utm_source=google_brand | Searched for otta
-- s3586: Searched for outa | Visited Otta | The better way to find a job in tech | Viewed Otta
-- s3602: Searched for sql projects | Viewed Health Hero | Visited 15 Exciting SQL Project Ideas & Topics With Source Code For ...
-- s3641: Visited Cleo, the AI-powered 'financial assistant', raises $44M Series B led ... | Searched for commercial associate cleo | Searched for my o2
-- s3784: Searched for how healthy is basa fish | Visited Otta | The better way to find a job in tech | Searched for otta
-
-## KCL Student Records (mass=118.70)
-
-This topic centers on King's College London student services and records management. The user has searched for KCL-specific resources including student records systems, student services at Kings, and organizing student events at the university. Off-topic queries about Apple product events, fintech conferences, iPhone discounts, and entrepreneurship programs are included only due to shared words like 'event' and 'student' but lack the core KCL administrative context. The retained queries all relate directly to KCL's student administration infrastructure and campus life organization.
-
-**Top queries**
-- organise student event at kcl
-- kings college - organise student event
-- kcl student records
-- student records kcl
-- student records
-- student services kings
-
-**Representative sessions**
-- s2612: Searched for kings college - organise student event | Visited https://livecolonies.com/discover-prenzl | Visited Our Events - KCLSU
-- s0730: Searched for kcl student records | Searched for holding period | Searched for student records kcl
-- s0056: Searched for kcl student records | Visited https://mykcl.kcl.ac.uk/urd/sits.urd/run/siw_lgn
-- s0258: Searched for how to manipulate income in yolt | Searched for kcl student records | Searched for yolt app income
-- s0304: Searched for drive | Visited Microsoft OneNote | The digital note-taking app for your devices | Visited Personal Cloud Storage & File Sharing Platform - Google
-- s0315: Searched for price of gold | Visited https://mykcl.kcl.ac.uk/urd/sits.urd/run/siw_lgn | Visited https://www.moneymetals.com/precious-metals-charts/gold-price
-
-## Cloud Storage Services (mass=115.93)
-
-This topic focuses on the user's interest in cloud storage services, specifically Google Drive and OneDrive. The user has searched for information about downloading Google Drive, the Google Drive app, and OneDrive. Several queries about '1 Park Drive' and 'One Park Drive' (a residential building in Canary Wharf) appear due to word overlap with 'drive' but are off-topic for cloud storage. The ambiguous standalone query 'drive' has been removed as it lacks context to definitively place it in the cloud storage category.
-
-**Top domains**
-- drive.google.com
-
-**Top queries**
-- download google drive
-- google drive
-- google drive app
-- one drive
-
-**Representative sessions**
-- s2717: Searched for homeland season 8 | Visited Download - Google Drive | Searched for download google drive
-- s3050: Searched for sql udemy | Visited PostgreSQL: The world's most advanced open source database | Visited https://www.udemy.com/topic/sql/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Branded-Topic_la.EN_cc.UK&utm_content=deal4584&utm_term=_._ag_78218159171_._ad_359386513170_._kw_%2Bsql%20%2Budemy_._de_c_._dm__._pl__._ti_kwd-445009214094_._li_9044965_._pd__._&matchtype=b
-- s3676: Searched for google drive | Visited https://agility.im/frequent-agile-question/what-are-the-stories-features-capabilities-and-epics-in-safe/ | Visited Google Drive: Sign-in
-- s4577: Searched for one drive sync | Searched for value error in filter excel | Visited Sync OneDrive files and folders - Microsoft Support
-- s4906: Searched for gloria shoreditch | Visited DeepStream | eSourcing Procurement Software | Viewed Gloria
+- s6315: Visited https://support.babylonhealth.com/hc/en-us/articles/4408869933457-Contact-us | Visited Contact Us | IslandHealth | Searched for babylon health email uk
+- s3644: Searched for how to walk 10000 steps in lockdown | Visited https://farmerj.com/nutritional-table/ | Visited https://www.thirdspace.london/this-space/2020/04/10-ways-to-get-10000-steps-without-leaving-your-living-room/
+- s5506: Searched for island health | Visited Job Vacancies | Durham, London & Remote Jobs | Atom bank | Viewed Island Health
+- s6311: Searched for island health email | Visited https://www.islandhealth.nhs.uk/web/ | Visited Contact Us | Island Health
+- s2540: Searched for cal newport | Visited https://www.islandhealth.nhs.uk/web/appointments/ | Visited https://www.calnewport.com/
+- s1937: Searched for eye doctor near me | Searched for can you use eye drops with contacts | Searched for roodlane medical

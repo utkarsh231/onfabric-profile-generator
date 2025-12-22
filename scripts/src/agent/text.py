@@ -32,22 +32,23 @@ def tokens(text: str, *, extra_stop: Optional[set[str]] = None, use_bigrams: boo
 
 def build_tfidf(items: Dict[str, str]) -> Tuple[Dict[str, Dict[str, float]], Dict[str, float], set[str]]:
     N = max(1, len(items))
-
-    global_counts: Counter[str] = Counter()
-    for _item_id, text in items.items():
-        toks = tokens(text, extra_stop=None, use_bigrams=False)
-        global_counts.update(toks)
-
     extra_stop: set[str] = set()
-    for tok, _c in global_counts.most_common(180):
-        if tok.isdigit():
-            continue
-        extra_stop.add(tok)
+
+    # global_counts: Counter[str] = Counter()
+    # for _item_id, text in items.items():
+    #     toks = tokens(text, extra_stop=None, use_bigrams=False)
+    #     global_counts.update(toks)
+
+    # extra_stop: set[str] = set()
+    # for tok, _c in global_counts.most_common(180):
+    #     if tok.isdigit():
+    #         continue
+    #     extra_stop.add(tok)
 
     tfs: Dict[str, Counter[str]] = {}
     df: Counter[str] = Counter()
     for item_id, text in items.items():
-        toks = tokens(text, extra_stop=extra_stop, use_bigrams=True)
+        toks = tokens(text, extra_stop=None, use_bigrams=True)
         c = Counter(toks)
         tfs[item_id] = c
         for tok in set(c.keys()):
