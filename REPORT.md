@@ -1,13 +1,25 @@
 
 # onFabric Profile Generator
 
-A brief description of what this project does and who it's for
+- [onFabric Profile Generator](#onfabric-profile-generator)
+    - [TL;DR](#tldr)
+  - [Ingest Layer](#ingest-layer)
+  - [Graph Layer](#graph-layer)
+  - [Agent Layer](#agent-layer)
+  - [Figures](#figures)
+    - [1) Overall graph + query stats](#1-overall-graph--query-stats)
+    - [2) Community summary (top domains + queries)](#2-community-summary-top-domains--queries)
+    - [3) Community subgraph (interactive)](#3-community-subgraph-interactive)
+    - [4) Session drill-down](#4-session-drill-down)
+    - [5) Session ego-graph](#5-session-ego-graph)
+  - [Results](#results)
+    - [Example output highlights (from `artifacts/PROFILE.md`)](#example-output-highlights-from-artifactsprofilemd)
+    - [Where the LLM improved quality in this run (and why it’s included)](#where-the-llm-improved-quality-in-this-run-and-why-its-included)
+    - [How to interpret “mass”](#how-to-interpret-mass)
+  - [Failed attempts](#failed-attempts)
+    - [1) Pulling context from every visited link](#1-pulling-context-from-every-visited-link)
+    - [2) SEARCH-R1-style navigation for representation](#2-search-r1-style-navigation-for-representation)
 
-## Table of contents
-- [Documentation](#documentation)
-- [Ingest Layer](#ingest-layer)
-- [Graph Layer](#graph-layer)
-- [Agent Layer](#agent-layer)
 
 
 ### TL;DR
@@ -16,17 +28,11 @@ A brief description of what this project does and who it's for
 - **Agent:** convert topics + evidence into a user-facing profile (themes + snapshot). Optionally use an LLM to semantically compress and prune evidence while staying grounded in retrieved graph evidence.
 
 
-## Documentation
-
-
-
 ## Ingest Layer
 
 The ingest layer converts raw Chrome History JSON into a clean, deterministic stream of events that the rest of the system can safely build on. The main goal here is to normalize messy real-world logs without inventing signal, because the downstream graph is extremely sensitive to “synthetic” or noisy nodes.
 
-<ins>[Parsing](scripts/src/ingest/parse_takeout.py)</ins>
-
-What comes in
+<ins>What comes in</ins>
 
 A Takeout JSON file exported as a flat list of browsing entries (mixed “Searched for…”, “Visited…”, “Viewed…”, and other rows), with inconsistent URL formats and domain variants.
 
@@ -44,11 +50,11 @@ Key design choices:
 This is the most important decision in ingest. Browsing logs contain many visit/view events, and if you treat those as queries (or try to infer queries from them), you create huge “supernodes” (like google.com) that connect everything and collapse communities.
 So ingest is conservative: only explicit search events produce query text. Visits/views remain evidence through domains and session context.
 
-2. Normalize domains to reduce fragmentation
+1. Normalize domains to reduce fragmentation
 Takeout data contains many variants of the same site (e.g., www., mobile, country TLDs, language subdomains). If each variant becomes a different node, the graph splits signal unnecessarily.
 So ingest normalizes a few high-impact families (Google / YouTube / Wikipedia) into canonical domains to keep the graph stable and interpretable.
 
-3. Resolve Google redirect URLs to the true destination
+1. Resolve Google redirect URLs to the true destination
 Many Takeout rows store titleUrl as a Google redirect (/url?q=...). If you keep that, the graph overrepresents Google and underrepresents what the user actually visited.
 So ingest extracts the actual target URL where possible.
 
@@ -305,3 +311,86 @@ Main challenges and mitigations
 -	mitigate with broader snapshot query gathering (evidence lists + session neighbors)
 -	LLM vs graph mismatch
 -	mitigate by recomputing sessions after LLM pruning + keeping evidence-grounded fallbacks
+
+
+
+## Figures
+
+> Note: place the screenshots in `docs/images/` (or update the paths below to wherever you store them in the repo).
+
+### 1) Overall graph + query stats
+
+![Overview dashboard](static/overview.png)
+
+This view helps sanity-check scale (nodes/edges/sessions/queries) and whether the query-quality / query-class split looks reasonable.
+
+### 2) Community summary (top domains + queries)
+
+![Community summary](static/community.png)
+
+This view shows what a detected community *means* in plain terms: the most central domains and queries inside that cluster.
+
+### 3) Community subgraph (interactive)
+
+![Community subgraph](static/community_subgraph.jpeg)
+
+This view is useful for spotting “topic bleed” (bridge domains/queries) and verifying that the community is not being held together by hub-like sites.
+
+### 4) Session drill-down
+
+![Session summary](static/session.png)
+
+This view shows a single session’s top domains and queries, which is helpful for debugging mixed-intent sessions.
+
+### 5) Session ego-graph
+
+![Session ego graph](static/session0_graph.png)
+
+This view makes it easy to see how a session connects to domains and queries (and whether a particular query is acting like a bridge).
+
+## Results
+
+This run produces a **snapshot + 8 themes (“suits”)**, each grounded with **top queries/domains + representative sessions**. Even though the underlying graph is large (≈43,948 nodes, ≈145,219 edges, ≈10,410 sessions, ≈25,668 queries), the output stays debuggable because every claim links back to concrete evidence.
+
+### Example output highlights (from `artifacts/PROFILE.md`)
+- **High-confidence location: United Kingdom.** Multiple independent UK cues converge: IKEA UK pages, UK settled-status / EU Settlement Scheme queries, Zoom UK dial-in, and KCL student-records usage.
+- **Home / lifestyle: IKEA kitchen planning.** The top theme (*Kitchen Islands & Cabinets*, mass≈151.9) is highly coherent: repeated IKEA queries (“ikea uk”, “ikea kitchen cabinets”, “kitchen island”), plus direct visits to IKEA UK category pages.
+- **Work: student/admin + job search workflow.** KCL student-records queries combined with heavy Otta activity (Deliveroo/Cleo/Checkout.com/Lendable roles) and Zoom usage forms a consistent “student/job-seeker in the UK” picture.
+- **News: Russia–Ukraine focus.** The *Russia–Ukraine Conflict* theme is stable, supported by repeated news/history queries and long-running coverage browsing.
+- **Secondary signals:** light fashion/shopping (e.g., Van Cleef, event dresses/gowns) and travel/visa planning (Schengen/UK travel visa queries), plus a weak India link (“chennai drive”, IKEA India).
+
+### Where the LLM improved quality in this run (and why it’s included)
+The graph is strongest at **structure + retrieval**, but weak at turning sparse/noisy evidence into clean profile statements. In this specific output, the LLM adds value by:
+- **Fixing label corruption from word overlap.** A furniture topic was previously mislabeled due to the word “island” bridging into an unrelated label (e.g., “Dental_Island”). The LLM judge correctly renames it to *Kitchen Islands & Cabinets* and explains the failure mode.
+- **Separating adjacent intents inside a cluster.** Immigration-related queries often co-occur. The LLM prunes general visa/travel queries and keeps the theme narrowly about the **EU Settlement Scheme**, preventing a “mixed immigration blob.”
+- **Inferring stable concepts from multiple weak cues.** Example: graph-only logic can output “can’t figure out” when no single query is explicit; the LLM can combine multiple UK-specific signals into a confident “UK” conclusion while staying grounded in evidence.
+
+### How to interpret “mass”
+Mass is a ranking signal (persistence/connectedness), not a probability. I always show evidence lists + sessions so each theme can be audited.
+
+## Failed attempts
+
+A couple of approaches were tried early on but ultimately rejected because they either didn’t scale or didn’t produce richer profiles.
+
+### 1) Pulling context from every visited link
+
+Idea: fetch each URL and extract page context (titles/snippets/metadata) to enrich every datapoint before building themes.
+
+Why it failed:
+- Too expensive and slow at realistic scale (tens of thousands of URLs).
+- Many pages are blocked, dynamic, or behind auth/paywalls, so coverage is inconsistent.
+- Adds a lot of boilerplate noise (cookie banners, nav text) unless you build a full extraction pipeline.
+
+What I kept: limited “context” signals already available in the log (domain + Takeout title) and representative-session trails, which are cheap and reliable.
+
+### 2) SEARCH-R1-style navigation for representation
+
+Idea: use a search/navigation agent (SEARCH-R1 vibe) to traverse the graph under a budget and return “best evidence” for a profile.
+
+Why it failed:
+- Those methods are optimized for retrieval/navigation, not for stable representation learning.
+- Even after tuning budgets/coverage, the outputs were not deep or rich enough: they surfaced facts, but didn’t consistently form coherent, multi-facet profiles.
+- The traversal was sensitive to bridge nodes and mixed sessions, so results varied too much run-to-run.
+
+What I kept: the budgeted-evidence mindset (caps, purity gates), but combined it with topic projection + semantic grouping and an LLM summarizer for final compression.
+
