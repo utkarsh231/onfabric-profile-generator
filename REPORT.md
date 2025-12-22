@@ -3,6 +3,18 @@
 
 A brief description of what this project does and who it's for
 
+## Table of contents
+- [Documentation](#documentation)
+- [Ingest Layer](#ingest-layer)
+- [Graph Layer](#graph-layer)
+- [Agent Layer](#agent-layer)
+
+
+### TL;DR
+- **Ingest:** parse messy Chrome/Takeout history into clean, UTC-sorted events and deterministic sessions (avoid inventing queries; normalize domains; de-redirect URLs).
+- **Graph:** build a small evidence graph (sessions/domains/queries) with noise-aware weights (`psignal`) and hub-domain handling, then derive topics from a domain–query projection.
+- **Agent:** convert topics + evidence into a user-facing profile (themes + snapshot). Optionally use an LLM to semantically compress and prune evidence while staying grounded in retrieved graph evidence.
+
 
 ## Documentation
 
